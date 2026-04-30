@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Science journal thumbnail</title>
+  <desc id="desc">A stylized dark laboratory desk with data streams.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#1b1036"/></linearGradient>
+    <linearGradient id="glow" x1="0" x2="1"><stop stop-color="#6ff3e6"/><stop offset="1" stop-color="#a88bff"/></linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <circle cx="980" cy="110" r="170" fill="#6ff3e6" opacity=".12"/>
+  <circle cx="160" cy="650" r="230" fill="#a88bff" opacity=".12"/>
+  <path d="M120 510h960v88H120z" fill="#101927"/>
+  <path d="M240 250h360v230H240z" fill="#121d2e" stroke="#6ff3e6" stroke-width="6"/>
+  <path d="M650 220h260v260H650z" fill="#141f32" stroke="#a88bff" stroke-width="6"/>
+  <path d="M300 380c40-90 90-90 130 0s90 90 130 0" fill="none" stroke="url(#glow)" stroke-width="18" stroke-linecap="round"/>
+  <path d="M710 300h140M710 355h110M710 410h155" stroke="#f3c969" stroke-width="14" stroke-linecap="round"/>
+  <text x="120" y="150" fill="#f4f8ff" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800">Hotarun Journal</text>
+  <text x="124" y="205" fill="#9aa8ba" font-family="Segoe UI, Arial, sans-serif" font-size="30">Nature / Science / Cell papers, gently decoded</text>
+</svg>

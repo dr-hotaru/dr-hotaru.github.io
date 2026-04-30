@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <rect width="1200" height="750" fill="#10151f"/>
+  <circle cx="930" cy="170" r="190" fill="#6ff3e6" opacity=".14"/>
+  <path d="M160 550c150-260 350-170 500-320 110-110 230-110 380-40" fill="none" stroke="#6ff3e6" stroke-width="16" stroke-linecap="round"/>
+  <rect x="170" y="230" width="170" height="120" rx="18" fill="#19263a" stroke="#f3c969" stroke-width="6"/>
+  <rect x="510" y="160" width="170" height="120" rx="18" fill="#19263a" stroke="#a88bff" stroke-width="6"/>
+  <rect x="850" y="350" width="170" height="120" rx="18" fill="#19263a" stroke="#6ff3e6" stroke-width="6"/>
+  <text x="120" y="118" fill="#f4f8ff" font-family="Segoe UI, Arial, sans-serif" font-size="62" font-weight="800">Medicine × Machine Learning</text>
+  <text x="120" y="650" fill="#9aa8ba" font-family="Segoe UI, Arial, sans-serif" font-size="34">Decision-aware allocation of essential medicines</text>
+</svg>

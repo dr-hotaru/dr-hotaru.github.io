@@ -267,6 +267,70 @@ footer {
   border-top: 1px solid var(--line);
 }
 
+.empty-state,
+.article {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.empty-state {
+  padding: 28px;
+}
+
+.article-shell {
+  width: min(880px, 90vw);
+  margin: 0 auto;
+  padding: 56px 0 72px;
+}
+
+.article {
+  padding: clamp(22px, 5vw, 52px);
+}
+
+.article h1 {
+  font-size: clamp(40px, 6vw, 68px);
+}
+
+.lead {
+  color: var(--ink);
+  font-size: 20px;
+}
+
+.article-hero {
+  width: 100%;
+  margin: 18px 0 34px;
+  border-radius: 10px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.article section {
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.article section + section {
+  margin-top: 24px;
+}
+
+.article p {
+  color: var(--muted);
+}
+
+.article .source {
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+
+.article .source a {
+  color: var(--cyan);
+  font-weight: 800;
+}
+
 @media (max-width: 900px) {
   .hero,
   .post-grid,

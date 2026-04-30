@@ -6,6 +6,19 @@
   const title = document.querySelector("h1")?.textContent?.trim() || document.title;
   const encodedUrl = encodeURIComponent(pageUrl);
   const encodedTitle = encodeURIComponent(`${title} | ほたるんジャーナル`);
+  const h1 = article.querySelector("h1");
+  const label = article.querySelector(".label")?.textContent?.trim() || "Science";
+
+  if (h1 && !article.querySelector(".article-meta")) {
+    const meta = document.createElement("div");
+    meta.className = "article-meta";
+    meta.innerHTML = `
+      <span>${label}</span>
+      <span>蒼樹羽ほたる</span>
+      <time datetime="2026-05-01">2026.05.01</time>
+    `;
+    h1.insertAdjacentElement("afterend", meta);
+  }
 
   const share = document.createElement("section");
   share.className = "share-panel";

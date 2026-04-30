@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Climate precipitation thumbnail</title>
+  <desc id="desc">A stylized climate map with winter storm tracks and precipitation bands.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#14324a"/></linearGradient>
+    <linearGradient id="rain" x1="0" x2="1"><stop stop-color="#71e6d6"/><stop offset="1" stop-color="#6aa9ff"/></linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#sky)"/>
+  <circle cx="910" cy="160" r="190" fill="#71e6d6" opacity=".12"/>
+  <path d="M90 500c170-140 290-90 430-170 155-89 260-210 590-90" fill="none" stroke="url(#rain)" stroke-width="28" stroke-linecap="round" opacity=".9"/>
+  <path d="M170 180c130 80 250 80 380 0s250-80 390 10" fill="none" stroke="#f3c969" stroke-width="10" stroke-linecap="round" opacity=".8"/>
+  <path d="M230 290v170M310 250v220M410 310v160M730 245v220M820 285v170M930 250v210" stroke="#e8f4ff" stroke-width="9" stroke-linecap="round" opacity=".75"/>
+  <path d="M130 610h940" stroke="#263a54" stroke-width="44" stroke-linecap="round"/>
+</svg>

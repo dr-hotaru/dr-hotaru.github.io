@@ -175,7 +175,7 @@ footer {
 }
 
 .genre-card {
-  min-height: 230px;
+  min-height: 360px;
   padding: 24px;
   border: 1px solid var(--line);
   border-radius: 10px;
@@ -197,6 +197,44 @@ footer {
 
 .genre-card p {
   color: var(--muted);
+}
+
+.mini-post {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  margin-top: 18px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.035);
+  text-decoration: none;
+}
+
+.mini-post img {
+  width: 92px;
+  height: 66px;
+  border-radius: 6px;
+  object-fit: cover;
+  display: block;
+}
+
+.mini-post strong {
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.genre-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  margin-top: 14px;
+  color: var(--cyan);
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration: none;
 }
 
 .post-card {

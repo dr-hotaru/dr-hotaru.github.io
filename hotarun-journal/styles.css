@@ -167,6 +167,37 @@ footer {
   gap: 18px;
 }
 
+.genre-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.genre-card {
+  min-height: 230px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  text-decoration: none;
+}
+
+.genre-card span {
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.genre-card h3 {
+  margin: 14px 0 10px;
+  font-size: 28px;
+}
+
+.genre-card p {
+  color: var(--muted);
+}
+
 .post-card {
   overflow: hidden;
   border: 1px solid var(--line);
@@ -239,6 +270,7 @@ footer {
 @media (max-width: 900px) {
   .hero,
   .post-grid,
+  .genre-grid,
   .policy {
     grid-template-columns: 1fr;
   }

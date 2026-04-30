@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ja">
   <head>
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
     <header class="site-header">
       <a class="brand" href="#">ほたるんジャーナル</a>
       <nav aria-label="主要ナビゲーション">
-        <a href="#articles">記事</a>
+        <a href="#genres">ジャンル</a>
+        <a href="#latest">最新記事</a>
         <a href="#policy">編集方針</a>
-        <a href="#automation">自動化</a>
       </nav>
     </header>
 
@@ -21,11 +21,11 @@
       <section class="hero">
         <div class="hero-copy">
           <p class="label">Hotarun Journal</p>
-          <h1>トップジャーナルの論文を、専門外にも読みやすく。</h1>
-          <p>Nature、Science、Cell系の新着論文を、背景、何が新しいか、どこまで分かったか、今後の論点に分けて整理する科学ブログです。</p>
+          <h1>ふしぎな論文を、ジャンル別に読み解く。</h1>
+          <p>Nature、Science、Cell系の新着論文を、生物、医学、宇宙、AI、心理、古生物などのジャンルに分けて整理する科学ブログです。</p>
           <div class="hero-actions">
-            <a class="button primary" href="#articles">最新記事へ</a>
-            <a class="button secondary" href="#policy">編集方針</a>
+            <a class="button primary" href="#genres">ジャンルを見る</a>
+            <a class="button secondary" href="#latest">最新記事へ</a>
           </div>
         </div>
         <figure class="hero-image">
@@ -33,7 +33,46 @@
         </figure>
       </section>
 
-      <section id="articles" class="section">
+      <section id="genres" class="section">
+        <div class="section-head">
+          <p class="label">Genres</p>
+          <h2>ジャンル別ジャーナル</h2>
+        </div>
+        <div class="genre-grid">
+          <a class="genre-card biology" href="genres/biology.html">
+            <span>Biology</span>
+            <h3>生物・進化</h3>
+            <p>ゲノム、進化、生態、動物、植物、微生物の論文を読む。</p>
+          </a>
+          <a class="genre-card medicine" href="genres/medicine.html">
+            <span>Medicine</span>
+            <h3>医学・健康</h3>
+            <p>疾患、臨床研究、創薬、神経科学、健康科学の論文を読む。</p>
+          </a>
+          <a class="genre-card space" href="genres/space.html">
+            <span>Space</span>
+            <h3>宇宙・地球</h3>
+            <p>宇宙、惑星、気候、地球科学、環境研究を読む。</p>
+          </a>
+          <a class="genre-card technology" href="genres/technology.html">
+            <span>Technology</span>
+            <h3>AI・テクノロジー</h3>
+            <p>AI、ロボット、材料、量子、計算科学の論文を読む。</p>
+          </a>
+          <a class="genre-card psychology" href="genres/psychology.html">
+            <span>Psychology</span>
+            <h3>心理・社会</h3>
+            <p>認知、行動、言語、社会、コミュニケーション研究を読む。</p>
+          </a>
+          <a class="genre-card paleontology" href="genres/paleontology.html">
+            <span>Paleontology</span>
+            <h3>古生物・考古</h3>
+            <p>化石、古生物、人類史、考古学の論文を読む。</p>
+          </a>
+        </div>
+      </section>
+
+      <section id="latest" class="section">
         <div class="section-head">
           <p class="label">Articles</p>
           <h2>最新記事</h2>
@@ -87,14 +126,6 @@
             <h3>原典へリンクする</h3>
             <p>論文タイトル、ジャーナル名、DOI、公式URLを明記し、読者が原文へ辿れるようにします。</p>
           </article>
-        </div>
-      </section>
-
-      <section id="automation" class="automation-band">
-        <div>
-          <p class="label">Automation</p>
-          <h2>自動運用の設計</h2>
-          <p>朝と夜に3本ずつ候補記事を生成し、公開前に権利、引用、要約精度、X投稿文を確認する設計です。Xへの投稿は外部送信のため、実投稿前に内容確認を挟む運用を推奨します。</p>
         </div>
       </section>
     </main>

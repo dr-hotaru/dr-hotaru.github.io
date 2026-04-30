@@ -1,13 +1,14 @@
 :root {
-  --bg: #f7f9fb;
-  --ink: #10202f;
-  --muted: #607080;
-  --line: #dbe5ee;
-  --surface: #ffffff;
-  --blue: #2266aa;
-  --aqua: #20a7b8;
-  --violet: #6b5bd6;
-  --shadow: 0 20px 70px rgba(16, 32, 47, 0.12);
+  --bg: #05070b;
+  --surface: #0e141f;
+  --surface-soft: #141c2b;
+  --ink: #f4f8ff;
+  --muted: #9aa8ba;
+  --line: rgba(255, 255, 255, 0.12);
+  --cyan: #6ff3e6;
+  --blue: #6aa9ff;
+  --violet: #a88bff;
+  --shadow: 0 24px 90px rgba(0, 0, 0, 0.46);
 }
 
 * {
@@ -29,18 +30,19 @@ a {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 20;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 64px;
+  min-height: 66px;
   padding: 0 5vw;
-  border-bottom: 1px solid rgba(219, 229, 238, 0.9);
-  background: rgba(247, 249, 251, 0.92);
-  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line);
+  background: rgba(5, 7, 11, 0.88);
+  backdrop-filter: blur(18px);
 }
 
 .brand {
+  color: var(--cyan);
   font-weight: 900;
   text-decoration: none;
 }
@@ -58,20 +60,20 @@ nav a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(320px, 1.08fr);
-  gap: 42px;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.62fr);
+  gap: 44px;
   align-items: center;
-  min-height: calc(100vh - 88px);
-  padding: 44px 5vw 32px;
+  min-height: calc(100vh - 80px);
+  padding: 48px 5vw 36px;
 }
 
 .hero-copy {
-  max-width: 680px;
+  max-width: 820px;
 }
 
 .eyebrow {
   margin: 0 0 12px;
-  color: var(--blue);
+  color: var(--cyan);
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 0;
@@ -86,61 +88,145 @@ p {
 }
 
 h1 {
+  max-width: 900px;
   margin-bottom: 20px;
-  font-size: clamp(44px, 6vw, 80px);
-  line-height: 1.03;
+  font-size: clamp(50px, 8vw, 112px);
+  line-height: 0.96;
   letter-spacing: 0;
 }
 
 h2 {
   margin-bottom: 18px;
-  font-size: 32px;
-  line-height: 1.2;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.08;
 }
 
 h3 {
   margin-bottom: 8px;
-  font-size: 19px;
+  font-size: 20px;
 }
 
 .hero-copy > p:not(.eyebrow),
-.text-block p,
-.timeline p,
+.profile-card p,
+.work-grid p,
+.project-card p,
 footer {
   color: var(--muted);
 }
 
-.portrait-panel {
-  margin: 0;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: var(--shadow);
-  aspect-ratio: 4 / 3;
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
 }
 
-.portrait-panel img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.button.primary {
+  border-color: var(--cyan);
+  background: var(--cyan);
+  color: #041014;
+}
+
+.button.secondary {
+  background: var(--surface);
+}
+
+.identity-panel {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: linear-gradient(160deg, rgba(111, 243, 230, 0.13), rgba(168, 139, 255, 0.1)), var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.identity-panel p {
+  color: var(--cyan);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.identity-panel h2 {
+  margin-bottom: 28px;
+}
+
+dl {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+}
+
+dl div {
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+dt {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+dd {
+  margin: 2px 0 0;
 }
 
 .section {
   width: min(1120px, 90vw);
   margin: 0 auto;
-  padding: 58px 0;
+  padding: 64px 0;
 }
 
-.split {
-  display: grid;
-  grid-template-columns: minmax(220px, 0.55fr) minmax(0, 1fr);
-  gap: 44px;
+.section-head {
+  margin-bottom: 22px;
 }
 
-.timeline {
+.profile-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(240px, 0.48fr) minmax(0, 1fr);
+  gap: 42px;
+}
+
+.profile-card,
+.work-grid article,
+.project-card,
+.link-band {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.profile-card {
+  padding: 28px;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
+}
+
+.work-grid article {
+  padding: 24px;
+}
+
+.work-grid span {
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 900;
 }
 
 .project-grid {
@@ -154,9 +240,6 @@ footer {
   grid-template-rows: auto 1fr;
   overflow: hidden;
   min-height: 520px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: var(--surface);
   box-shadow: var(--shadow);
   text-decoration: none;
 }
@@ -175,7 +258,7 @@ footer {
 .project-card span {
   display: inline-flex;
   margin-bottom: 12px;
-  color: var(--aqua);
+  color: var(--cyan);
   font-size: 12px;
   font-weight: 900;
   text-transform: uppercase;
@@ -185,28 +268,6 @@ footer {
   margin-bottom: 12px;
   font-size: clamp(30px, 4vw, 46px);
   line-height: 1.05;
-}
-
-.project-card p {
-  color: var(--muted);
-  font-size: 17px;
-}
-
-.timeline article,
-.link-band {
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: var(--surface);
-}
-
-.timeline article {
-  padding: 22px;
-}
-
-.timeline span {
-  color: var(--aqua);
-  font-size: 12px;
-  font-weight: 900;
 }
 
 .link-band {
@@ -229,9 +290,9 @@ footer {
   min-height: 42px;
   padding: 0 16px;
   border-radius: 8px;
-  background: #e9f4f8;
-  color: var(--blue);
-  font-weight: 800;
+  background: #102438;
+  color: var(--cyan);
+  font-weight: 900;
   text-decoration: none;
 }
 
@@ -242,25 +303,20 @@ footer {
   border-top: 1px solid var(--line);
 }
 
-@media (max-width: 860px) {
+@media (max-width: 900px) {
   .hero,
-  .split,
-  .project-grid,
-  .timeline {
+  .profile-grid,
+  .work-grid,
+  .project-grid {
     grid-template-columns: 1fr;
   }
 
   .hero {
     min-height: auto;
   }
-
-  .link-band {
-    align-items: flex-start;
-    flex-direction: column;
-  }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 640px) {
   .site-header {
     align-items: flex-start;
     flex-direction: column;
@@ -272,5 +328,10 @@ footer {
   nav {
     width: 100%;
     justify-content: space-between;
+  }
+
+  .link-band {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }

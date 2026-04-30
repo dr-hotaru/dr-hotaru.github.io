@@ -1,10 +1,10 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ja">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>蒼樹羽ほたる | Research Profile</title>
-    <meta name="description" content="蒼樹羽ほたるの研究者プロフィールサイト。生命科学・情報学、データ解析、科学コミュニケーションの活動をまとめています。">
+    <meta name="description" content="蒼樹羽ほたるの研究者プロフィール。生命科学・情報学、R/Python3による大規模データ解析、科学コミュニケーションの活動をまとめています。">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -12,26 +12,73 @@
       <a class="brand" href="#">蒼樹羽ほたる</a>
       <nav aria-label="主要ナビゲーション">
         <a href="#profile">Profile</a>
-        <a href="#career">Career</a>
-        <a href="#projects">Projects</a>
+        <a href="#work">Work</a>
+        <a href="#media">Media</a>
+        <a href="#links">Links</a>
       </nav>
     </header>
 
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Aokiha Hotaru / Science Communicator</p>
-          <h1>研究、論文、ガジェットを読み解くポータル。</h1>
-          <p>蒼樹羽ほたるは、生命科学・情報学分野の研究経験をもとに、科学ニュース、論文解説、在宅ワーク向けガジェット比較を届けるバーチャル研究者キャラクターです。</p>
+          <p class="eyebrow">Aokiha Hotaru / Researcher Persona</p>
+          <h1>生命科学と情報学のあいだで、知を編集する。</h1>
+          <p>蒼樹羽ほたるは、生命科学・情報学分野の研究経験を背景に、論文、データ解析、科学ニュース、研究者の作業環境を読み解くバーチャル研究者キャラクターです。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="hotarun-journal/index.html">ほたるんジャーナル</a>
+            <a class="button secondary" href="https://dr-hotaru.github.io/deskgear-rank/">DeskGear Rank</a>
+          </div>
         </div>
-        <figure class="portrait-panel" aria-label="蒼樹羽ほたるのイメージビジュアル">
-          <img src="https://images.unsplash.com/photo-1532187643603-ba119ca4109e?auto=format&fit=crop&w=1200&q=85" alt="青い光に照らされた研究室の顕微鏡">
-        </figure>
+        <aside class="identity-panel">
+          <p>Research Focus</p>
+          <h2>Life Science<br>Informatics<br>Communication</h2>
+          <dl>
+            <div><dt>Tools</dt><dd>R / Python3 / Sequence Analysis</dd></div>
+            <div><dt>Style</dt><dd>Evidence first, hype last</dd></div>
+            <div><dt>Role</dt><dd>Scientist, curator, guide</dd></div>
+          </dl>
+        </aside>
       </section>
 
-      <section id="projects" class="section">
+      <section id="profile" class="section profile-grid">
+        <div>
+          <p class="eyebrow">Profile</p>
+          <h2>研究者っぽく、けれど読みやすく。</h2>
+        </div>
+        <div class="profile-card">
+          <p>東京大学で生命科学・情報学分野の研究により博士号を取得。RやPython3による塩基配列・アミノ酸配列などの大規模データ分析を扱ってきました。</p>
+          <p>日本学術振興会特別研究員DC1、特別研究員PDとして生命科学研究に従事。日本学術振興会育志賞を受賞。</p>
+          <p>現在は、トップジャーナルの論文を専門外にも読みやすく整理する「ほたるんジャーナル」と、研究・在宅ワーク環境の道具を比較する「DeskGear Rank」を運営しています。</p>
+        </div>
+      </section>
+
+      <section id="work" class="section">
         <div class="section-head">
-          <p class="eyebrow">Projects</p>
+          <p class="eyebrow">Work</p>
+          <h2>活動領域</h2>
+        </div>
+        <div class="work-grid">
+          <article>
+            <span>01</span>
+            <h3>論文読解</h3>
+            <p>背景、発見、手法、限界、今後の展望を分けて、トップジャーナル論文を整理します。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>データ解析</h3>
+            <p>配列データや生命科学データを、再現性と比較可能性を意識して扱います。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>科学コミュニケーション</h3>
+            <p>難しい研究を、誤解を増やさず、それでも読まれる形へ編集します。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="media" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Media</p>
           <h2>運営メディア</h2>
         </div>
         <div class="project-grid">
@@ -40,7 +87,7 @@
             <div>
               <span>Science Blog</span>
               <h3>ほたるんジャーナル</h3>
-              <p>Nature、Science、Cell系の論文を、背景、発見、限界、今後の展望に分けて読みやすく整理します。</p>
+              <p>Nature、Science、Cell系の論文を、ジャンル別に分かりやすく紹介します。</p>
             </div>
           </a>
           <a class="project-card gear" href="https://dr-hotaru.github.io/deskgear-rank/">
@@ -48,49 +95,9 @@
             <div>
               <span>Desk Gear</span>
               <h3>DeskGear Rank</h3>
-              <p>在宅ワーク向けのPCスタンド、デスクライト、Webカメラ、モニターアームをジャンル別に比較します。</p>
+              <p>在宅ワーク向けのPC周辺機器・デスク用品をジャンル別に比較します。</p>
             </div>
           </a>
-        </div>
-      </section>
-
-      <section id="profile" class="section split">
-        <div>
-          <p class="eyebrow">Profile</p>
-          <h2>研究者としての背景を持つ案内役</h2>
-        </div>
-        <div class="text-block">
-          <p>蒼樹羽ほたるは、トップジャーナルの論文や生命科学データ解析の話題を、専門外の読者にも届くように整理するための運営者キャラクターです。</p>
-          <p>論文の背景、何が新しいのか、どこまで分かったのか、まだ分かっていない点を分けて伝えることを重視します。</p>
-        </div>
-      </section>
-
-      <section id="career" class="section">
-        <div class="section-head">
-          <p class="eyebrow">Career</p>
-          <h2>経歴</h2>
-        </div>
-        <div class="timeline">
-          <article>
-            <span>Doctoral Research</span>
-            <h3>東京大学で博士号を取得</h3>
-            <p>生命科学・情報学分野の研究で博士号を取得。塩基配列・アミノ酸配列などの大規模データ分析を扱ってきました。</p>
-          </article>
-          <article>
-            <span>Data Science</span>
-            <h3>R / Python3による解析</h3>
-            <p>生命科学データの解析、可視化、比較、再現性を意識したワークフローを重視しています。</p>
-          </article>
-          <article>
-            <span>Fellowship</span>
-            <h3>日本学術振興会特別研究員</h3>
-            <p>日本学術振興会特別研究員DC1、特別研究員PDとして生命科学研究に従事。日本学術振興会育志賞を受賞。</p>
-          </article>
-          <article>
-            <span>Communication</span>
-            <h3>科学を読み解くメディア運営</h3>
-            <p>トップジャーナルの研究を、背景、発見、限界、今後の展望に分けて伝える科学メディア「ほたるんジャーナル」を運営します。</p>
-          </article>
         </div>
       </section>
 

@@ -49,6 +49,7 @@ a {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -203,6 +204,7 @@ footer {
   border: 1px solid var(--line);
   border-radius: 10px;
   background: var(--surface);
+  text-decoration: none;
 }
 
 .post-card img {
@@ -219,7 +221,7 @@ footer {
   font-weight: 900;
 }
 
-.post-card a {
+.post-card .read-link {
   display: inline-flex;
   align-items: center;
   min-height: 38px;
@@ -472,6 +474,18 @@ footer {
   color: #647184;
   font-size: 12px;
   line-height: 1.35;
+}
+
+.affiliate-panel-home {
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.affiliate-panel-home .section-head {
+  margin-bottom: 14px;
 }
 
 @media (max-width: 900px) {

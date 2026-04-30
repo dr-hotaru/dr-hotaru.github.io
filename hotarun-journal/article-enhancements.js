@@ -1,6 +1,7 @@
 (() => {
   const article = document.querySelector(".article");
   if (!article) return;
+  if (article.querySelector(".affiliate-panel")) return;
 
   const pageUrl = window.location.href.split("#")[0];
   const title = document.querySelector("h1")?.textContent?.trim() || document.title;

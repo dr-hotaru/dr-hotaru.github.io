@@ -60,10 +60,10 @@ nav a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.62fr);
-  gap: 44px;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+  gap: 36px;
   align-items: center;
-  min-height: calc(100vh - 80px);
+  min-height: min(760px, calc(100vh - 80px));
   padding: 48px 5vw 36px;
 }
 
@@ -144,7 +144,7 @@ footer {
 }
 
 .identity-panel {
-  padding: 28px;
+  padding: 18px;
   border: 1px solid var(--line);
   border-radius: 12px;
   background: linear-gradient(160deg, rgba(111, 243, 230, 0.13), rgba(168, 139, 255, 0.1)), var(--surface);
@@ -153,11 +153,13 @@ footer {
 
 .profile-visual {
   display: grid;
-  gap: 22px;
+  gap: 16px;
 }
 
 .profile-visual img {
   width: 100%;
+  max-width: 280px;
+  justify-self: center;
   border-radius: 10px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
@@ -172,7 +174,8 @@ footer {
 }
 
 .identity-panel h2 {
-  margin-bottom: 28px;
+  margin-bottom: 18px;
+  font-size: clamp(24px, 3vw, 34px);
 }
 
 dl {
@@ -228,7 +231,7 @@ dd {
 
 .profile-with-image {
   display: grid;
-  grid-template-columns: minmax(220px, 0.45fr) minmax(0, 1fr);
+  grid-template-columns: minmax(180px, 280px) minmax(0, 1fr);
   gap: 24px;
   align-items: center;
 }

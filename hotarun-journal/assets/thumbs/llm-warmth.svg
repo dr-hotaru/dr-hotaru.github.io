@@ -5,6 +5,4 @@
   <rect x="160" y="210" width="390" height="190" rx="28" fill="#1c2433" stroke="#ff8bbd" stroke-width="7"/>
   <rect x="650" y="310" width="390" height="190" rx="28" fill="#1c2433" stroke="#6ff3e6" stroke-width="7"/>
   <path d="M260 300h190M745 390h210M745 440h140" stroke="#f4f8ff" stroke-width="16" stroke-linecap="round" opacity=".82"/>
-  <text x="120" y="120" fill="#f4f8ff" font-family="Segoe UI, Arial, sans-serif" font-size="64" font-weight="800">Warm AI, Accurate AI?</text>
-  <text x="120" y="650" fill="#9aa8ba" font-family="Segoe UI, Arial, sans-serif" font-size="34">Accuracy and sycophancy in language models</text>
 </svg>

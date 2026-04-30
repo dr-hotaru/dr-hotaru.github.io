@@ -7,6 +7,4 @@
   <rect x="770" y="230" width="170" height="270" rx="20" fill="#111a28" stroke="#6ff3e6" stroke-width="8"/>
   <path d="M420 438h130v62H420z" fill="#26344a"/>
   <path d="M330 530h620" stroke="#6ff3e6" stroke-width="12" stroke-linecap="round"/>
-  <text x="120" y="110" fill="#f4f8ff" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800">DeskGear Rank</text>
-  <text x="124" y="165" fill="#9aa8ba" font-family="Segoe UI, Arial, sans-serif" font-size="30">Workstation tools compared by use case</text>
 </svg>

@@ -151,6 +151,19 @@ footer {
   box-shadow: var(--shadow);
 }
 
+.profile-visual {
+  display: grid;
+  gap: 22px;
+}
+
+.profile-visual img {
+  width: 100%;
+  border-radius: 10px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
 .identity-panel p {
   color: var(--cyan);
   font-size: 12px;
@@ -211,6 +224,21 @@ dd {
 
 .profile-card {
   padding: 28px;
+}
+
+.profile-with-image {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.45fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.profile-with-image img {
+  width: 100%;
+  border-radius: 10px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
 }
 
 .work-grid {
@@ -306,6 +334,7 @@ footer {
 @media (max-width: 900px) {
   .hero,
   .profile-grid,
+  .profile-with-image,
   .work-grid,
   .project-grid {
     grid-template-columns: 1fr;

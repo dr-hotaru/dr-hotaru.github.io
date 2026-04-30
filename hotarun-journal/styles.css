@@ -331,6 +331,98 @@ footer {
   font-weight: 800;
 }
 
+.share-panel,
+.affiliate-panel {
+  margin-top: 34px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.share-panel h2,
+.affiliate-panel h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.share-buttons a,
+.share-buttons button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 13px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #121b2a;
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.share-buttons .x {
+  border-color: #7aa7ff;
+}
+
+.share-buttons .facebook {
+  border-color: #6aa9ff;
+}
+
+.share-buttons .line {
+  border-color: #58d86d;
+}
+
+.affiliate-note {
+  margin-bottom: 14px;
+  font-size: 13px;
+}
+
+.affiliate-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.affiliate-card {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #111927;
+  text-decoration: none;
+}
+
+.affiliate-card img {
+  width: 76px;
+  height: 76px;
+  border-radius: 6px;
+  object-fit: cover;
+  display: block;
+}
+
+.affiliate-card strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.affiliate-card span {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
 @media (max-width: 900px) {
   .hero,
   .post-grid,
@@ -341,6 +433,10 @@ footer {
 
   .hero {
     min-height: auto;
+  }
+
+  .affiliate-grid {
+    grid-template-columns: 1fr;
   }
 }
 

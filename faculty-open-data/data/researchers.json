@@ -5,5 +5,157 @@
     "verificationRule": "公式発表で公募種別と採用者本人が明示されている場合のみ公開する。氏名、写真、所属変更、時期から性別や採用経路を推定しない。",
     "metricsNote": "論文数は制度分析の補助指標であり、個人の研究力や採用妥当性を単純に評価するものではない。"
   },
-  "researchers": []
+  "researchers": [],
+  "candidateCalls": [
+    {
+      "id": "tohoku-university-hospital-2026-female-professor",
+      "fiscalYear": 2026,
+      "university": "東北大学病院",
+      "department": "東北大学病院",
+      "position": "教授",
+      "field": "医学・臨床研究",
+      "appointmentDate": "2026年8月1日以降",
+      "statusLabel": "採用者未確認",
+      "note": "女性限定公募として公式掲載。採用者名との対応は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "東北大学病院 採用情報",
+        "url": "https://www.hosp.tohoku.ac.jp/recruitment/doctor/47631.html"
+      }
+    },
+    {
+      "id": "tohoku-aimr-2026-female-pi-professor",
+      "fiscalYear": 2026,
+      "university": "東北大学",
+      "department": "材料科学高等研究所（AIMR）",
+      "position": "主任研究者（PI・テニュア教授）",
+      "field": "材料科学",
+      "appointmentDate": "2026年8月1日以降",
+      "statusLabel": "採用者未確認",
+      "note": "女性限定公募として公式掲載。採用者名との対応は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "東北大学AIMR 公募情報",
+        "url": "https://www.wpi-aimr.tohoku.ac.jp/jp/about/staff/20260130_002124.html"
+      }
+    },
+    {
+      "id": "science-tokyo-2025-seven-female-faculty-calls",
+      "fiscalYear": 2025,
+      "university": "東京科学大学",
+      "department": "理工学系7部局",
+      "position": "教授・准教授・助教",
+      "field": "理工学",
+      "appointmentDate": "2026年度以降",
+      "statusLabel": "採用者未確認",
+      "note": "7部局で女性限定公募を実施する公式ニュース。個別採用者との対応は未確認。",
+      "source": {
+        "label": "Science Tokyo ニュース",
+        "url": "https://www.isct.ac.jp/ja/news/5dzphbls9dhd"
+      }
+    },
+    {
+      "id": "omu-aerospace-2025-female-associate-professor",
+      "fiscalYear": 2024,
+      "university": "大阪公立大学",
+      "department": "工学研究院・航空宇宙工学分野",
+      "position": "准教授",
+      "field": "航空宇宙工学",
+      "appointmentDate": "2025年4月1日",
+      "statusLabel": "採用者未確認",
+      "note": "女性限定公募として公式掲載。採用者名との対応は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "大阪公立大学 教員公募",
+        "url": "https://www.omu.ac.jp/research/recruit/faculty/entry-00583.html"
+      }
+    },
+    {
+      "id": "omu-biology-2025-female-professor",
+      "fiscalYear": 2024,
+      "university": "大阪公立大学",
+      "department": "理学研究院・生物学専攻",
+      "position": "教授",
+      "field": "生物学",
+      "appointmentDate": "2025年4月1日",
+      "statusLabel": "採用者未確認",
+      "note": "女性限定公募として公式掲載。採用者名との対応は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "大阪公立大学 教員公募",
+        "url": "https://www.omu.ac.jp/research/recruit/faculty/entry-00684.html"
+      }
+    },
+    {
+      "id": "omu-math-2025-female-professor",
+      "fiscalYear": 2024,
+      "university": "大阪公立大学",
+      "department": "理学研究院・数学専攻",
+      "position": "教授",
+      "field": "数学",
+      "appointmentDate": "2025年4月1日",
+      "statusLabel": "採用者未確認",
+      "note": "女性限定公募として公式掲載。採用者名との対応は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "大阪公立大学 教員公募",
+        "url": "https://www.omu.ac.jp/research/recruit/faculty/entry-00559.html"
+      }
+    },
+    {
+      "id": "kyushu-physics-2023-female-professor-associate",
+      "fiscalYear": 2022,
+      "university": "九州大学",
+      "department": "大学院理学研究院物理学部門",
+      "position": "教授または准教授",
+      "field": "量子物性・物理学",
+      "appointmentDate": "2023年4月1日まで",
+      "statusLabel": "採用者未確認",
+      "note": "女性教員募集として公式掲載。採用者名との対応は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "九州大学 理学研究院 公募情報",
+        "url": "https://www.sci.kyushu-u.ac.jp/koho/kobo/kobo_220128.html"
+      }
+    },
+    {
+      "id": "tsukuba-all-fields-2026-female-associate-assistant",
+      "fiscalYear": 2025,
+      "university": "筑波大学",
+      "department": "全学・全研究分野",
+      "position": "准教授または助教",
+      "field": "全分野",
+      "appointmentDate": "2026年4月1日",
+      "statusLabel": "採用者未確認",
+      "note": "全学20名枠のうち14名分の女性限定公募。採用者名との対応は未確認。",
+      "source": {
+        "label": "日本細胞生物学会 公募掲載",
+        "url": "https://www.jscb.gr.jp/jscb/communication/jscb_communication-6845/"
+      }
+    },
+    {
+      "id": "riken-ithems-2025-female-researchers",
+      "fiscalYear": 2025,
+      "university": "理化学研究所",
+      "department": "数理創造研究センター",
+      "position": "上級研究員・研究員・特別研究員・リサーチアソシエイト",
+      "field": "数理科学・計算科学",
+      "appointmentDate": "応相談",
+      "statusLabel": "採用者未確認",
+      "note": "女性限定公募として公式掲載。採用者名との対応は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "理化学研究所 採用情報",
+        "url": "https://www.riken.jp/careers/researchers/20250526_1/index.html"
+      }
+    },
+    {
+      "id": "tokyo-u-astronomy-female-assistant-professor",
+      "fiscalYear": 2026,
+      "university": "東京大学",
+      "department": "大学院理学系研究科天文学専攻",
+      "position": "助教",
+      "field": "天文学",
+      "appointmentDate": "決定後できるだけ早い時期",
+      "statusLabel": "採用者未確認",
+      "note": "女性限定公募として公式掲載。採用者名との対応は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "東京大学大学院理学系研究科 公募",
+        "url": "https://www.s.u-tokyo.ac.jp/ja/recruit/?id=1951"
+      }
+    }
+  ]
 }

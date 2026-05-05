@@ -1,5 +1,6 @@
 const state = {
   researchers: [],
+  candidateCalls: [],
   filtered: [],
   selectedId: null
 };
@@ -12,7 +13,8 @@ const els = {
   rows: document.querySelector("#researcherRows"),
   total: document.querySelector("#totalCount"),
   universities: document.querySelector("#universityCount"),
-  fields: document.querySelector("#fieldCount"),
+  candidates: document.querySelector("#candidateCount"),
+  candidateCalls: document.querySelector("#candidateCalls"),
   detailName: document.querySelector("#detailName"),
   detailMeta: document.querySelector("#detailMeta"),
   sources: document.querySelector("#sourceLinks"),
@@ -23,6 +25,7 @@ async function loadData() {
   const response = await fetch("data/researchers.json", { cache: "no-store" });
   const data = await response.json();
   state.researchers = data.researchers.filter(item => item.verificationStatus === "verified");
+  state.candidateCalls = data.candidateCalls || [];
   state.filtered = [...state.researchers];
   populateFilters();
   render();
@@ -68,6 +71,7 @@ function applyFilters() {
 function render() {
   renderSummary();
   renderRows();
+  renderCandidateCalls();
   const selected = state.filtered.find(item => item.id === state.selectedId) || state.filtered[0];
   renderDetail(selected);
 }
@@ -75,7 +79,7 @@ function render() {
 function renderSummary() {
   els.total.textContent = state.filtered.length;
   els.universities.textContent = uniqueValues(state.filtered.map(item => item.university)).length;
-  els.fields.textContent = uniqueValues(state.filtered.map(item => item.field)).length;
+  els.candidates.textContent = state.candidateCalls.length;
 }
 
 function renderRows() {
@@ -105,6 +109,30 @@ function renderRows() {
       render();
     });
     els.rows.appendChild(row);
+  });
+}
+
+function renderCandidateCalls() {
+  els.candidateCalls.innerHTML = "";
+  state.candidateCalls.forEach(item => {
+    const card = document.createElement("article");
+    card.className = "candidate-card";
+    card.innerHTML = `
+      <div class="candidate-topline">
+        <span>${escapeHtml(item.fiscalYear)}年度</span>
+        <span>${escapeHtml(item.statusLabel)}</span>
+      </div>
+      <h3>${escapeHtml(item.university)}</h3>
+      <p>${escapeHtml(item.department)}</p>
+      <dl>
+        <div><dt>職位</dt><dd>${escapeHtml(item.position)}</dd></div>
+        <div><dt>分野</dt><dd>${escapeHtml(item.field)}</dd></div>
+        <div><dt>採用予定</dt><dd>${escapeHtml(item.appointmentDate)}</dd></div>
+      </dl>
+      <p class="candidate-note">${escapeHtml(item.note)}</p>
+      <a href="${item.source.url}" target="_blank" rel="noopener noreferrer">根拠を見る</a>
+    `;
+    els.candidateCalls.appendChild(card);
   });
 }
 

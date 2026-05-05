@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-label="公募採用データラボの抽象サムネイル">
+  <rect width="960" height="600" fill="#07101a"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M90 430 C210 260, 300 340, 430 220 S680 160, 850 78" stroke="#6ff3e6" stroke-width="18"/>
+    <path d="M110 500 C270 390, 360 470, 520 325 S710 300, 860 190" stroke="#ffd166" stroke-width="12" opacity=".9"/>
+    <path d="M130 180 H830" stroke="#233449" stroke-width="2"/>
+    <path d="M130 300 H830" stroke="#233449" stroke-width="2"/>
+    <path d="M130 420 H830" stroke="#233449" stroke-width="2"/>
+    <path d="M220 120 V500" stroke="#233449" stroke-width="2"/>
+    <path d="M420 120 V500" stroke="#233449" stroke-width="2"/>
+    <path d="M620 120 V500" stroke="#233449" stroke-width="2"/>
+  </g>
+  <g>
+    <circle cx="190" cy="360" r="32" fill="#6ff3e6"/>
+    <circle cx="340" cy="304" r="32" fill="#ffd166"/>
+    <circle cx="516" cy="260" r="32" fill="#ff7aa2"/>
+    <circle cx="700" cy="182" r="32" fill="#a88bff"/>
+  </g>
+  <g fill="#101a28" stroke="#6ff3e6" stroke-width="4">
+    <rect x="132" y="110" width="150" height="64" rx="12"/>
+    <rect x="382" y="430" width="210" height="64" rx="12"/>
+    <rect x="650" y="330" width="180" height="64" rx="12"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Squid diversification thumbnail">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#06121e"/>
+      <stop offset="1" stop-color="#062b3a"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="78%" cy="24%" r="40%">
+      <stop offset="0" stop-color="#f3c969" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#f3c969" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#moon)"/>
+  <g opacity="0.9">
+    <path d="M880 280c-120 90-180 190-180 300 0 110 60 210 180 300 120-90 180-190 180-300 0-110-60-210-180-300Z" fill="#71e6d6" opacity="0.20"/>
+    <path d="M880 320c-90 72-132 156-132 252 0 96 42 180 132 252 90-72 132-156 132-252 0-96-42-180-132-252Z" fill="#ffffff" opacity="0.08"/>
+    <g stroke="#ff8bbd" stroke-width="10" opacity="0.55" fill="none">
+      <path d="M880 560c-120 0-220 70-300 210"/>
+      <path d="M880 560c120 0 220 70 300 210"/>
+    </g>
+  </g>
+</svg>
+

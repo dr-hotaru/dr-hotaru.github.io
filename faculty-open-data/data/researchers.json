@@ -1,0 +1,9 @@
+{
+  "updatedAt": "2026-05-05",
+  "policy": {
+    "publishOnlyVerified": true,
+    "verificationRule": "公式発表で公募種別と採用者本人が明示されている場合のみ公開する。氏名、写真、所属変更、時期から性別や採用経路を推定しない。",
+    "metricsNote": "論文数は制度分析の補助指標であり、個人の研究力や採用妥当性を単純に評価するものではない。"
+  },
+  "researchers": []
+}

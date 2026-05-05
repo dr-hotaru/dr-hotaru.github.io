@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DNAの“よじれ”が回路になる：隣の遺伝子が干渉し合う仕組み | ほたるんジャーナル</title>
+    <meta name="description" content="転写が作るDNA超らせん（supercoiling）が隣接遺伝子の発現をフィードバック制御しうることを示したScience論文を解説します。">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">ほたるんジャーナル</a>
+      <nav aria-label="主要ナビゲーション">
+        <a href="https://dr-hotaru.github.io/">メイン</a>
+        <a href="https://dr-hotaru.github.io/hotarun-journal/">ほたるんジャーナル</a>
+        <a href="https://dr-hotaru.github.io/deskgear-rank/">DeskGear</a>
+        <a href="https://dr-hotaru.github.io/hotarun-journal/#genres">ジャンル</a>
+        <a href="https://dr-hotaru.github.io/hotarun-journal/#latest">最新記事</a>
+      </nav>
+    </header>
+
+    <main class="article-shell">
+      <article class="article">
+        <p class="label">Technology / Synthetic Biology</p>
+        <h1>DNAの“よじれ”が回路になる：隣の遺伝子が干渉し合う仕組み</h1>
+        <div class="article-meta">
+          <span>technology</span>
+          <span>遺伝子回路</span>
+          <time datetime="2026-05-05">2026.05.05</time>
+        </div>
+        <p class="lead">遺伝子回路の設計で「隣に何を置くか」は意外と効きます。その理由の一つが、転写が作るDNAの“よじれ（超らせん）”。それが発現を自己強化／自己抑制するフィードバックになる、という研究です。</p>
+        <img class="article-hero" src="../assets/thumbs/thumb-supercoiling-circuit.svg" alt="DNA超らせんと遺伝子回路をイメージしたイラスト">
+
+        <section>
+          <h2>背景</h2>
+          <p>DNAは静的な紐ではなく、転写や複製で物理的にねじれます。RNAポリメラーゼが進むと、前方に正の超らせん、後方に負の超らせんが生じ、局所的なDNAの状態が変わります。</p>
+          <p>この物理状態は、転写開始のしやすさやクロマチン状態に影響し得ますが、「遺伝子配置（syntax）」と結び付けて系統的に整理するのは簡単ではありませんでした。</p>
+        </section>
+
+        <section>
+          <h2>手法</h2>
+          <p>論文は、遺伝子配置の違い（向き・距離・隣接関係）を変えた系を観察し、超らせんを介したフィードバックで発現パターンがどう変わるかを解析します。さらに、その効果を取り込んだ設計ルールとして、遺伝子回路のロバスト性改善に応用します。</p>
+        </section>
+
+        <section>
+          <h2>結果</h2>
+          <p>隣接遺伝子の転写が作る超らせんが、別の遺伝子の転写開始に影響し、発現が“結び付く”ことが示されました。これにより、遺伝子回路の挙動が想定外に変わる理由が説明され、逆に超らせんを前提にした配置設計で回路性能を上げられる可能性が示唆されます。</p>
+        </section>
+
+        <section>
+          <h2>議論</h2>
+          <p><strong>著者の解釈</strong>: 超らせんは単なる副作用ではなく、遺伝子間の結合（暗黙の配線）として機能し得ると解釈しています。</p>
+          <p><strong>限界</strong>: 細胞種や染色体文脈で超らせんの拡がり方は変わり得ます。設計ルールの一般性は追加検証が必要です。</p>
+          <p><strong>代替解釈</strong>: 観測された効果の一部は、転写因子の競合や局所クロマチン変化など、別の相互作用でも説明できる可能性があります。</p>
+          <p><strong>今後の課題</strong>: 合成回路だけでなく、自然のゲノム上の遺伝子クラスターで同様の原理がどこまで働くかを定量化することが重要です。</p>
+        </section>
+
+        <section>
+          <h2>分野全体へのインパクト</h2>
+          <p>合成生物学では「パーツを足せば動く」から「物理文脈も含めて設計する」へ進んでいます。超らせんを回路設計に取り込む流れは、再現性・ロバスト性の向上に直結します。自然ゲノムの遺伝子配置の意味づけにも波及しそうです。</p>
+        </section>
+
+        <section>
+          <h2>用語注釈</h2>
+          <p>
+            <strong>超らせん（supercoiling）</strong>: DNAが余分にねじれた状態。<br>
+            <strong>転写開始</strong>: RNAポリメラーゼがDNAからRNA合成を始める段階。<br>
+            <strong>遺伝子配置（syntax）</strong>: 遺伝子同士の向き・距離・並び方。<br>
+            <strong>フィードバック</strong>: 出力が入力に戻り、自己強化/自己抑制を起こす構造。<br>
+            <strong>ロバスト性</strong>: 条件変化に対して挙動が崩れにくい性質。
+          </p>
+        </section>
+
+        <p class="source">論文: <a href="https://doi.org/10.1126/science.adw1925">Gene syntax defines supercoiling-mediated transcriptional feedback</a> / Science / 公開日: 2026-04-30 / DOI: <a href="https://doi.org/10.1126/science.adw1925">10.1126/science.adw1925</a></p>
+      </article>
+    </main>
+
+    <script src="../article-enhancements.js"></script>
+  </body>
+</html>
+

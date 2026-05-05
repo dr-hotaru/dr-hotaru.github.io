@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Tuberculosis dormancy thumbnail">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#3a2b17"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="55%" r="60%">
+      <stop offset="0" stop-color="#f3c969" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#f3c969" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#halo)"/>
+  <g opacity="0.85">
+    <path d="M420 520c160-180 600-180 760 0-160 180-600 180-760 0Z" fill="#71e6d6" opacity="0.22"/>
+    <g fill="#ffffff" opacity="0.1">
+      <circle cx="560" cy="520" r="70"/>
+      <circle cx="760" cy="460" r="52"/>
+      <circle cx="960" cy="540" r="64"/>
+    </g>
+    <g fill="#ff8bbd" opacity="0.85">
+      <circle cx="520" cy="480" r="12"/>
+      <circle cx="880" cy="500" r="10"/>
+      <circle cx="1040" cy="480" r="14"/>
+      <circle cx="700" cy="560" r="9"/>
+    </g>
+  </g>
+</svg>
+

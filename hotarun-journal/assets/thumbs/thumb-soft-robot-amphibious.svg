@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Amphibious soft robot thumbnail">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#0a1220"/>
+      <stop offset="1" stop-color="#072b3a"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#71e6d6" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#71e6d6" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <path d="M0 520c260 60 520 60 780 0s520-60 820 0v380H0z" fill="url(#water)"/>
+  <g opacity="0.9">
+    <path d="M560 520c180-140 360-140 540 0-60 140-180 240-270 240S620 660 560 520Z" fill="#ffffff" opacity="0.06"/>
+    <g fill="none" stroke="#f3c969" stroke-width="12" opacity="0.6" stroke-linecap="round">
+      <path d="M620 520h420"/>
+      <path d="M640 580h380"/>
+    </g>
+    <g fill="#ff8bbd" opacity="0.85">
+      <circle cx="700" cy="520" r="10"/>
+      <circle cx="960" cy="520" r="10"/>
+      <circle cx="830" cy="610" r="12"/>
+    </g>
+  </g>
+</svg>
+

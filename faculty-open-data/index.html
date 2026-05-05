@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>公募採用データラボ | 蒼樹羽ほたる</title>
+    <meta name="description" content="女性限定公募等の公式発表に基づく研究者採用データを、年度、分野、大学、所属部局、採用後の論文数推移で整理するデータベースです。">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">蒼樹羽ほたる</a>
+      <nav aria-label="主要ナビゲーション">
+        <a href="../index.html">メイン</a>
+        <a href="../hotarun-journal/">ほたるんジャーナル</a>
+        <a href="https://dr-hotaru.github.io/deskgear-rank/">DeskGear</a>
+        <a href="index.html">公募データ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">Open Hiring Data</p>
+        <h1>女性限定公募等の採用データを、根拠つきで読む。</h1>
+        <p>大学・研究機関の公式発表に基づき、年度、分野、所属、採用時点の論文業績、採用後の主著・共著論文数推移を整理するためのデータベースです。</p>
+      </section>
+
+      <section class="notice" aria-label="公開方針">
+        <h2>公開方針</h2>
+        <p>このサイトでは、公式情報で「公募種別」と「採用者本人」が明示されているものだけを確認済みデータとして扱います。氏名、写真、時期、所属変更だけから性別や採用経路を推定したデータは公開しません。</p>
+        <p>論文数は研究力の単純な優劣を示すものではありません。分野、キャリア段階、産休・育休、教育・管理業務、共同研究文化によって大きく変わるため、制度分析の補助指標として表示します。</p>
+      </section>
+
+      <section class="filters" aria-label="データ絞り込み">
+        <label>
+          年度
+          <select id="yearFilter">
+            <option value="all">すべて</option>
+          </select>
+        </label>
+        <label>
+          分野
+          <select id="fieldFilter">
+            <option value="all">すべて</option>
+          </select>
+        </label>
+        <label>
+          大学
+          <select id="universityFilter">
+            <option value="all">すべて</option>
+          </select>
+        </label>
+        <label>
+          キーワード
+          <input id="keywordFilter" type="search" placeholder="氏名、部局、根拠メモ">
+        </label>
+      </section>
+
+      <section class="summary-grid" aria-label="集計">
+        <article>
+          <span id="totalCount">0</span>
+          <p>確認済み採用者</p>
+        </article>
+        <article>
+          <span id="universityCount">0</span>
+          <p>大学・研究機関</p>
+        </article>
+        <article>
+          <span id="fieldCount">0</span>
+          <p>分野</p>
+        </article>
+      </section>
+
+      <section class="data-layout">
+        <div class="table-panel">
+          <div class="section-head">
+            <p class="eyebrow">Verified List</p>
+            <h2>採用者一覧</h2>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>氏名</th>
+                  <th>年度</th>
+                  <th>大学</th>
+                  <th>部局</th>
+                  <th>分野</th>
+                  <th>採択時主著</th>
+                  <th>採択時共著</th>
+                </tr>
+              </thead>
+              <tbody id="researcherRows"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <aside class="detail-panel" aria-live="polite">
+          <p class="eyebrow">Profile</p>
+          <h2 id="detailName">データを選択</h2>
+          <p id="detailMeta">一覧から行を選ぶと、採用後の論文数推移と根拠URLを表示します。</p>
+          <canvas id="publicationChart" width="640" height="360" aria-label="採用後の論文数推移グラフ"></canvas>
+          <div id="sourceLinks" class="source-links"></div>
+        </aside>
+      </section>
+
+      <section class="method">
+        <h2>データ項目</h2>
+        <div class="method-grid">
+          <article>
+            <h3>採用情報</h3>
+            <p>年度、大学、所属部局、職位、分野、公募種別、根拠URLを記録します。</p>
+          </article>
+          <article>
+            <h3>採択時業績</h3>
+            <p>採択時点までの主著論文数と共著論文数を、可能な範囲で公開DBに基づいて記録します。</p>
+          </article>
+          <article>
+            <h3>採用後推移</h3>
+            <p>採用年度以降の年別主著論文数・共著論文数を可視化します。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 蒼樹羽ほたる / Studio Guepard</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

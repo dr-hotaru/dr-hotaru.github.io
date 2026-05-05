@@ -1,0 +1,215 @@
+const state = {
+  researchers: [],
+  filtered: [],
+  selectedId: null
+};
+
+const els = {
+  year: document.querySelector("#yearFilter"),
+  field: document.querySelector("#fieldFilter"),
+  university: document.querySelector("#universityFilter"),
+  keyword: document.querySelector("#keywordFilter"),
+  rows: document.querySelector("#researcherRows"),
+  total: document.querySelector("#totalCount"),
+  universities: document.querySelector("#universityCount"),
+  fields: document.querySelector("#fieldCount"),
+  detailName: document.querySelector("#detailName"),
+  detailMeta: document.querySelector("#detailMeta"),
+  sources: document.querySelector("#sourceLinks"),
+  chart: document.querySelector("#publicationChart")
+};
+
+async function loadData() {
+  const response = await fetch("data/researchers.json", { cache: "no-store" });
+  const data = await response.json();
+  state.researchers = data.researchers.filter(item => item.verificationStatus === "verified");
+  state.filtered = [...state.researchers];
+  populateFilters();
+  render();
+}
+
+function populateFilters() {
+  fillSelect(els.year, uniqueValues(state.researchers.map(item => item.fiscalYear)).sort((a, b) => b - a));
+  fillSelect(els.field, uniqueValues(state.researchers.map(item => item.field)).sort());
+  fillSelect(els.university, uniqueValues(state.researchers.map(item => item.university)).sort());
+}
+
+function fillSelect(select, values) {
+  values.forEach(value => {
+    const option = document.createElement("option");
+    option.value = value;
+    option.textContent = value;
+    select.appendChild(option);
+  });
+}
+
+function uniqueValues(values) {
+  return [...new Set(values.filter(Boolean))];
+}
+
+function applyFilters() {
+  const keyword = els.keyword.value.trim().toLowerCase();
+  state.filtered = state.researchers.filter(item => {
+    const yearOk = els.year.value === "all" || String(item.fiscalYear) === els.year.value;
+    const fieldOk = els.field.value === "all" || item.field === els.field.value;
+    const universityOk = els.university.value === "all" || item.university === els.university.value;
+    const keywordText = [
+      item.name,
+      item.university,
+      item.department,
+      item.field,
+      item.evidenceNote
+    ].join(" ").toLowerCase();
+    return yearOk && fieldOk && universityOk && (!keyword || keywordText.includes(keyword));
+  });
+  render();
+}
+
+function render() {
+  renderSummary();
+  renderRows();
+  const selected = state.filtered.find(item => item.id === state.selectedId) || state.filtered[0];
+  renderDetail(selected);
+}
+
+function renderSummary() {
+  els.total.textContent = state.filtered.length;
+  els.universities.textContent = uniqueValues(state.filtered.map(item => item.university)).length;
+  els.fields.textContent = uniqueValues(state.filtered.map(item => item.field)).length;
+}
+
+function renderRows() {
+  els.rows.innerHTML = "";
+  if (!state.filtered.length) {
+    const row = document.createElement("tr");
+    row.className = "empty-row";
+    row.innerHTML = '<td colspan="7">確認済みデータはまだ登録されていません。公式発表で採用者と公募種別を確認できたものから追加します。</td>';
+    els.rows.appendChild(row);
+    return;
+  }
+
+  state.filtered.forEach(item => {
+    const row = document.createElement("tr");
+    row.className = item.id === state.selectedId ? "is-active" : "";
+    row.innerHTML = `
+      <td>${escapeHtml(item.name)}</td>
+      <td>${escapeHtml(item.fiscalYear)}</td>
+      <td>${escapeHtml(item.university)}</td>
+      <td>${escapeHtml(item.department)}</td>
+      <td>${escapeHtml(item.field)}</td>
+      <td>${escapeHtml(item.baselinePublications?.leadAuthor ?? 0)}</td>
+      <td>${escapeHtml(item.baselinePublications?.coauthored ?? 0)}</td>
+    `;
+    row.addEventListener("click", () => {
+      state.selectedId = item.id;
+      render();
+    });
+    els.rows.appendChild(row);
+  });
+}
+
+function renderDetail(item) {
+  if (!item) {
+    els.detailName.textContent = "データを選択";
+    els.detailMeta.textContent = "確認済みデータが追加されると、ここに採用後の論文数推移を表示します。";
+    els.sources.innerHTML = "";
+    drawChart(null);
+    return;
+  }
+
+  els.detailName.textContent = item.name;
+  els.detailMeta.textContent = `${item.fiscalYear}年度 / ${item.university} / ${item.department} / ${item.field}`;
+  els.sources.innerHTML = item.sources.map(source => `<a href="${source.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)}</a>`).join("");
+  drawChart(item);
+}
+
+function drawChart(item) {
+  const ctx = els.chart.getContext("2d");
+  const width = els.chart.width;
+  const height = els.chart.height;
+  ctx.clearRect(0, 0, width, height);
+  ctx.fillStyle = "#080d14";
+  ctx.fillRect(0, 0, width, height);
+
+  if (!item || !item.publicationTimeline?.length) {
+    ctx.fillStyle = "#9fb0c3";
+    ctx.font = "20px Segoe UI";
+    ctx.fillText("確認済みデータの追加待ちです", 32, 70);
+    return;
+  }
+
+  const padding = 52;
+  const points = item.publicationTimeline;
+  const maxValue = Math.max(1, ...points.flatMap(point => [point.leadAuthor, point.coauthored]));
+  drawAxis(ctx, width, height, padding, maxValue);
+  drawSeries(ctx, points, "leadAuthor", "#6ff3e6", width, height, padding, maxValue);
+  drawSeries(ctx, points, "coauthored", "#ffd166", width, height, padding, maxValue);
+  drawLegend(ctx);
+}
+
+function drawAxis(ctx, width, height, padding, maxValue) {
+  ctx.strokeStyle = "rgba(255,255,255,.22)";
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.moveTo(padding, padding);
+  ctx.lineTo(padding, height - padding);
+  ctx.lineTo(width - padding, height - padding);
+  ctx.stroke();
+  ctx.fillStyle = "#9fb0c3";
+  ctx.font = "14px Segoe UI";
+  ctx.fillText(`0`, 24, height - padding + 5);
+  ctx.fillText(`${maxValue}`, 20, padding + 5);
+}
+
+function drawSeries(ctx, points, key, color, width, height, padding, maxValue) {
+  const xStep = points.length > 1 ? (width - padding * 2) / (points.length - 1) : 0;
+  ctx.strokeStyle = color;
+  ctx.fillStyle = color;
+  ctx.lineWidth = 3;
+  ctx.beginPath();
+  points.forEach((point, index) => {
+    const x = padding + xStep * index;
+    const y = height - padding - (point[key] / maxValue) * (height - padding * 2);
+    if (index === 0) ctx.moveTo(x, y);
+    else ctx.lineTo(x, y);
+  });
+  ctx.stroke();
+  points.forEach((point, index) => {
+    const x = padding + xStep * index;
+    const y = height - padding - (point[key] / maxValue) * (height - padding * 2);
+    ctx.beginPath();
+    ctx.arc(x, y, 5, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillStyle = "#9fb0c3";
+    ctx.font = "12px Segoe UI";
+    ctx.fillText(point.year, x - 16, height - 22);
+    ctx.fillStyle = color;
+  });
+}
+
+function drawLegend(ctx) {
+  ctx.font = "14px Segoe UI";
+  ctx.fillStyle = "#6ff3e6";
+  ctx.fillText("主著論文", 52, 28);
+  ctx.fillStyle = "#ffd166";
+  ctx.fillText("共著論文", 142, 28);
+}
+
+function escapeHtml(value) {
+  return String(value ?? "").replace(/[&<>"']/g, char => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#039;"
+  })[char]);
+}
+
+[els.year, els.field, els.university, els.keyword].forEach(input => {
+  input.addEventListener("input", applyFilters);
+});
+
+loadData().catch(error => {
+  console.error(error);
+  els.rows.innerHTML = '<tr class="empty-row"><td colspan="7">データの読み込みに失敗しました。</td></tr>';
+});

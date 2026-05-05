@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>電子回路なしで「地形に適応」する：両生ソフトロボットの受動適応 | ほたるんジャーナル</title>
+    <meta name="description" content="水陸両用のソフトロボットが、受動的な形態変化で環境に適応するというPNAS論文を解説します。">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">ほたるんジャーナル</a>
+      <nav aria-label="主要ナビゲーション">
+        <a href="https://dr-hotaru.github.io/">メイン</a>
+        <a href="https://dr-hotaru.github.io/hotarun-journal/">ほたるんジャーナル</a>
+        <a href="https://dr-hotaru.github.io/deskgear-rank/">DeskGear</a>
+        <a href="https://dr-hotaru.github.io/hotarun-journal/#genres">ジャンル</a>
+        <a href="https://dr-hotaru.github.io/hotarun-journal/#latest">最新記事</a>
+      </nav>
+    </header>
+
+    <main class="article-shell">
+      <article class="article">
+        <p class="label">Technology / Robotics</p>
+        <h1>電子回路なしで「地形に適応」する：両生ソフトロボットの受動適応</h1>
+        <div class="article-meta">
+          <span>technology</span>
+          <span>ソフトロボ</span>
+          <time datetime="2026-05-05">2026.05.05</time>
+        </div>
+        <p class="lead">ロボットが多様な地形を移動するには、センサーと制御が必要…と思いがち。でも、生物のように「形が勝手に変わって適応する」設計ができれば、制御を軽くできます。PNASから、受動適応に寄せた水陸両用ソフトロボットの報告です。</p>
+        <img class="article-hero" src="../assets/thumbs/thumb-soft-robot-amphibious.svg" alt="水陸両用ソフトロボットをイメージしたイラスト">
+
+        <section>
+          <h2>背景</h2>
+          <p>ロボットの適応は、モーターやアクチュエータ制御で実現されることが多いですが、その分エネルギーや機構が複雑になります。対照的に生物は、素材の柔らかさや形状の工夫で、環境に応じた運動を“受動的”に引き出すことがあります。</p>
+          <p>この「受動適応」を設計原理として取り込むのが、ソフトロボティクスの狙いの一つです。</p>
+        </section>
+
+        <section>
+          <h2>手法</h2>
+          <p>研究は、柔らかい構造体（ソフトボディ）を持つロボットを設計し、水中と陸上で異なる抵抗・摩擦条件に応じて運動様式が自然に切り替わるよう工夫します。実験では、移動効率や安定性を複数環境で測定し、受動適応の効果を評価します。</p>
+        </section>
+
+        <section>
+          <h2>結果</h2>
+          <p>固定形状のままでは適応しにくい地形でも、構造・素材の設計により、外界との相互作用だけで運動が切り替わる（受動適応する）ことが示されました。環境に応じて“勝手に”適した動きが出る設計は、エネルギーと制御のコストを下げる方向性になります。</p>
+        </section>
+
+        <section>
+          <h2>議論</h2>
+          <p><strong>著者の解釈</strong>: 形態と素材の設計により、制御を最小化した適応移動が可能だと解釈しています。</p>
+          <p><strong>限界</strong>: 現段階の設計が適応できる環境の範囲は有限で、実運用には耐久性・スケール・速度など課題が残ります。</p>
+          <p><strong>代替解釈</strong>: “適応”の一部は受動ではなく、暗黙の制御（駆動パターンの調整）に依存している可能性もあり、寄与分解が必要です。</p>
+          <p><strong>今後の課題</strong>: 受動適応と最小限の能動制御をどう組み合わせると最適か、設計空間の整理が期待されます。</p>
+        </section>
+
+        <section>
+          <h2>分野全体へのインパクト</h2>
+          <p>災害現場や環境モニタリングなど、予測できない地形で動くロボットの設計に直結します。「制御で頑張る」だけでなく「形で勝つ」設計思想は、ロボットの実用性と低コスト化を後押しします。</p>
+        </section>
+
+        <section>
+          <h2>用語注釈</h2>
+          <p>
+            <strong>ソフトロボット</strong>: 柔らかい材料で作られたロボット。<br>
+            <strong>受動適応</strong>: センサー・制御なしでも、形態と物理相互作用で適応的挙動が出ること。<br>
+            <strong>アクチュエータ</strong>: 動力を運動へ変換する機構。<br>
+            <strong>水陸両用</strong>: 水中と陸上の両方で動作すること。<br>
+            <strong>形態計算</strong>: 形そのものが計算（情報処理）の役割を担うという考え方。
+          </p>
+        </section>
+
+        <p class="source">論文: <a href="https://doi.org/10.1073/pnas.2532988123">Amphibious passive adaptation in untethered soft robots</a> / PNAS / 公開日: 2026-04-21（Epub） / DOI: <a href="https://doi.org/10.1073/pnas.2532988123">10.1073/pnas.2532988123</a></p>
+      </article>
+    </main>
+
+    <script src="../article-enhancements.js"></script>
+  </body>
+</html>
+

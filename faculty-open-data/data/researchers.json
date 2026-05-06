@@ -1,11 +1,71 @@
 {
-  "updatedAt": "2026-05-05",
+  "updatedAt": "2026-05-06",
   "policy": {
     "publishOnlyVerified": true,
     "verificationRule": "公式発表で公募種別と採用者本人が明示されている場合のみ公開する。氏名、写真、所属変更、時期から性別や採用経路を推定しない。",
     "metricsNote": "論文数は制度分析の補助指標であり、個人の研究力や採用妥当性を単純に評価するものではない。"
   },
-  "researchers": [],
+  "researchers": [
+    {
+      "id": "kyoto-fserc-kawamura-mariko-2023",
+      "name": "河村真理子",
+      "fiscalYear": 2023,
+      "field": "水圏生命科学",
+      "university": "京都大学",
+      "department": "フィールド科学教育研究センター 瀬戸臨海実験所",
+      "position": "特定講師または特定助教",
+      "appointmentYear": 2024,
+      "appointmentDate": "2024-04-01",
+      "callType": "特定講師または特定助教（女性限定）",
+      "verificationStatus": "verified",
+      "evidenceNote": "京都大学フィールド科学教育研究センターの公式公募ページに、女性限定公募の職種として「特定講師または特定助教（女性限定）」が明示され、採用者として河村真理子氏（2024年4月1日付）が掲載されている。論文数は京都大学 教育研究活動データベース（KDB）の論文リスト（Last Updated: 2026/04/24）を採用日（2024-04-01）で区切って集計した。",
+      "baselinePublications": { "leadAuthor": 7, "coauthored": 10 },
+      "publicationTimeline": [
+        { "year": 2024, "leadAuthor": 0, "coauthored": 0 },
+        { "year": 2025, "leadAuthor": 0, "coauthored": 1 }
+      ],
+      "sources": [
+        {
+          "label": "京大フィールド研：特定講師または特定助教（女性限定）の公募（採用者記載あり）",
+          "url": "https://fserc.kyoto-u.ac.jp/wp/blog/archives/37405"
+        },
+        {
+          "label": "京都大学 教育研究活動データベース（河村真理子・論文一覧）",
+          "url": "https://kdb.iimc.kyoto-u.ac.jp/profile/ja.2451ccaa09c40750.html"
+        }
+      ]
+    },
+    {
+      "id": "kyoto-fserc-zhang-manqing-2022",
+      "name": "張 曼青",
+      "fiscalYear": 2022,
+      "field": "人文社会科学",
+      "university": "京都大学",
+      "department": "フィールド科学教育研究センター 森林生態系部門 森林育成学分野",
+      "position": "特定助教",
+      "appointmentYear": 2023,
+      "appointmentDate": "2023-04-16",
+      "callType": "特定助教（女性限定）",
+      "verificationStatus": "verified",
+      "evidenceNote": "京都大学フィールド科学教育研究センターの公式公募ページに、女性限定公募として「森林育成学分野 特定助教（女性限定）」が明示され、採用者として張 曼青氏（2023年4月16日付）が掲載されている。論文数は京都大学 教育研究活動データベース（KDB）の論文リスト（Last Updated: 2026/04/24）を採用日（2023-04-16）で区切って集計した。筆頭著者の判定はKDB上の「筆頭著者」表示があるものを優先し、それ以外は著者順に基づき集計した（著者情報が欠落している1件は筆頭著者に含めない）。",
+      "baselinePublications": { "leadAuthor": 11, "coauthored": 3 },
+      "publicationTimeline": [
+        { "year": 2023, "leadAuthor": 2, "coauthored": 0 },
+        { "year": 2024, "leadAuthor": 1, "coauthored": 0 },
+        { "year": 2025, "leadAuthor": 1, "coauthored": 0 }
+      ],
+      "sources": [
+        {
+          "label": "京大フィールド研：森林育成学分野 特定助教の公募（女性）（採用者記載あり）",
+          "url": "https://fserc.kyoto-u.ac.jp/wp/blog/archives/35563"
+        },
+        {
+          "label": "京都大学 教育研究活動データベース（張 曼青・論文一覧）",
+          "url": "https://kdb.iimc.kyoto-u.ac.jp/profile/ja.c45dfc2076126539.html"
+        }
+      ]
+    }
+  ],
   "candidateCalls": [
     {
       "id": "tohoku-university-hospital-2026-female-professor",

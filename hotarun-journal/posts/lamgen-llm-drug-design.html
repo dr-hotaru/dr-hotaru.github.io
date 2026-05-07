@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>創薬LLMは“分子言語”を話せるか：LaMGenで分子設計を自動化 | ほたるんジャーナル</title>
+    <meta name="description" content="大規模言語モデル（LLM）を分子設計へ応用する試みが進んでいます。LaMGenという枠組みで、分子生成と最適化をどう行うかを整理した研究を解説します。">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">ほたるんジャーナル</a>
+      <nav aria-label="主要ナビゲーション">
+        <a href="https://dr-hotaru.github.io/">メイン</a>
+        <a href="https://dr-hotaru.github.io/hotarun-journal/">ほたるんジャーナル</a>
+        <a href="https://dr-hotaru.github.io/deskgear-rank/">DeskGear</a>
+        <a href="https://dr-hotaru.github.io/hotarun-journal/#genres">ジャンル</a>
+        <a href="https://dr-hotaru.github.io/hotarun-journal/#latest">最新記事</a>
+      </nav>
+    </header>
+
+    <main class="article-shell">
+      <article class="article">
+        <p class="label">Technology / AI Drug Design</p>
+        <h1>創薬LLMは“分子言語”を話せるか：LaMGenで分子設計を自動化</h1>
+        <div class="article-meta">
+          <span>technology</span>
+          <span>AI Drug Design</span>
+          <time datetime="2026-04-30">2026.04.30</time>
+        </div>
+        <p class="lead">LLMは文章だけでなく“記号列”も扱えます。分子を表すSMILESなどを言語として扱えば、分子設計も生成AIの射程に入る。とはいえ、化学では「それっぽい」だけでは意味がない。何をどう検証するのかが焦点です。</p>
+        <img class="article-hero" src="../assets/thumbs/thumb-lamgen-llm-drug-design.svg" alt="創薬LLMは“分子言語”を話せるか：LaMGenで分子設計を自動化をイメージしたサムネイル">
+
+        <section>
+          <h2>背景</h2>
+          <p>創薬は探索問題で、候補分子の数が膨大です。生成モデルで候補を提案し、計算・実験で絞る流れが一般化しつつあります。</p>
+          <p>LLMを使う利点は、条件付き生成（目的特性を満たす候補提案）や、既存知識の活用が期待できる点です。</p>
+        </section>
+
+        <section>
+          <h2>手法</h2>
+          <p>研究は、分子表現（文字列表現など）を入力に、LLMを用いた生成・改変の枠組みを構築します。</p>
+          <p>提案分子に対し、薬理的・化学的な妥当性を評価する指標（合成可能性、物性推定など）を用い、生成と評価のループを設計します。</p>
+        </section>
+
+        <section>
+          <h2>結果</h2>
+          <p>LLMを用いた分子生成で、一定の制約を満たす候補を出せる可能性が示され、生成モデルの設計次第で候補の多様性や質が変わることが示されます。</p>
+          <p>同時に、評価系が弱いと“それらしいが役に立たない”候補が増えるため、評価設計が重要である点が強調されます。</p>
+        </section>
+
+        <section>
+          <h2>議論</h2>
+          <p><strong>著者の解釈</strong>: LLMは分子設計のインターフェースになり得るが、評価・検証の仕組みとセットで初めて実用に近づく、という解釈です。</p>
+          <p><strong>限界</strong>: 計算評価は近似であり、実験検証なしに薬効を断定できません。学習データのバイアスも残ります。</p>
+          <p><strong>代替解釈</strong>: LLM以外の生成モデル（拡散モデル等）でも類似の成果が得られる可能性があり、強みの切り分けが必要です。</p>
+          <p><strong>今後の課題</strong>: 実験自動化やアクティブラーニングと接続し、提案→合成→測定の閉ループを回す方向が鍵になります。</p>
+        </section>
+
+        <section>
+          <h2>分野全体へのインパクト</h2>
+          <p>創薬における生成AIは、誇張されがちですが、候補の提案効率を上げる基盤技術としては有望です。実験検証を前提に“どこまで任せるか”の線引きが進むほど、現実の価値が見えてきます。</p>
+        </section>
+
+        <section>
+          <h2>用語注釈</h2>
+          <p>
+            <strong>LLM</strong>: 大規模言語モデル。大量のデータからパターンを学ぶ生成モデル。<br>
+            <strong>SMILES</strong>: 分子構造を文字列で表す表記法。<br>
+            <strong>合成可能性</strong>: その分子を現実の化学反応で作れる見込み。<br>
+            <strong>物性</strong>: 溶けやすさ、脂溶性など分子の性質。<br>
+            <strong>アクティブラーニング</strong>: どのデータを追加取得すべきかを学習が提案する枠組み。<br>
+          </p>
+        </section>
+
+
+        <p class="source">論文: <a href="https://www.nature.com/articles/s41467-026-71737-w">Large language model-based molecular generative framework (LaMGen)</a> / Nature Communications / 公開日: 2026-04-30 / DOI: <a href="https://doi.org/10.1038/s41467-026-71737-w">10.1038/s41467-026-71737-w</a></p>
+      </article>
+    </main>
+
+    <script src="../article-enhancements.js"></script>
+  </body>
+</html>

@@ -1,4 +1,8 @@
 (() => {
+  const thumbnailScript = document.createElement("script");
+  thumbnailScript.src = "../thumbnail-replacements.js";
+  document.body.appendChild(thumbnailScript);
+
   const article = document.querySelector(".article");
   if (!article) return;
   if (article.querySelector(".affiliate-panel")) return;

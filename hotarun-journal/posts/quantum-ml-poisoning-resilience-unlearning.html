@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>量子機械学習は“毒”に強いのか：データ汚染とアンラーニングの設計 | ほたるんジャーナル</title>
+    <meta name="description" content="学習データに混ぜられた“毒”（データ汚染）はモデルを壊します。量子機械学習で、毒に対する脆弱性とアンラーニング（忘却）の可能性を検討した研究を解説します。">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">ほたるんジャーナル</a>
+      <nav aria-label="主要ナビゲーション">
+        <a href="https://dr-hotaru.github.io/">メイン</a>
+        <a href="https://dr-hotaru.github.io/hotarun-journal/">ほたるんジャーナル</a>
+        <a href="https://dr-hotaru.github.io/deskgear-rank/">DeskGear</a>
+        <a href="https://dr-hotaru.github.io/hotarun-journal/#genres">ジャンル</a>
+        <a href="https://dr-hotaru.github.io/hotarun-journal/#latest">最新記事</a>
+      </nav>
+    </header>
+
+    <main class="article-shell">
+      <article class="article">
+        <p class="label">Technology / Quantum ML</p>
+        <h1>量子機械学習は“毒”に強いのか：データ汚染とアンラーニングの設計</h1>
+        <div class="article-meta">
+          <span>technology</span>
+          <span>Quantum ML</span>
+          <time datetime="2026-03-12">2026.03.12</time>
+        </div>
+        <p class="lead">AIの安全性は、モデルそのものだけでなく学習データにも依存します。悪意のあるデータ（ポイズニング）が混ざったら？ さらに、混ざった後に“忘れさせる”ことはできる？ 量子MLという新しい領域での安全設計の話です。</p>
+        <img class="article-hero" src="../assets/thumbs/thumb-quantum-ml-poisoning-resilience-unlearning.svg" alt="量子機械学習は“毒”に強いのか：データ汚染とアンラーニングの設計をイメージしたサムネイル">
+
+        <section>
+          <h2>背景</h2>
+          <p>データポイズニングは、学習プロセスを悪用してモデルの振る舞いを歪める攻撃です。クラシカルMLでは研究が進み、対策も議論されています。</p>
+          <p>一方、量子機械学習（QML）は新しい分野で、攻撃・防御の整理が十分とは言えません。</p>
+        </section>
+
+        <section>
+          <h2>手法</h2>
+          <p>研究は、量子MLモデルを対象に、汚染データが学習結果へ与える影響を定式化し、脆弱性を評価します。</p>
+          <p>さらに、学習済みモデルから特定データの影響を取り除く“アンラーニング”の枠組みを検討します。</p>
+        </section>
+
+        <section>
+          <h2>結果</h2>
+          <p>量子MLでもデータ汚染が問題になり得ること、そして条件によってはアンラーニングの設計が可能であることが示唆されます。</p>
+          <p>攻撃の成立条件や、防御側がどこを監視すべきか（検知のポイント）が整理されます。</p>
+        </section>
+
+        <section>
+          <h2>議論</h2>
+          <p><strong>著者の解釈</strong>: QMLでも安全性設計は必須で、クラシカルの知見を移植しつつ、量子特有の性質を踏まえる必要があるという解釈です。</p>
+          <p><strong>限界</strong>: 理論/シミュレーション中心で、実機ノイズなど現実要因を含めた評価は今後の課題です。</p>
+          <p><strong>代替解釈</strong>: 量子回路設計やデータ表現によって脆弱性は変わり得るため、特定の設定に依存した結論の可能性があります。</p>
+          <p><strong>今後の課題</strong>: 実機環境での検証と、検知・修復の運用（監査ログなど）を含む安全設計が求められます。</p>
+        </section>
+
+        <section>
+          <h2>分野全体へのインパクト</h2>
+          <p>量子技術が実用域に近づくほど、安全性は後付けできません。今の段階で攻撃面を整理しておくことは、将来の量子AI運用の“保険”になります。</p>
+        </section>
+
+        <section>
+          <h2>用語注釈</h2>
+          <p>
+            <strong>データポイズニング</strong>: 学習データを汚染し、モデルの挙動を意図的に歪める攻撃。<br>
+            <strong>アンラーニング</strong>: 特定データの影響を学習済みモデルから取り除く（忘却させる）こと。<br>
+            <strong>QML</strong>: 量子回路を用いた機械学習。<br>
+            <strong>ノイズ</strong>: 量子計算で避けにくい誤差要因。<br>
+            <strong>監査</strong>: 学習や運用の過程を記録・検証すること。<br>
+          </p>
+        </section>
+
+
+        <p class="source">論文: <a href="https://www.nature.com/articles/s41467-026-70420-4">Poisoning resilience and unlearning in quantum machine learning</a> / Nature Communications / 公開日: 2026-03-12 / DOI: <a href="https://doi.org/10.1038/s41467-026-70420-4">10.1038/s41467-026-70420-4</a></p>
+      </article>
+    </main>
+
+    <script src="../article-enhancements.js"></script>
+  </body>
+</html>

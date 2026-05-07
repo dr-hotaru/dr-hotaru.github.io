@@ -132,7 +132,6 @@ function renderCandidateCalls() {
         <span>${escapeHtml(item.statusLabel)}</span>
       </div>
       <h3>${escapeHtml(item.university)}</h3>
-      ${metrics}
       <p>${escapeHtml(item.department)}</p>
       <dl>
         <div><dt>職位</dt><dd>${escapeHtml(item.position)}</dd></div>
@@ -186,6 +185,7 @@ function renderAchievements(item) {
 
   els.achievements.innerHTML = `
     <section>
+      ${metrics}
       <h3>業績</h3>
       <p>${escapeHtml(achievements.summary || "業績情報は確認中です。")}</p>
       <ul class="achievement-list">${paperItems}</ul>

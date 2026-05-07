@@ -23,9 +23,17 @@ const els = {
 };
 
 async function loadData() {
-  const response = await fetch("data/researchers.json", { cache: "no-store" });
+  const [response, achievementsResponse] = await Promise.all([
+    fetch("data/researchers.json", { cache: "no-store" }),
+    fetch("data/achievements.json", { cache: "no-store" })
+  ]);
   const data = await response.json();
+  const achievementsData = await achievementsResponse.json();
+  const achievementsById = new Map((achievementsData.items || []).map(item => [item.researcherId, item]));
   state.researchers = data.researchers.filter(item => item.verificationStatus === "verified");
+  state.researchers.forEach(item => {
+    item.achievements = achievementsById.get(item.id) || null;
+  });
   state.candidateCalls = data.candidateCalls || [];
   state.filtered = [...state.researchers];
   populateFilters();

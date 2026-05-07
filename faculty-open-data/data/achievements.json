@@ -1,0 +1,137 @@
+{
+  "updatedAt": "2026-05-08",
+  "items": [
+    {
+      "researcherId": "kyoto-fserc-kawamura-mariko-2023",
+      "summary": "京都大学KDBの論文欄に掲載された論文19件を収録。MISC・講演・外部資金等は外部DBリンクで確認。",
+      "externalLinks": [
+        {
+          "label": "京都大学KDB 全業績",
+          "url": "https://kdb.iimc.kyoto-u.ac.jp/profile/ja.2451ccaa09c40750.html"
+        }
+      ],
+      "publications": [
+        { "year": "2025", "title": "Genetic and morphological comparisons between Echinostrephus aciculatus and Echinostrephus molaris from Japan, with a new northernmost record of E. molaris", "venue": "Plankton and Benthos Research", "role": "共著" },
+        { "year": "2023", "title": "Molecular and morphological assessment of juvenile and adult forms in the giant worm Eunice cf. aphroditois and its phylogenetic position in the family", "venue": "Zoological Science", "role": "共著" },
+        { "year": "2023", "title": "Long tubules of tentacular nematocysts in the moon jellyfish Aurelia coerulea from Tanabe Bay, Pacific coast of southern Japan", "venue": "Plankton and Benthos Research", "role": "筆頭著者" },
+        { "year": "2022", "title": "Direct and indirect effects of amphidromous shrimps on nutrient mineralization in streams in Japan", "venue": "Oecologia", "role": "共著" },
+        { "year": "2021", "title": "The hydroid stage of the medusa Koellikerina bouilloni", "venue": "Bulletin of the National Museum of Nature and Science A", "role": "共著" },
+        { "year": "2021", "title": "The intertidal macrobenthic fauna of the Hatakejima Experimental Field, Wakayama Prefecture, Japan, in 2019", "venue": "Publications of the Seto Marine Biological Laboratory", "role": "共著" },
+        { "year": "2019", "title": "和歌山県白浜町において採集された本州初記録の熱帯性種リュウキュウナガウニ", "venue": "日本ベントス学会誌", "role": "共著" },
+        { "year": "2015", "title": "Rhopilema asamushi Uchida newly occurred in Tanabe Bay, Wakayama Prefecture, Japan", "venue": "Biogeography", "role": "共著" },
+        { "year": "2015", "title": "Dwarf males in the barnacle Alepas pacifica Pilsbry, 1907, a symbiont of jellyfish", "venue": "Crustaceana", "role": "共著" },
+        { "year": "2012", "title": "エチゼンクラゲの長崎県対馬沿岸への漂着", "venue": "漂着物学会誌", "role": "共著" },
+        { "year": "2010", "title": "2009年初夏，隠岐諸島東方海域における海洋構造と大型クラゲの分布", "venue": "海と空", "role": "共著" },
+        { "year": "2009", "title": "2001年，2002年および2004年に和歌山県田辺湾で採集された有クラゲ類および有櫛動物", "venue": "瀬戸臨海実験所年報", "role": "筆頭著者" },
+        { "year": "2009", "title": "わが国で確認されたKoellikerina constrictaのクラゲの大形個体", "venue": "日本生物地理学会会報", "role": "共著" },
+        { "year": "2008", "title": "Influences of temperature and salinity on asexual budding by hydromedusa Proboscidactyla ornata", "venue": "Journal of the Marine Biological Association of the United Kingdom", "role": "筆頭著者" },
+        { "year": "2007", "title": "わが国で2個体目のKoellikerina constrictaの記録", "venue": "長崎県生物学会誌", "role": "共著" },
+        { "year": "2005", "title": "和歌山県田辺湾におけるベニクラゲのクラゲ世代の季節消長", "venue": "日本生物地理学会会報", "role": "筆頭著者" },
+        { "year": "2005", "title": "Two species of Koellikerina medusae from Japan", "venue": "Publications of the Seto Marine Biological Laboratory", "role": "筆頭著者" },
+        { "year": "2005", "title": "First occurrence of Euphysora gemmifera in Japan", "venue": "Biogeography", "role": "筆頭著者" },
+        { "year": "2003", "title": "The relationship between fine rings in the statolith and growth of the cubomedusa Chiropsalmus quadrigatus from Okinawa Island, Japan", "venue": "Plankton Biology and Ecology", "role": "筆頭著者" }
+      ]
+    },
+    {
+      "researcherId": "kyoto-fserc-zhang-manqing-2022",
+      "summary": "京都大学KDBの論文欄に掲載された論文18件を収録。講演・書籍・外部資金等は外部DBリンクで確認。",
+      "externalLinks": [
+        {
+          "label": "京都大学KDB 全業績",
+          "url": "https://kdb.iimc.kyoto-u.ac.jp/profile/ja.c45dfc2076126539.html"
+        }
+      ],
+      "publications": [
+        { "year": "2025", "title": "「郷土中国」とポスト「郷土中国」の間への凝視", "venue": "大阪大学大学院人間科学研究科紀要", "role": "筆頭著者" },
+        { "year": "2024", "title": "2012年以降の「里山」研究の動向について", "venue": "大阪大学大学院人間科学研究科紀要", "role": "筆頭著者" },
+        { "year": "2023", "title": "中国農民の施肥行為における主体性からの再考", "venue": "村落社会研究ジャーナル", "role": "筆頭著者" },
+        { "year": "2023", "title": "社会転換の荒波を生きる中国農民の「農」をめぐる葛藤と主体的な選択", "venue": "生活学論叢", "role": "筆頭著者" },
+        { "year": "2022", "title": "中国皖南都市公共スペースでの「アウトロー」農業", "venue": "アジア太平洋論叢", "role": "筆頭著者" },
+        { "year": "2021", "title": "农民对有机农业实践的意义赋予的演变与环境保全的主体形成", "venue": "国際研討会論文集", "role": "筆頭著者" },
+        { "year": "2021", "title": "日本山地地区小农的环境保全型农业的实践", "venue": "東アジア環境社会学国際研討会論文集", "role": "筆頭著者" },
+        { "year": "2021", "title": "Use Intention Of Organic Fertilizer From Livestock Waste Among Planting Farmers In Rural Area, Southern Anhui, China", "venue": "International Joint Conference on Information, Media and Engineering", "role": "筆頭著者" },
+        { "year": "2021", "title": "中日地铁PM2.5濃度调查与分析", "venue": "大阪大学中国文化フォーラム・ディスカッションペーパー", "role": "共著" },
+        { "year": "2021", "title": "The Introduction of life-environmentalism to China and its special development", "venue": "KDB掲載論文", "role": "筆頭著者" },
+        { "year": "2020", "title": "中国における生活環境主義の理論導入とその独自な展開", "venue": "大阪大学大学院人間科学研究科紀要", "role": "筆頭著者" },
+        { "year": "2019", "title": "从生活环境主义角度对中国大规模畜禽养殖污染的解决策的再探讨", "venue": "国際セミナー論文集", "role": "筆頭著者" },
+        { "year": "2019", "title": "「ポスト郷土中国」における養豚廃棄物処理の課題と展望", "venue": "生活学論叢", "role": "筆頭著者" },
+        { "year": "2018", "title": "関于中国地鉄高濃度pm2.5汚染現象的分析", "venue": "国際セミナー論文集", "role": "共著" },
+        { "year": "2018", "title": "The Construction of Multi-actor Biogas Utilization under Government Operation", "venue": "KDB掲載論文", "role": "筆頭著者" },
+        { "year": "2018", "title": "関于建設沼气総合利用系統处理規模化养殖場糞尿問題的探討", "venue": "大阪大学中国文化フォーラム・ディスカッションペーパー", "role": "共著" },
+        { "year": "2018", "title": "The Cyclic Utilization of Biogas Slurry in Incomplete Information Society", "venue": "ICIME", "role": "筆頭著者" },
+        { "year": "2017", "title": "从能源利用到環境保護：舟山沼气利用模式的変迁及展望", "venue": "国際セミナー論文集", "role": "筆頭著者" }
+      ]
+    },
+    {
+      "researcherId": "hiroshima-okamura-yoshiko-2010",
+      "summary": "researchmapで論文79件が確認できる。ページ内の全件転記は同姓同名チェック後に順次反映。",
+      "externalLinks": [
+        { "label": "researchmap 全業績", "url": "https://researchmap.jp/read0054481/published_papers" },
+        { "label": "CiNii Research", "url": "https://cir.nii.ac.jp/crid/1410870297797889408" }
+      ],
+      "publications": []
+    },
+    {
+      "researcherId": "hiroshima-sato-tomoko-2010",
+      "summary": "researchmapで論文30件、受賞1件が確認できる。ページ内の全件転記は同姓同名チェック後に順次反映。",
+      "externalLinks": [
+        { "label": "researchmap 全業績", "url": "https://researchmap.jp/iTe87MDGyi6J" },
+        { "label": "CiNii/J-GLOBAL検索", "url": "https://jglobal.jst.go.jp/" }
+      ],
+      "publications": []
+    },
+    {
+      "researcherId": "hiroshima-kato-aki-2010",
+      "summary": "researchmapで主要論文53件、論文ページで49件が確認できる。ページ内の全件転記は同姓同名チェック後に順次反映。",
+      "externalLinks": [
+        { "label": "researchmap 全業績", "url": "https://researchmap.jp/katoa" },
+        { "label": "広島大学 研究者プロフィール", "url": "https://www.hiroshima-u.ac.jp/seisei/news/76172" }
+      ],
+      "publications": []
+    },
+    {
+      "researcherId": "hiroshima-yamamura-mariko-2011",
+      "summary": "researchmapで論文19件、主要書籍等11件、受賞3件が確認できる。ページ内の全件転記は同姓同名チェック後に順次反映。",
+      "externalLinks": [
+        { "label": "researchmap 全業績", "url": "https://researchmap.jp/marico" },
+        { "label": "J-GLOBAL", "url": "https://jglobal.jst.go.jp/public/201801014459996272" }
+      ],
+      "publications": []
+    },
+    {
+      "researcherId": "hiroshima-okita-miki-2011",
+      "summary": "KAKENで研究成果5件と研究課題3件が確認できる。ページ内の全件転記は同姓同名チェック後に順次反映。",
+      "externalLinks": [
+        { "label": "KAKEN 研究者ページ", "url": "https://nrid.nii.ac.jp/ja/nrid/1000030611842/" }
+      ],
+      "publications": []
+    },
+    {
+      "researcherId": "hiroshima-kanna-machi-2011",
+      "summary": "KAKENで研究課題と研究者番号が確認でき、現所属の研究者情報に論文等が掲載されている。ページ内の全件転記は同姓同名チェック後に順次反映。",
+      "externalLinks": [
+        { "label": "KAKEN 研究者ページ", "url": "https://nrid.nii.ac.jp/ja/nrid/1000010619365/" },
+        { "label": "山口東京理科大学 研究者情報", "url": "https://unipa.socu.ac.jp/kg/japanese/researchersHtml/A30220/A30220_Researcher.html" }
+      ],
+      "publications": []
+    },
+    {
+      "researcherId": "hiroshima-ogawa-yuko-2011",
+      "summary": "広島大学研究者ガイドブックとKAKENで研究分野・研究課題が確認できる。ページ内の全件転記は同姓同名チェック後に順次反映。",
+      "externalLinks": [
+        { "label": "広島大学 研究者ガイドブック", "url": "https://www.guidebook.hiroshima-u.ac.jp/researchers/detail?r=1545" },
+        { "label": "KAKEN 研究者ページ", "url": "https://nrid.nii.ac.jp/ja/nrid/1000030624564/" }
+      ],
+      "publications": []
+    },
+    {
+      "researcherId": "hiroshima-sato-akiko-2012",
+      "summary": "researchmapで経歴、研究分野、研究課題等が確認できる。ページ内の全件転記は同姓同名チェック後に順次反映。",
+      "externalLinks": [
+        { "label": "researchmap 全業績", "url": "https://researchmap.jp/read0145301" },
+        { "label": "researchmap 経歴", "url": "https://researchmap.jp/read0145301/research_experience/19692006" }
+      ],
+      "publications": []
+    }
+  ]
+}

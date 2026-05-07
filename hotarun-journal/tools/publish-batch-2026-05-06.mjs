@@ -1204,15 +1204,6 @@ function buildPostCard(post) {
   )}</p><a href="${href}">読む</a></div></article>\n`;
 }
 
-function buildDraftCard(post) {
-  const genre = GENRES[post.genre].jp;
-  const draft = buildXDraft(post);
-  return `\n        <article class="draft-card">\n          <span>${escapeHtml(
-    genre
-  )}</span>\n          <h2>${escapeHtml(post.title)}</h2>\n          <p class="draft-text">${escapeHtml(
-    draft
-  )}</p>\n          <button type="button" data-copy-draft>コピー</button>\n        </article>\n`;
-}
 
 function insertAfter(html, marker, insertion) {
   const idx = html.indexOf(marker);
@@ -1241,12 +1232,10 @@ async function main() {
   const postsDir = path.join(root, "posts");
   const thumbsDir = path.join(root, "assets", "thumbs");
   const genresDir = path.join(root, "genres");
-  const xDraftDir = path.join(root, "x-post-drafts");
 
   await mkdir(postsDir, { recursive: true });
   await mkdir(thumbsDir, { recursive: true });
   await mkdir(genresDir, { recursive: true });
-  await mkdir(xDraftDir, { recursive: true });
 
   // Write posts and thumbs
   for (const [i, post] of posts.entries()) {
@@ -1291,28 +1280,7 @@ async function main() {
     await writeFile(genrePath, html, "utf8");
   }
 
-  // Write X draft markdown
-  const mdLines = [];
-  mdLines.push(`# X投稿ドラフト（${today}）`);
-  mdLines.push("");
-  posts.forEach((post, idx) => {
-    mdLines.push(`## ${idx + 1}. ${post.title}`);
-    mdLines.push("");
-    mdLines.push(buildXDraft(post));
-    mdLines.push("");
-  });
-  const mdPath = path.join(xDraftDir, `${today}-x-drafts.md`);
-  await writeFile(mdPath, mdLines.join("\n"), "utf8");
 
-  // Update X drafts HTML
-  const xDraftsHtmlPath = path.join(root, "x-drafts.html");
-  let xDraftsHtml = await readFile(xDraftsHtmlPath, "utf8");
-  xDraftsHtml = insertAfter(
-    xDraftsHtml,
-    `<div class="draft-grid">`,
-    posts.map(buildDraftCard).join("")
-  );
-  await writeFile(xDraftsHtmlPath, xDraftsHtml, "utf8");
 }
 
 main().catch(err => {

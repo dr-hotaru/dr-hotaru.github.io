@@ -175,12 +175,14 @@ input {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
   align-items: start;
+  min-width: 0;
 }
 
 .table-panel,
 .detail-panel {
   min-width: 0;
   padding: 22px;
+  overflow: hidden;
 }
 
 .table-wrap {
@@ -453,9 +455,16 @@ footer {
 }
 
 @media (max-width: 980px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   main,
   footer {
     width: min(100% - 32px, 1280px);
+    max-width: calc(100vw - 32px);
   }
 
   .filters,
@@ -480,6 +489,25 @@ footer {
   .method article {
     width: 100%;
     max-width: 100%;
+    min-width: 0;
+  }
+
+  .table-wrap {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    width: max-content;
+    min-width: 720px;
+  }
+
+  canvas {
+    display: block;
+    height: auto;
   }
 
   .site-header {

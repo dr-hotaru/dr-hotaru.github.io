@@ -101,8 +101,8 @@ function renderRows() {
       <td>${escapeHtml(item.university)}</td>
       <td>${escapeHtml(item.department)}</td>
       <td>${escapeHtml(item.field)}</td>
-      <td>${escapeHtml(item.baselinePublications?.leadAuthor ?? 0)}</td>
-      <td>${escapeHtml(item.baselinePublications?.coauthored ?? 0)}</td>
+      <td>${formatCount(item.baselinePublications?.leadAuthor)}</td>
+      <td>${formatCount(item.baselinePublications?.coauthored)}</td>
     `;
     row.addEventListener("click", () => {
       state.selectedId = item.id;
@@ -231,6 +231,10 @@ function escapeHtml(value) {
     '"': "&quot;",
     "'": "&#039;"
   })[char]);
+}
+
+function formatCount(value) {
+  return value === null || value === undefined ? "未集計" : escapeHtml(value);
 }
 
 [els.year, els.field, els.university, els.keyword].forEach(input => {

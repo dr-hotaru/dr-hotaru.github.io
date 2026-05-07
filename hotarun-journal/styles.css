@@ -458,6 +458,45 @@ footer {
   background: #f0f3f7;
 }
 
+.paper-info {
+  margin: 0 clamp(20px, 5vw, 58px) 26px;
+  padding: 18px 20px;
+  border: 1px solid #d8e2ed;
+  border-radius: 8px;
+  background: #f8fbff;
+}
+
+.paper-info h2 {
+  margin: 0 0 12px;
+  color: #111827;
+  font-size: 20px;
+}
+
+.paper-info dl {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+}
+
+.paper-info div {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 12px;
+}
+
+.paper-info dt {
+  color: #526071;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.paper-info dd {
+  margin: 0;
+  color: #18202d;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
 .article section {
   margin: 0 clamp(20px, 5vw, 58px);
   padding: 26px 0 0;
@@ -633,5 +672,10 @@ footer {
   nav {
     width: 100%;
     justify-content: space-between;
+  }
+
+  .paper-info div {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 }

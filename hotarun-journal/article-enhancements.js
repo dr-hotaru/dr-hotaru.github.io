@@ -1,7 +1,85 @@
 (() => {
-  const thumbnailScript = document.createElement("script");
-  thumbnailScript.src = "../thumbnail-replacements.js";
-  document.body.appendChild(thumbnailScript);
+  function loadThumbnails() {
+    return new Promise(resolve => {
+      if (window.HotarunThumbnails) {
+        resolve();
+        return;
+      }
+      const thumbnailScript = document.createElement("script");
+      thumbnailScript.src = "../thumbnail-replacements.js";
+      thumbnailScript.onload = resolve;
+      thumbnailScript.onerror = resolve;
+      document.body.appendChild(thumbnailScript);
+    });
+  }
+
+  function extractDoi(article) {
+    const doiLink = [...article.querySelectorAll(".source a[href*='doi.org/']")][0];
+    if (!doiLink) return "";
+    try {
+      const url = new URL(doiLink.href);
+      return decodeURIComponent(url.pathname.replace(/^\/+/, ""));
+    } catch {
+      return doiLink.href.split("doi.org/")[1] || "";
+    }
+  }
+
+  function paperTitle(article) {
+    const sourceLink = article.querySelector(".source a");
+    return sourceLink?.textContent?.trim() || "";
+  }
+
+  function renderPaperInfo(article, h1) {
+    if (article.querySelector(".paper-info")) return;
+    const title = paperTitle(article);
+    const doi = extractDoi(article);
+    if (!title && !doi) return;
+
+    const info = document.createElement("section");
+    info.className = "paper-info";
+    info.innerHTML = `
+      <h2>元論文</h2>
+      <dl>
+        <div>
+          <dt>論文タイトル</dt>
+          <dd>${escapeHtml(title || "論文ページで確認")}</dd>
+        </div>
+        <div>
+          <dt>著者一覧</dt>
+          <dd data-paper-authors>${doi ? "取得中..." : "論文ページで確認"}</dd>
+        </div>
+      </dl>
+    `;
+    const lead = article.querySelector(".lead");
+    if (lead) lead.insertAdjacentElement("beforebegin", info);
+    else h1.insertAdjacentElement("afterend", info);
+
+    if (doi) fetchAuthors(doi, info.querySelector("[data-paper-authors]"));
+  }
+
+  async function fetchAuthors(doi, target) {
+    try {
+      const response = await fetch(`https://api.crossref.org/works/${encodeURIComponent(doi)}`);
+      if (!response.ok) throw new Error("Crossref request failed");
+      const data = await response.json();
+      const authors = (data.message?.author || [])
+        .map(author => [author.given, author.family].filter(Boolean).join(" "))
+        .filter(Boolean);
+      target.textContent = authors.length ? authors.join(", ") : "論文ページで確認";
+    } catch {
+      target.textContent = "論文ページで確認";
+    }
+  }
+
+  function escapeHtml(value) {
+    return String(value ?? "").replace(/[&<>"']/g, char => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#039;"
+    })[char]);
+  }
 
   const article = document.querySelector(".article");
   if (!article) return;
@@ -14,6 +92,19 @@
   const h1 = article.querySelector("h1");
   const label = article.querySelector(".label")?.textContent?.trim() || "Science";
 
+  loadThumbnails().then(() => {
+    const hero = article.querySelector(".article-hero");
+    if (!hero || !window.HotarunThumbnails) return;
+    const replacement = window.HotarunThumbnails.resolve(hero);
+    hero.src = replacement.src;
+    hero.onerror = () => {
+      hero.onerror = null;
+      hero.src = replacement.fallbackSrc;
+      hero.dataset.credit = replacement.fallbackCredit;
+    };
+    hero.dataset.credit = replacement.credit;
+  });
+
   if (h1 && !article.querySelector(".article-meta")) {
     const meta = document.createElement("div");
     meta.className = "article-meta";
@@ -24,6 +115,8 @@
     `;
     h1.insertAdjacentElement("afterend", meta);
   }
+
+  if (h1) renderPaperInfo(article, h1);
 
   const share = document.createElement("section");
   share.className = "share-panel";

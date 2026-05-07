@@ -53,27 +53,43 @@
     credit: "Wikimedia Commons / NHGRI"
   };
 
+  function pickRuleFromText(text) {
+    const haystack = String(text || "").toLowerCase();
+    return imageRules.find(rule => haystack.includes(rule.key)) || null;
+  }
+
   function pickImage(img) {
-    const haystack = [img.getAttribute("src"), img.getAttribute("alt"), img.closest("a, article")?.textContent]
+    const sourceText = [img.getAttribute("src"), img.getAttribute("alt")]
       .filter(Boolean)
-      .join(" ")
-      .toLowerCase();
-    return imageRules.find(rule => haystack.includes(rule.key)) || fallback;
+      .join(" ");
+    return pickRuleFromText(sourceText) || pickRuleFromText(img.closest("a, article")?.textContent) || fallback;
   }
 
   function replacementUrl(file) {
     return `${commonPrefix}${file}?width=1200`;
   }
 
+  window.HotarunThumbnails = {
+    resolve(img) {
+      const replacement = pickImage(img);
+      return {
+        src: replacementUrl(replacement.file),
+        credit: replacement.credit,
+        fallbackSrc: replacementUrl(fallback.file),
+        fallbackCredit: fallback.credit
+      };
+    }
+  };
+
   document.querySelectorAll("img").forEach(img => {
     const src = img.getAttribute("src") || "";
     if (!src.includes("assets/thumbs/") && !src.includes("../assets/thumbs/")) return;
-    const replacement = pickImage(img);
-    img.src = replacementUrl(replacement.file);
+    const replacement = window.HotarunThumbnails.resolve(img);
+    img.src = replacement.src;
     img.onerror = () => {
       img.onerror = null;
-      img.src = replacementUrl(fallback.file);
-      img.dataset.credit = fallback.credit;
+      img.src = replacement.fallbackSrc;
+      img.dataset.credit = replacement.fallbackCredit;
     };
     img.loading = "lazy";
     img.decoding = "async";

@@ -110,8 +110,8 @@ function renderRows() {
       <td>${escapeHtml(item.university)}</td>
       <td>${escapeHtml(item.department)}</td>
       <td>${escapeHtml(item.field)}</td>
-      <td>${formatCount(item.baselinePublications?.leadAuthor ?? item.achievements?.metrics?.primary)}</td>
-      <td>${formatCount(item.baselinePublications?.coauthored ?? item.achievements?.metrics?.secondary)}</td>
+      <td>${formatBaselineCount(item, "leadAuthor")}</td>
+      <td>${formatBaselineCount(item, "coauthored")}</td>
     `;
     row.addEventListener("click", () => {
       state.selectedId = item.id;
@@ -167,7 +167,7 @@ function renderAchievements(item) {
   const publications = achievements.publications || [];
   const externalLinks = achievements.externalLinks || [];
   const metrics = achievements.metrics
-    ? `<p class="achievement-metrics"><strong>??DB??:</strong> ${escapeHtml(achievements.metrics.primary)} / ${escapeHtml(achievements.metrics.secondary)}</p>`
+    ? `<p class="achievement-metrics"><strong>公開DB集計:</strong> ${escapeHtml(getMetricLabel(achievements.metrics))} ${escapeHtml(getMetricTotal(achievements.metrics))}件 / ${escapeHtml(getMetricSource(achievements.metrics))}</p>`
     : "";
   const paperItems = publications.length
     ? publications.map(pub => `
@@ -223,18 +223,21 @@ function drawChart(item) {
 }
 
 function drawMetricsSummary(ctx, metrics, width, height) {
+  const total = getMetricTotal(metrics);
+  const label = getMetricLabel(metrics);
+  const source = getMetricSource(metrics);
   ctx.fillStyle = "#9fb0c3";
   ctx.font = "18px Segoe UI";
   ctx.fillText("公開DB集計", 32, 58);
   ctx.fillStyle = "#6ff3e6";
   ctx.font = "34px Segoe UI";
-  ctx.fillText(metrics.primary, 32, 112);
+  ctx.fillText(`${label} ${total}件`, 32, 112);
   ctx.fillStyle = "#ffd166";
   ctx.font = "18px Segoe UI";
-  ctx.fillText(metrics.secondary, 32, 150);
+  ctx.fillText(source, 32, 150);
   ctx.fillStyle = "#9fb0c3";
   ctx.font = "14px Segoe UI";
-  ctx.fillText("採用時点の筆頭/共著分類ではなく、公開DBに表示される確認済み総数です。", 32, height - 44);
+  ctx.fillText("採択時点の筆頭/共著分類ではなく、公開DBに表示される確認済み総数です。", 32, height - 44);
 }
 
 function drawAxis(ctx, width, height, padding, maxValue) {
@@ -297,6 +300,33 @@ function escapeHtml(value) {
 
 function formatCount(value) {
   return value === null || value === undefined ? "未集計" : escapeHtml(value);
+}
+
+function formatBaselineCount(item, key) {
+  const value = item.baselinePublications?.[key];
+  if (value !== null && value !== undefined) {
+    return escapeHtml(value);
+  }
+  const metrics = item.achievements?.metrics;
+  if (!metrics) {
+    return "未集計";
+  }
+  if (key === "leadAuthor") {
+    return `${escapeHtml(getMetricLabel(metrics))} ${escapeHtml(getMetricTotal(metrics))}`;
+  }
+  return escapeHtml(getMetricSource(metrics));
+}
+
+function getMetricTotal(metrics) {
+  return metrics.totalOutputs ?? metrics.totalPublications ?? metrics.primary ?? "未集計";
+}
+
+function getMetricLabel(metrics) {
+  return metrics.outputLabel || "総論文";
+}
+
+function getMetricSource(metrics) {
+  return metrics.source || metrics.secondary || "公開DB";
 }
 
 [els.year, els.field, els.university, els.keyword].forEach(input => {

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-06",
+  "updatedAt": "2026-05-08",
   "policy": {
     "publishOnlyVerified": true,
     "verificationRule": "公式発表で公募種別と採用者本人が明示されている場合のみ公開する。氏名、写真、所属変更、時期から性別や採用経路を推定しない。",
@@ -19,10 +19,21 @@
       "callType": "特定講師または特定助教（女性限定）",
       "verificationStatus": "verified",
       "evidenceNote": "京都大学フィールド科学教育研究センターの公式公募ページに、女性限定公募の職種として「特定講師または特定助教（女性限定）」が明示され、採用者として河村真理子氏（2024年4月1日付）が掲載されている。論文数は京都大学 教育研究活動データベース（KDB）の論文リスト（Last Updated: 2026/04/24）を採用日（2024-04-01）で区切って集計した。",
-      "baselinePublications": { "leadAuthor": 7, "coauthored": 10 },
+      "baselinePublications": {
+        "leadAuthor": 7,
+        "coauthored": 10
+      },
       "publicationTimeline": [
-        { "year": 2024, "leadAuthor": 0, "coauthored": 0 },
-        { "year": 2025, "leadAuthor": 0, "coauthored": 1 }
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 1
+        }
       ],
       "sources": [
         {
@@ -48,11 +59,26 @@
       "callType": "特定助教（女性限定）",
       "verificationStatus": "verified",
       "evidenceNote": "京都大学フィールド科学教育研究センターの公式公募ページに、女性限定公募として「森林育成学分野 特定助教（女性限定）」が明示され、採用者として張 曼青氏（2023年4月16日付）が掲載されている。論文数は京都大学 教育研究活動データベース（KDB）の論文リスト（Last Updated: 2026/04/24）を採用日（2023-04-16）で区切って集計した。筆頭著者の判定はKDB上の「筆頭著者」表示があるものを優先し、それ以外は著者順に基づき集計した（著者情報が欠落している1件は筆頭著者に含めない）。",
-      "baselinePublications": { "leadAuthor": 11, "coauthored": 3 },
+      "baselinePublications": {
+        "leadAuthor": 11,
+        "coauthored": 3
+      },
       "publicationTimeline": [
-        { "year": 2023, "leadAuthor": 2, "coauthored": 0 },
-        { "year": 2024, "leadAuthor": 1, "coauthored": 0 },
-        { "year": 2025, "leadAuthor": 1, "coauthored": 0 }
+        {
+          "year": 2023,
+          "leadAuthor": 2,
+          "coauthored": 0
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 1,
+          "coauthored": 0
+        }
       ],
       "sources": [
         {
@@ -78,7 +104,10 @@
       "callType": "女性研究者養成システム改革加速",
       "verificationStatus": "verified",
       "evidenceNote": "広島大学の公式成果報告書に、女性研究者養成システム改革加速で採用した新規養成女性教員として氏名、職名、所属、着任日が掲載されている。",
-      "baselinePublications": { "leadAuthor": null, "coauthored": null },
+      "baselinePublications": {
+        "leadAuthor": null,
+        "coauthored": null
+      },
       "publicationTimeline": [],
       "sources": [
         {
@@ -100,7 +129,10 @@
       "callType": "女性研究者養成システム改革加速",
       "verificationStatus": "verified",
       "evidenceNote": "広島大学の公式成果報告書に、女性研究者養成システム改革加速で採用した新規養成女性教員として氏名、職名、所属、着任日が掲載されている。",
-      "baselinePublications": { "leadAuthor": null, "coauthored": null },
+      "baselinePublications": {
+        "leadAuthor": null,
+        "coauthored": null
+      },
       "publicationTimeline": [],
       "sources": [
         {
@@ -122,7 +154,10 @@
       "callType": "女性研究者養成システム改革加速",
       "verificationStatus": "verified",
       "evidenceNote": "広島大学の公式成果報告書に、女性研究者養成システム改革加速で採用した新規養成女性教員として氏名、職名、所属、着任日が掲載されている。",
-      "baselinePublications": { "leadAuthor": null, "coauthored": null },
+      "baselinePublications": {
+        "leadAuthor": null,
+        "coauthored": null
+      },
       "publicationTimeline": [],
       "sources": [
         {
@@ -144,7 +179,10 @@
       "callType": "女性研究者養成システム改革加速",
       "verificationStatus": "verified",
       "evidenceNote": "広島大学の公式成果報告書に、女性研究者養成システム改革加速で採用した新規養成女性教員として氏名、職名、所属、着任日が掲載されている。",
-      "baselinePublications": { "leadAuthor": null, "coauthored": null },
+      "baselinePublications": {
+        "leadAuthor": null,
+        "coauthored": null
+      },
       "publicationTimeline": [],
       "sources": [
         {
@@ -166,7 +204,10 @@
       "callType": "女性研究者養成システム改革加速",
       "verificationStatus": "verified",
       "evidenceNote": "広島大学の公式成果報告書に、女性研究者養成システム改革加速で採用した新規養成女性教員として氏名、職名、所属、着任日が掲載されている。",
-      "baselinePublications": { "leadAuthor": null, "coauthored": null },
+      "baselinePublications": {
+        "leadAuthor": null,
+        "coauthored": null
+      },
       "publicationTimeline": [],
       "sources": [
         {
@@ -188,7 +229,10 @@
       "callType": "女性研究者養成システム改革加速",
       "verificationStatus": "verified",
       "evidenceNote": "広島大学の公式成果報告書に、女性研究者養成システム改革加速で採用した新規養成女性教員として氏名、職名、所属、着任日が掲載されている。",
-      "baselinePublications": { "leadAuthor": null, "coauthored": null },
+      "baselinePublications": {
+        "leadAuthor": null,
+        "coauthored": null
+      },
       "publicationTimeline": [],
       "sources": [
         {
@@ -210,7 +254,10 @@
       "callType": "女性研究者養成システム改革加速",
       "verificationStatus": "verified",
       "evidenceNote": "広島大学の公式成果報告書に、女性研究者養成システム改革加速で採用した新規養成女性教員として氏名、職名、所属、着任日が掲載されている。",
-      "baselinePublications": { "leadAuthor": null, "coauthored": null },
+      "baselinePublications": {
+        "leadAuthor": null,
+        "coauthored": null
+      },
       "publicationTimeline": [],
       "sources": [
         {
@@ -232,7 +279,10 @@
       "callType": "女性研究者養成システム改革加速",
       "verificationStatus": "verified",
       "evidenceNote": "広島大学の公式成果報告書に、女性研究者養成システム改革加速で採用した新規養成女性教員として氏名、職名、所属、着任日が掲載されている。",
-      "baselinePublications": { "leadAuthor": null, "coauthored": null },
+      "baselinePublications": {
+        "leadAuthor": null,
+        "coauthored": null
+      },
       "publicationTimeline": [],
       "sources": [
         {
@@ -391,6 +441,81 @@
       "source": {
         "label": "東京大学大学院理学系研究科 公募",
         "url": "https://www.s.u-tokyo.ac.jp/ja/recruit/?id=1951"
+      }
+    },
+    {
+      "id": "kyoto-math-2025-female-assistant-professor",
+      "fiscalYear": 2025,
+      "university": "京都大学",
+      "department": "大学院理学研究科 数学・数理解析専攻",
+      "position": "助教",
+      "field": "数学",
+      "appointmentDate": "2025年10月1日以降できるだけ早い時期",
+      "statusLabel": "採用者未確認",
+      "note": "2025年度の女性限定公募として確認。公式に採用者名との対応を確認できていないため、個人データには未登録。",
+      "source": {
+        "label": "京都大学大学院理学研究科 数学系 女性限定公募",
+        "url": "https://mail.math.nagoya-u.ac.jp/pipermail/geometry-ml/2025/005946.html"
+      }
+    },
+    {
+      "id": "kyoto-icr-2025-female-associate-assistant",
+      "fiscalYear": 2025,
+      "university": "京都大学",
+      "department": "化学研究所",
+      "position": "准教授または助教 3名程度",
+      "field": "化学・関連分野",
+      "appointmentDate": "2025年度以降",
+      "statusLabel": "採用者未確認",
+      "note": "2025年1月に女性限定の准教授および助教公募として確認。公式に採用者名との対応を確認できていないため、個人データには未登録。",
+      "source": {
+        "label": "分子科学会速報：京大化研 女性限定准教授および助教公募",
+        "url": "https://www.molsci.jp/wp/date/2025/01/"
+      }
+    },
+    {
+      "id": "kwansei-materials-2025-female-faculty",
+      "fiscalYear": 2025,
+      "university": "関西学院大学",
+      "department": "工学部 物質工学課程",
+      "position": "教授・准教授・講師のいずれか",
+      "field": "物質科学・物質工学",
+      "appointmentDate": "2026年4月1日",
+      "statusLabel": "採用者未確認",
+      "note": "2025年度に女性限定公募として確認。公式に採用者名との対応を確認できていないため、個人データには未登録。",
+      "source": {
+        "label": "分子科学会速報：関西学院大学工学部 教員公募（女性限定）",
+        "url": "https://www.molsci.jp/wp/date/2025/01/"
+      }
+    },
+    {
+      "id": "kobe-kosen-info-2025-female-faculty",
+      "fiscalYear": 2025,
+      "university": "神戸市立工業高等専門学校",
+      "department": "情報分野",
+      "position": "准教授・講師または助教",
+      "field": "情報・数理・データサイエンス・AI",
+      "appointmentDate": "2025年10月1日または2026年4月1日",
+      "statusLabel": "採用者未確認",
+      "note": "2025年度の女性限定公募として確認。公式に採用者名との対応を確認できていないため、個人データには未登録。",
+      "source": {
+        "label": "神戸市立工業高等専門学校 情報分野専任教員募集（女性限定）",
+        "url": "https://www.kobe-kosen.ac.jp/news/14488/"
+      }
+    },
+    {
+      "id": "kobe-kosen-math-2025-female-faculty",
+      "fiscalYear": 2025,
+      "university": "神戸市立工業高等専門学校",
+      "department": "一般科（数学）",
+      "position": "准教授・講師または助教",
+      "field": "数学",
+      "appointmentDate": "2026年4月1日",
+      "statusLabel": "採用者未確認",
+      "note": "2025年度の女性限定公募として確認。公式に採用者名との対応を確認できていないため、個人データには未登録。",
+      "source": {
+        "label": "神戸市立工業高等専門学校 一般科（数学）専任教員募集（女性限定）",
+        "url": "https://www.kobe-kosen.ac.jp/news/14486/"
       }
     }
   ]

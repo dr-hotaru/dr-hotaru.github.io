@@ -249,7 +249,7 @@
     },
     {
       "researcherId": "hiroshima-okamura-yoshiko-2010",
-      "summary": "??DB???: researchmap ??79?? researchmapで論文79件が確認できる。ページ内の全件転記は同姓同名チェック後に順次反映。",
+      "summary": "researchmapで論文79件が確認できる。採択時点の主著/共著分類ではなく、公開DB上の総論文数として表示。",
       "externalLinks": [
         {
           "label": "researchmap 全業績",
@@ -262,20 +262,21 @@
       ],
       "publications": [],
       "metrics": {
-        "primary": "??79?",
-        "secondary": "researchmap",
+        "outputLabel": "総論文",
+        "totalOutputs": 79,
+        "source": "researchmap",
         "timeline": [
           {
             "year": 2026,
             "total": 79
           }
         ],
-        "summaryAdd": "??DB???: researchmap ??79??"
+        "note": "公開DBで確認できる総数。採択時点の筆頭著者・共著者分類ではない。"
       }
     },
     {
       "researcherId": "hiroshima-sato-tomoko-2010",
-      "summary": "??DB???: researchmap ??30????1?? researchmapで論文30件、受賞1件が確認できる。ページ内の全件転記は同姓同名チェック後に順次反映。",
+      "summary": "researchmapで論文30件、受賞1件が確認できる。採択時点の主著/共著分類ではなく、公開DB上の総論文数として表示。",
       "externalLinks": [
         {
           "label": "researchmap 全業績",
@@ -288,20 +289,21 @@
       ],
       "publications": [],
       "metrics": {
-        "primary": "??30?",
-        "secondary": "researchmap",
+        "outputLabel": "総論文",
+        "totalOutputs": 30,
+        "source": "researchmap",
         "timeline": [
           {
             "year": 2026,
             "total": 30
           }
         ],
-        "summaryAdd": "??DB???: researchmap ??30????1??"
+        "note": "公開DBで確認できる総数。採択時点の筆頭著者・共著者分類ではない。"
       }
     },
     {
       "researcherId": "hiroshima-kato-aki-2010",
-      "summary": "??DB???: researchmap ????53?? researchmapで主要論文53件、論文ページで49件が確認できる。ページ内の全件転記は同姓同名チェック後に順次反映。",
+      "summary": "researchmapで主要論文53件、論文ページで49件が確認できる。採択時点の主著/共著分類ではなく、公開DB上の総論文数として表示。",
       "externalLinks": [
         {
           "label": "researchmap 全業績",
@@ -314,20 +316,21 @@
       ],
       "publications": [],
       "metrics": {
-        "primary": "????53?",
-        "secondary": "researchmap",
+        "outputLabel": "総論文",
+        "totalOutputs": 53,
+        "source": "researchmap",
         "timeline": [
           {
             "year": 2026,
             "total": 53
           }
         ],
-        "summaryAdd": "??DB???: researchmap ????53??"
+        "note": "公開DBで確認できる総数。採択時点の筆頭著者・共著者分類ではない。"
       }
     },
     {
       "researcherId": "hiroshima-yamamura-mariko-2011",
-      "summary": "??DB???: researchmap ??19?????11????3?? researchmapで論文19件、主要書籍等11件、受賞3件が確認できる。ページ内の全件転記は同姓同名チェック後に順次反映。",
+      "summary": "researchmapで論文19件、主要書籍等11件、受賞3件が確認できる。採択時点の主著/共著分類ではなく、公開DB上の総論文数として表示。",
       "externalLinks": [
         {
           "label": "researchmap 全業績",
@@ -340,20 +343,21 @@
       ],
       "publications": [],
       "metrics": {
-        "primary": "??19?",
-        "secondary": "researchmap",
+        "outputLabel": "総論文",
+        "totalOutputs": 19,
+        "source": "researchmap",
         "timeline": [
           {
             "year": 2026,
             "total": 19
           }
         ],
-        "summaryAdd": "??DB???: researchmap ??19?????11????3??"
+        "note": "公開DBで確認できる総数。採択時点の筆頭著者・共著者分類ではない。"
       }
     },
     {
       "researcherId": "hiroshima-okita-miki-2011",
-      "summary": "??DB???: KAKEN ????5??????3?? KAKENで研究成果5件と研究課題3件が確認できる。ページ内の全件転記は同姓同名チェック後に順次反映。",
+      "summary": "KAKENで研究成果5件、研究課題3件が確認できる。採択時点の主著/共著分類ではなく、公開DB上の研究成果総数として表示。",
       "externalLinks": [
         {
           "label": "KAKEN 研究者ページ",
@@ -362,20 +366,21 @@
       ],
       "publications": [],
       "metrics": {
-        "primary": "????5?",
-        "secondary": "KAKEN",
+        "outputLabel": "研究成果",
+        "totalOutputs": 5,
+        "source": "KAKEN",
         "timeline": [
           {
             "year": 2026,
             "total": 5
           }
         ],
-        "summaryAdd": "??DB???: KAKEN ????5??????3??"
+        "note": "公開DBで確認できる総数。採択時点の筆頭著者・共著者分類ではない。"
       }
     },
     {
       "researcherId": "hiroshima-kanna-machi-2011",
-      "summary": "??DB???: researchmap ??36?? KAKENで研究課題と研究者番号が確認でき、現所属の研究者情報に論文等が掲載されている。ページ内の全件転記は同姓同名チェック後に順次反映。",
+      "summary": "researchmapで論文等36件が確認できる。KAKENでも研究課題と研究者番号を確認。採択時点の主著/共著分類ではなく、公開DB上の総論文数として表示。",
       "externalLinks": [
         {
           "label": "KAKEN 研究者ページ",
@@ -388,20 +393,21 @@
       ],
       "publications": [],
       "metrics": {
-        "primary": "??36?",
-        "secondary": "researchmap",
+        "outputLabel": "総論文",
+        "totalOutputs": 36,
+        "source": "researchmap",
         "timeline": [
           {
             "year": 2026,
             "total": 36
           }
         ],
-        "summaryAdd": "??DB???: researchmap ??36??"
+        "note": "公開DBで確認できる総数。採択時点の筆頭著者・共著者分類ではない。"
       }
     },
     {
       "researcherId": "hiroshima-ogawa-yuko-2011",
-      "summary": "??DB???: researchmap ??111????9?? 広島大学研究者ガイドブックとKAKENで研究分野・研究課題が確認できる。ページ内の全件転記は同姓同名チェック後に順次反映。",
+      "summary": "researchmapで論文111件、外部資金等9件が確認できる。採択時点の主著/共著分類ではなく、公開DB上の総論文数として表示。",
       "externalLinks": [
         {
           "label": "広島大学 研究者ガイドブック",
@@ -414,20 +420,21 @@
       ],
       "publications": [],
       "metrics": {
-        "primary": "??111?",
-        "secondary": "researchmap",
+        "outputLabel": "総論文",
+        "totalOutputs": 111,
+        "source": "researchmap",
         "timeline": [
           {
             "year": 2026,
             "total": 111
           }
         ],
-        "summaryAdd": "??DB???: researchmap ??111????9??"
+        "note": "公開DBで確認できる総数。採択時点の筆頭著者・共著者分類ではない。"
       }
     },
     {
       "researcherId": "hiroshima-sato-akiko-2012",
-      "summary": "??DB???: researchmap ?????37????39??????20????2?? researchmapで経歴、研究分野、研究課題等が確認できる。ページ内の全件転記は同姓同名チェック後に順次反映。",
+      "summary": "researchmapで論文37件、MISC等39件、講演等20件、書籍等2件が確認できる。採択時点の主著/共著分類ではなく、公開DB上の総論文数として表示。",
       "externalLinks": [
         {
           "label": "researchmap 全業績",
@@ -440,15 +447,16 @@
       ],
       "publications": [],
       "metrics": {
-        "primary": "????37?",
-        "secondary": "researchmap",
+        "outputLabel": "総論文",
+        "totalOutputs": 37,
+        "source": "researchmap",
         "timeline": [
           {
             "year": 2026,
             "total": 37
           }
         ],
-        "summaryAdd": "??DB???: researchmap ?????37????39??????20????2??"
+        "note": "公開DBで確認できる総数。採択時点の筆頭著者・共著者分類ではない。"
       }
     }
   ]

@@ -85,6 +85,7 @@
     const link = card.querySelector("a[href]");
     if (!link) return;
     const href = link.getAttribute("href");
+    card.dataset.href = href;
     card.tabIndex = 0;
     card.setAttribute("role", "link");
     card.addEventListener("click", event => {

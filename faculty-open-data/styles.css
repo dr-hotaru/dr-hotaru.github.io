@@ -179,10 +179,14 @@ input {
 
 .table-panel,
 .detail-panel {
+  min-width: 0;
   padding: 22px;
 }
 
 .table-wrap {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   overflow-x: auto;
 }
 
@@ -215,6 +219,7 @@ tbody tr.is-active {
 }
 
 canvas {
+  max-width: 100%;
   width: 100%;
   margin-top: 18px;
   border: 1px solid var(--line);
@@ -448,6 +453,11 @@ footer {
 }
 
 @media (max-width: 980px) {
+  main,
+  footer {
+    width: min(100% - 32px, 1280px);
+  }
+
   .filters,
   .summary-grid,
   .data-layout,
@@ -459,6 +469,17 @@ footer {
 
   .candidate-card dl {
     grid-template-columns: 1fr;
+  }
+
+  .table-panel,
+  .detail-panel,
+  .notice,
+  .filters,
+  .ad-panel,
+  .candidate-card,
+  .method article {
+    width: 100%;
+    max-width: 100%;
   }
 
   .site-header {

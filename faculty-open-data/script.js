@@ -17,6 +17,7 @@ const els = {
   candidateCalls: document.querySelector("#candidateCalls"),
   detailName: document.querySelector("#detailName"),
   detailMeta: document.querySelector("#detailMeta"),
+  achievements: document.querySelector("#achievementPanel"),
   sources: document.querySelector("#sourceLinks"),
   chart: document.querySelector("#publicationChart")
 };
@@ -140,6 +141,7 @@ function renderDetail(item) {
   if (!item) {
     els.detailName.textContent = "データを選択";
     els.detailMeta.textContent = "確認済みデータが追加されると、ここに採用後の論文数推移を表示します。";
+    els.achievements.innerHTML = "";
     els.sources.innerHTML = "";
     drawChart(null);
     return;
@@ -147,8 +149,37 @@ function renderDetail(item) {
 
   els.detailName.textContent = item.name;
   els.detailMeta.textContent = `${item.fiscalYear}年度 / ${item.university} / ${item.department} / ${item.field}`;
+  renderAchievements(item);
   els.sources.innerHTML = item.sources.map(source => `<a href="${source.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)}</a>`).join("");
   drawChart(item);
+}
+
+function renderAchievements(item) {
+  const achievements = item.achievements || {};
+  const publications = achievements.publications || [];
+  const externalLinks = achievements.externalLinks || [];
+  const paperItems = publications.length
+    ? publications.map(pub => `
+        <li>
+          <span>${escapeHtml(pub.year || "年不明")}</span>
+          <strong>${escapeHtml(pub.title)}</strong>
+          <em>${escapeHtml(pub.venue || "")}${pub.role ? ` / ${escapeHtml(pub.role)}` : ""}</em>
+        </li>
+      `).join("")
+    : '<li class="achievement-empty">ページ内の全件転記は照合作業中です。下の外部DBで全業績を確認できます。</li>';
+
+  const linkItems = externalLinks.length
+    ? externalLinks.map(link => `<a href="${link.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.label)}</a>`).join("")
+    : "";
+
+  els.achievements.innerHTML = `
+    <section>
+      <h3>業績</h3>
+      <p>${escapeHtml(achievements.summary || "業績情報は確認中です。")}</p>
+      <ul class="achievement-list">${paperItems}</ul>
+      <div class="achievement-links">${linkItems}</div>
+    </section>
+  `;
 }
 
 function drawChart(item) {

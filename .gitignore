@@ -1,2 +1,4 @@
 .git2/
+.git-writable/
 automation-export-*.patch
+monthly-scan-*.patch

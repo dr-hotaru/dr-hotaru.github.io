@@ -110,8 +110,8 @@ function renderRows() {
       <td>${escapeHtml(item.university)}</td>
       <td>${escapeHtml(item.department)}</td>
       <td>${escapeHtml(item.field)}</td>
-      <td>${formatCount(item.baselinePublications?.leadAuthor)}</td>
-      <td>${formatCount(item.baselinePublications?.coauthored)}</td>
+      <td>${formatCount(item.baselinePublications?.leadAuthor ?? item.achievements?.metrics?.primary)}</td>
+      <td>${formatCount(item.baselinePublications?.coauthored ?? item.achievements?.metrics?.secondary)}</td>
     `;
     row.addEventListener("click", () => {
       state.selectedId = item.id;
@@ -132,6 +132,7 @@ function renderCandidateCalls() {
         <span>${escapeHtml(item.statusLabel)}</span>
       </div>
       <h3>${escapeHtml(item.university)}</h3>
+      ${metrics}
       <p>${escapeHtml(item.department)}</p>
       <dl>
         <div><dt>職位</dt><dd>${escapeHtml(item.position)}</dd></div>
@@ -166,6 +167,9 @@ function renderAchievements(item) {
   const achievements = item.achievements || {};
   const publications = achievements.publications || [];
   const externalLinks = achievements.externalLinks || [];
+  const metrics = achievements.metrics
+    ? `<p class="achievement-metrics"><strong>??DB??:</strong> ${escapeHtml(achievements.metrics.primary)} / ${escapeHtml(achievements.metrics.secondary)}</p>`
+    : "";
   const paperItems = publications.length
     ? publications.map(pub => `
         <li>
@@ -199,6 +203,10 @@ function drawChart(item) {
   ctx.fillRect(0, 0, width, height);
 
   if (!item || !item.publicationTimeline?.length) {
+    if (item?.achievements?.metrics) {
+      drawMetricsSummary(ctx, item.achievements.metrics, width, height);
+      return;
+    }
     ctx.fillStyle = "#9fb0c3";
     ctx.font = "20px Segoe UI";
     ctx.fillText("確認済みデータの追加待ちです", 32, 70);
@@ -212,6 +220,21 @@ function drawChart(item) {
   drawSeries(ctx, points, "leadAuthor", "#6ff3e6", width, height, padding, maxValue);
   drawSeries(ctx, points, "coauthored", "#ffd166", width, height, padding, maxValue);
   drawLegend(ctx);
+}
+
+function drawMetricsSummary(ctx, metrics, width, height) {
+  ctx.fillStyle = "#9fb0c3";
+  ctx.font = "18px Segoe UI";
+  ctx.fillText("公開DB集計", 32, 58);
+  ctx.fillStyle = "#6ff3e6";
+  ctx.font = "34px Segoe UI";
+  ctx.fillText(metrics.primary, 32, 112);
+  ctx.fillStyle = "#ffd166";
+  ctx.font = "18px Segoe UI";
+  ctx.fillText(metrics.secondary, 32, 150);
+  ctx.fillStyle = "#9fb0c3";
+  ctx.font = "14px Segoe UI";
+  ctx.fillText("採用時点の筆頭/共著分類ではなく、公開DBに表示される確認済み総数です。", 32, height - 44);
 }
 
 function drawAxis(ctx, width, height, padding, maxValue) {

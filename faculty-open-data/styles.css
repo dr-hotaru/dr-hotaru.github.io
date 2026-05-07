@@ -254,6 +254,14 @@ canvas {
   list-style: none;
 }
 
+.achievement-metrics {
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(111, 243, 230, 0.08);
+  color: var(--ink);
+}
+
 .achievement-list li {
   display: grid;
   gap: 3px;

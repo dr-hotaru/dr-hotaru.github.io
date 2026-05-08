@@ -32,7 +32,9 @@ async function loadData() {
   const data = await response.json();
   const achievementsData = await achievementsResponse.json();
   const achievementsById = new Map((achievementsData.items || []).map(item => [item.researcherId, item]));
-  state.researchers = data.researchers.filter(item => item.verificationStatus === "verified");
+  state.researchers = data.researchers.filter(item =>
+    item.verificationStatus === "verified" && !hasPlaceholderText(item)
+  );
   state.researchers.forEach(item => {
     item.achievements = achievementsById.get(item.id) || null;
   });
@@ -60,6 +62,14 @@ function fillSelect(select, values) {
 
 function uniqueValues(values) {
   return [...new Set(values.filter(Boolean))];
+}
+
+function hasPlaceholderText(value) {
+  if (value === null || value === undefined) return false;
+  if (typeof value === "string") return /\?{2,}|�/.test(value);
+  if (Array.isArray(value)) return value.some(hasPlaceholderText);
+  if (typeof value === "object") return Object.values(value).some(hasPlaceholderText);
+  return false;
 }
 
 function applyFilters() {

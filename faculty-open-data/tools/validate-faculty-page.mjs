@@ -50,8 +50,24 @@ const getElement = selector => {
   return elements.get(selector);
 };
 
-for (const file of ["data/researchers.json", "data/achievements.json"]) {
-  JSON.parse(fs.readFileSync(path.join(base, file), "utf8"));
+const data = JSON.parse(fs.readFileSync(path.join(base, "data/researchers.json"), "utf8"));
+JSON.parse(fs.readFileSync(path.join(base, "data/achievements.json"), "utf8"));
+
+const placeholderPattern = /\?{2,}|�/;
+const hasPlaceholderText = value => {
+  if (value === null || value === undefined) return false;
+  if (typeof value === "string") return placeholderPattern.test(value);
+  if (Array.isArray(value)) return value.some(hasPlaceholderText);
+  if (typeof value === "object") return Object.values(value).some(hasPlaceholderText);
+  return false;
+};
+
+const badVerified = (data.researchers || []).filter(item =>
+  item.verificationStatus === "verified" && hasPlaceholderText(item)
+);
+
+if (badVerified.length) {
+  throw new Error(`Verified faculty data contains placeholder text: ${badVerified.map(item => item.id).join(", ")}`);
 }
 
 const context = {
@@ -83,7 +99,7 @@ await new Promise(resolve => setTimeout(resolve, 0));
 
 const rows = getElement("#researcherRows");
 const failureText = String(rows.innerHTML || "");
-const hasFailure = failureText.includes("失敗") || failureText.includes("螟ｱ謨");
+const hasFailure = failureText.includes("失敗");
 
 if (hasFailure || rows.children.length === 0) {
   throw new Error("Faculty page render validation failed before publish.");

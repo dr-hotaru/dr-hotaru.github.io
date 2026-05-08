@@ -5,6 +5,14 @@
     "verificationRule": "公式発表で公募種別と採用者本人が明示されている場合のみ公開する。氏名、写真、所属変更、時期から性別や採用経路を推定しない。",
     "metricsNote": "論文数は制度分析の補助指標であり、個人の研究力や採用妥当性を単純に評価するものではない。"
   },
+  "callStatistics": {
+    "fy2023WomenOnlyCalls": 225,
+    "fy2023NationalUniversityCalls": 187,
+    "fy2023PublicUniversityCalls": 13,
+    "fy2023PrivateUniversityCalls": 25,
+    "sourceLabel": "Jxivプレプリント「教員公募における女性限定公募の実施実態とその特徴」",
+    "sourceUrl": "https://jxiv.jst.go.jp/index.php/jxiv/preprint/view/841"
+  },
   "researchers": [
     {
       "id": "kyoto-fserc-kawamura-mariko-2023",
@@ -294,6 +302,252 @@
   ],
   "candidateCalls": [
     {
+      "id": "utokyo-aori-marine-life-2023-takagi-haruka-candidate",
+      "fiscalYear": 2023,
+      "university": "東京大学",
+      "department": "大気海洋研究所 海洋生命システム研究系",
+      "position": "教授・准教授・講師",
+      "field": "海洋生命科学・海洋生態系科学",
+      "appointmentDate": "2024年度想定",
+      "statusLabel": "照合候補",
+      "candidateName": "高木 悠花",
+      "note": "2023年度の海洋生命システム研究系女性限定公募と、2024年版AORIカタログの海洋生命システム研究系・海洋生態系科学部門准教授としての掲載を照合。公募経路の明示は未確認のため、確認済み採用者には未登録。",
+      "sources": [
+        {
+          "label": "日本水産学会：東京大学大気海洋研究所教員公募情報",
+          "url": "https://jsfs.jp/topics/230703/"
+        },
+        {
+          "label": "AORI 2024カタログ：海洋生命システム研究系",
+          "url": "https://www.aori.u-tokyo.ac.jp/english/catalog/files/2024_07.pdf"
+        }
+      ]
+    },
+    {
+      "id": "utokyo-aori-ocean-earth-2023-kurisu-minako-candidate",
+      "fiscalYear": 2023,
+      "university": "東京大学",
+      "department": "大気海洋研究所 海洋地球システム研究系",
+      "position": "教授・准教授・講師",
+      "field": "海洋化学",
+      "appointmentDate": "2024年度想定",
+      "statusLabel": "照合候補",
+      "candidateName": "栗栖 美菜子",
+      "note": "2023年度の海洋地球システム研究系女性限定公募と、2024年版AORIカタログの海洋地球システム研究系・海洋化学部門講師としての掲載を照合。公募経路の明示は未確認のため、確認済み採用者には未登録。",
+      "sources": [
+        {
+          "label": "日本水産学会：東京大学大気海洋研究所教員公募情報",
+          "url": "https://jsfs.jp/topics/230703/"
+        },
+        {
+          "label": "AORI 2024カタログ：教職員",
+          "url": "https://www.aori.u-tokyo.ac.jp/catalog/files/2024_05.pdf"
+        }
+      ]
+    },
+    {
+      "id": "utokyo-aori-climate-2023-unidentified",
+      "fiscalYear": 2023,
+      "university": "東京大学",
+      "department": "大気海洋研究所 気候システム研究系",
+      "position": "教授・准教授・講師",
+      "field": "気候システム科学",
+      "appointmentDate": "2024年度想定",
+      "statusLabel": "採用者未確認",
+      "note": "2023年度の気候システム研究系女性限定公募は確認済み。採用者名との対応を示す公式発表は未発見のため、個人データには未登録。",
+      "source": {
+        "label": "日本気象学会：東京大学大気海洋研究所気候システム研究系教員公募",
+        "url": "https://www.metsoc.jp/2023/06/27/32390"
+      }
+    },
+    {
+      "id": "utokyo-forest-gxdx-2023-unidentified",
+      "fiscalYear": 2023,
+      "university": "東京大学",
+      "department": "農学生命科学研究科附属演習林 フォレストGX/DX協創センター",
+      "position": "特任教授または特任准教授",
+      "field": "森林GX/DX・産学官民協創",
+      "appointmentDate": "2024-04-01以降",
+      "statusLabel": "採用者未確認",
+      "note": "女性限定の特任教授または特任准教授公募として公式確認済み。採用者名との対応を示す公開ページは未発見のため、個人データには未登録。",
+      "source": {
+        "label": "東京大学演習林：フォレストGX/DX協創センター特任教員公募",
+        "url": "https://www.uf.a.u-tokyo.ac.jp/news/20231027_1.html"
+      }
+    },
+    {
+      "id": "iwate-education-2023-school-education",
+      "fiscalYear": 2023,
+      "university": "岩手大学",
+      "department": "教育学部 学校教育科",
+      "position": "准教授または講師",
+      "field": "教育学",
+      "appointmentDate": "2023-10-01",
+      "statusLabel": "採用者未確認",
+      "note": "学校教育科（教育学分野）の女性限定公募として公式確認済み。採用者名との対応は未確認。",
+      "source": {
+        "label": "岩手大学教育学部：学校教育科（教育学分野）女性限定公募",
+        "url": "https://www.edu.iwate-u.ac.jp/news-list/news/2023/5239/"
+      }
+    },
+    {
+      "id": "iwate-special-needs-2023",
+      "fiscalYear": 2023,
+      "university": "岩手大学",
+      "department": "教育学部 特別支援教育科",
+      "position": "准教授または講師",
+      "field": "特別支援教育",
+      "appointmentDate": "2024-04-01",
+      "statusLabel": "採用者未確認",
+      "note": "特別支援教育科の女性限定公募として公式確認済み。採用者名との対応は未確認。",
+      "source": {
+        "label": "岩手大学教育学部：特別支援教育科女性限定公募",
+        "url": "https://www.edu.iwate-u.ac.jp/news-list/kyouin/2023/5442/"
+      }
+    },
+    {
+      "id": "iwate-english-literature-2023",
+      "fiscalYear": 2023,
+      "university": "岩手大学",
+      "department": "教育学部 英語教育科",
+      "position": "准教授または講師",
+      "field": "英米文学",
+      "appointmentDate": "2024-04-01",
+      "statusLabel": "採用者未確認",
+      "note": "英語教育科（英米文学）の女性限定公募として公式確認済み。採用者名との対応は未確認。",
+      "source": {
+        "label": "岩手大学教育学部：英語教育科（英米文学）女性限定公募",
+        "url": "https://www.edu.iwate-u.ac.jp/news-list/news/2023/5565/"
+      }
+    },
+    {
+      "id": "hyogo-engineering-2023-five-female-calls",
+      "fiscalYear": 2023,
+      "university": "兵庫県立大学",
+      "department": "大学院工学研究科",
+      "position": "教授・准教授・助教または助手",
+      "field": "電気工学、システム・制御工学、知能情報工学、流体工学、金属材料学ほか",
+      "appointmentDate": "2024-04-01",
+      "statusLabel": "採用者未確認",
+      "note": "工学研究科で女性限定教員5名公募として確認済み。5名枠と採用者の公式対応表は未発見。",
+      "source": {
+        "label": "ISIJ：兵庫県立大学大学院工学研究科 教員公募",
+        "url": "https://www.isij.or.jp/related/offer2023/20230601.html"
+      }
+    },
+    {
+      "id": "hyogo-science-2023-three-female-calls",
+      "fiscalYear": 2023,
+      "university": "兵庫県立大学",
+      "department": "大学院理学研究科",
+      "position": "教授または准教授",
+      "field": "機能性物質学、電子物性学、数理科学、生体物質化学、生体情報学",
+      "appointmentDate": "2024-04-01",
+      "statusLabel": "採用者未確認",
+      "note": "理学研究科で女性限定の教授・准教授3名公募として確認済み。3名枠と採用者の公式対応表は未発見。",
+      "source": {
+        "label": "日本物理学会領域5：兵庫県立大学大学院理学研究科 教授・准教授公募",
+        "url": "https://www.r5.div.jps.or.jp/%E5%85%B5%E5%BA%AB%E7%9C%8C%E7%AB%8B%E5%A4%A7%E5%AD%A6%E5%A4%A7%E5%AD%A6%E9%99%A2%E7%90%86%E5%AD%A6%E7%A0%94%E7%A9%B6%E7%A7%91%E3%80%80%E6%95%99%E6%8E%88%E3%83%BB%E5%87%86%E6%95%99%E6%8E%88%E5%85%AC/"
+      }
+    },
+    {
+      "id": "omu-korean-2023-hong-yeonjeong-candidate",
+      "fiscalYear": 2023,
+      "university": "大阪公立大学",
+      "department": "国際基幹教育研究院・国際基幹教育機構 朝鮮語教育分野",
+      "position": "講師または准教授",
+      "field": "朝鮮語教育・韓国語教育",
+      "appointmentDate": "2024-04-01",
+      "statusLabel": "照合候補",
+      "candidateName": "洪 妍定",
+      "note": "朝鮮語教育分野の女性限定公募と、大阪公立大学研究者情報の国際基幹教育機構・講師、朝鮮語教育・韓国語教育等の掲載を照合。公募経路の明示は未確認のため、確認済み採用者には未登録。",
+      "sources": [
+        {
+          "label": "大阪公立大学：朝鮮語教育分野女性限定公募",
+          "url": "https://www.omu.ac.jp/research/recruit/faculty/entry-00347.html"
+        },
+        {
+          "label": "大阪公立大学研究者情報：国際基幹教育機構",
+          "url": "https://kyoiku-kenkyudb.omu.ac.jp/search?a2=0000028&l=ja&m=affiliation&o=affiliation&p=7&s=1"
+        }
+      ]
+    },
+    {
+      "id": "omu-earth-environment-2023-unidentified",
+      "fiscalYear": 2023,
+      "university": "大阪公立大学",
+      "department": "理学研究院・理学研究科・地球学専攻 地球環境学分野",
+      "position": "准教授",
+      "field": "第四紀自然学",
+      "appointmentDate": "2024-04-01",
+      "statusLabel": "採用者未確認",
+      "note": "地球環境学分野の女性限定公募として公式確認済み。採用者名との対応は未確認。",
+      "source": {
+        "label": "大阪公立大学：地球環境学分野女性限定公募",
+        "url": "https://www.omu.ac.jp/research/recruit/faculty/entry-00263.html"
+      }
+    },
+    {
+      "id": "omu-kosen-physics-math-2023-unidentified",
+      "fiscalYear": 2023,
+      "university": "大阪公立大学工業高等専門学校",
+      "department": "総合工学システム学科 一般科目系",
+      "position": "講師または准教授",
+      "field": "物理学および数学",
+      "appointmentDate": "2024-04-01",
+      "statusLabel": "採用者未確認",
+      "note": "物理学および数学に関する分野の女性限定公募として確認済み。採用者名との対応は未確認。",
+      "source": {
+        "label": "geometry-ml：大阪公立大学工業高等専門学校女性限定公募",
+        "url": "https://mail.math.nagoya-u.ac.jp/pipermail/geometry-ml/2023/005339.html"
+      }
+    },
+    {
+      "id": "fukuoka-earth-biology-2023-unidentified",
+      "fiscalYear": 2023,
+      "university": "福岡大学",
+      "department": "理学部地球圏科学科 生物科学分野",
+      "position": "教授または准教授",
+      "field": "植物生理学、植物発生学、生態学、バイオインフォマティクス",
+      "appointmentDate": "2024-04-01",
+      "statusLabel": "採用者未確認",
+      "note": "生物科学分野の女性限定公募として確認済み。採用者名との対応は未確認。",
+      "source": {
+        "label": "JSBi：福岡大学理学部地球圏科学科 生物科学分野女性限定公募",
+        "url": "https://www.jsbi.org/activity/news/calls/detail--id-710.html"
+      }
+    },
+    {
+      "id": "ynu-artificial-environment-2023-unidentified",
+      "fiscalYear": 2023,
+      "university": "横浜国立大学",
+      "department": "大学院環境情報研究院 人工環境と情報部門",
+      "position": "教授",
+      "field": "材料工学、材料化学、材料科学",
+      "appointmentDate": "2024-04-01以降",
+      "statusLabel": "採用者未確認",
+      "note": "人工環境と情報部門の教授女性限定公募として公式確認済み。採用者名との対応は未確認。",
+      "source": {
+        "label": "横浜国立大学：人工環境と情報部門教授女性限定公募",
+        "url": "https://www.ynu.ac.jp/hus/envk/30369/detail.html"
+      }
+    },
+    {
+      "id": "matsue-kosen-civil-2023-unidentified",
+      "fiscalYear": 2023,
+      "university": "松江工業高等専門学校",
+      "department": "環境・建設工学科",
+      "position": "准教授・講師または助教",
+      "field": "土木工学全般または建築学全般",
+      "appointmentDate": "2024-10-01以降",
+      "statusLabel": "採用者未確認",
+      "note": "環境・建設工学科の女性限定公募として公式確認済み。採用者名との対応は未確認。",
+      "source": {
+        "label": "松江工業高等専門学校：教職員公募",
+        "url": "https://www.matsue-ct.jp/information/faculty-and-staff-recruitment/"
+      }
+    },
+    {
       "id": "tohoku-university-hospital-2026-female-professor",
       "fiscalYear": 2026,
       "university": "東北大学病院",
@@ -516,6 +770,66 @@
       "source": {
         "label": "神戸市立工業高等専門学校 一般科（数学）専任教員募集（女性限定）",
         "url": "https://www.kobe-kosen.ac.jp/news/14486/"
+      }
+    },
+    {
+      "id": "tohoku-mech-2026-female-professor",
+      "fiscalYear": 2026,
+      "university": "東北大学",
+      "department": "大学院工学研究科 機械科学分野",
+      "position": "教授",
+      "field": "機械工学",
+      "appointmentDate": "採用決定後できるだけ早い時期",
+      "statusLabel": "採用者未確認",
+      "note": "2026年3月2日公開の女性限定公募として公式掲載。採用者名との対応は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "東北大学大学院機械系 採用情報",
+        "url": "https://www.mech.tohoku.ac.jp/news/recruit/14628/"
+      }
+    },
+    {
+      "id": "tohoku-cneas-2026-female-professor",
+      "fiscalYear": 2026,
+      "university": "東北大学",
+      "department": "東北アジア研究センター",
+      "position": "教授",
+      "field": "ロシア・シベリア研究",
+      "appointmentDate": "2026年8月1日以降",
+      "statusLabel": "採用者未確認",
+      "note": "2026年3月3日掲載の女性限定公募として公式掲載。採用者名との対応は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "東北大学東北アジア研究センター 教員公募",
+        "url": "https://www2.cneas.tohoku.ac.jp/news/news260303.html"
+      }
+    },
+    {
+      "id": "ryukyu-tbc-2026-female-assistant-professor",
+      "fiscalYear": 2026,
+      "university": "琉球大学",
+      "department": "熱帯生物圏研究センター",
+      "position": "助教",
+      "field": "生命科学",
+      "appointmentDate": "未公表",
+      "statusLabel": "採用者未確認",
+      "note": "2026年4月21日掲載の女性限定公募として公式掲載。採用者名との対応は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "琉球大学熱帯生物圏研究センター 女性限定教員公募",
+        "url": "https://tbc.skr.u-ryukyu.ac.jp/blog/2026/04/21/%E5%A5%B3%E6%80%A7%E9%99%90%E5%AE%9A%E6%95%99%E5%93%A1%E5%85%AC%E5%8B%9F%EF%BC%88%E5%8A%A9%E6%95%99%EF%BC%89%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/"
+      }
+    },
+    {
+      "id": "omu-electron-2026-female-tenure-track-assistant-professor",
+      "fiscalYear": 2026,
+      "university": "大阪公立大学",
+      "department": "工学研究院・工学研究科 電子物理系専攻 電子物理工学分野",
+      "position": "テニュアトラック助教",
+      "field": "電子物理工学",
+      "appointmentDate": "2027年4月1日予定",
+      "statusLabel": "採用者未確認",
+      "note": "2026年1月9日公開の女性限定公募として公式掲載。採用者名との対応は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "大阪公立大学 女性限定テニュアトラック教員公募",
+        "url": "https://www.omu.ac.jp/research/recruit/faculty/entry-01329.html"
       }
     }
   ]

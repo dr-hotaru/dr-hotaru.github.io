@@ -1,6 +1,7 @@
 const state = {
   researchers: [],
   candidateCalls: [],
+  callStatistics: {},
   filtered: [],
   selectedId: null
 };
@@ -12,6 +13,7 @@ const els = {
   keyword: document.querySelector("#keywordFilter"),
   rows: document.querySelector("#researcherRows"),
   total: document.querySelector("#totalCount"),
+  fy2023Calls: document.querySelector("#fy2023CallCount"),
   universities: document.querySelector("#universityCount"),
   candidates: document.querySelector("#candidateCount"),
   candidateCalls: document.querySelector("#candidateCalls"),
@@ -35,6 +37,7 @@ async function loadData() {
     item.achievements = achievementsById.get(item.id) || null;
   });
   state.candidateCalls = data.candidateCalls || [];
+  state.callStatistics = data.callStatistics || {};
   state.filtered = [...state.researchers];
   populateFilters();
   render();
@@ -87,7 +90,11 @@ function render() {
 
 function renderSummary() {
   els.total.textContent = state.filtered.length;
-  els.universities.textContent = uniqueValues(state.filtered.map(item => item.university)).length;
+  els.fy2023Calls.textContent = state.callStatistics.fy2023WomenOnlyCalls || 0;
+  els.universities.textContent = uniqueValues([
+    ...state.researchers.map(item => item.university),
+    ...state.candidateCalls.map(item => item.university)
+  ]).length;
   els.candidates.textContent = state.candidateCalls.length;
 }
 
@@ -131,7 +138,8 @@ function renderCandidateCalls() {
         <span>${escapeHtml(item.fiscalYear)}年度</span>
         <span>${escapeHtml(item.statusLabel)}</span>
       </div>
-      <h3>${escapeHtml(item.university)}</h3>
+      <h3>${escapeHtml(item.candidateName || item.university)}</h3>
+      ${item.candidateName ? `<p class="candidate-name-meta">${escapeHtml(item.university)}</p>` : ""}
       <p>${escapeHtml(item.department)}</p>
       <dl>
         <div><dt>職位</dt><dd>${escapeHtml(item.position)}</dd></div>
@@ -139,10 +147,15 @@ function renderCandidateCalls() {
         <div><dt>採用予定</dt><dd>${escapeHtml(item.appointmentDate)}</dd></div>
       </dl>
       <p class="candidate-note">${escapeHtml(item.note)}</p>
-      <a href="${item.source.url}" target="_blank" rel="noopener noreferrer">根拠を見る</a>
+      ${renderCandidateSources(item)}
     `;
     els.candidateCalls.appendChild(card);
   });
+}
+
+function renderCandidateSources(item) {
+  const sources = item.sources || (item.source ? [item.source] : []);
+  return sources.map(source => `<a href="${source.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label || "根拠を見る")}</a>`).join("");
 }
 
 function renderDetail(item) {

@@ -148,7 +148,7 @@ input {
 
 .summary-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
   margin-bottom: 26px;
 }
@@ -396,6 +396,12 @@ canvas {
 
 .candidate-card h3 {
   margin: 0 0 8px;
+}
+
+.candidate-name-meta {
+  margin: -4px 0 10px;
+  color: var(--cyan);
+  font-weight: 800;
 }
 
 .candidate-card p,

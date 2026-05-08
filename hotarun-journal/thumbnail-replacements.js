@@ -1,17 +1,24 @@
 (() => {
   const commonPrefix = "https://commons.wikimedia.org/wiki/Special:FilePath/";
   const imageRules = [
+    { key: "gene-expression-evolution-repeatability", file: "Computer_with_microarray.jpg", credit: "Wikimedia Commons / National Cancer Institute" },
+    { key: "termite-selfish-elements", file: "Transposable_elements_(2).png", credit: "Wikimedia Commons / Arvid Ågren and Andrew G. Clark" },
+    { key: "code-genome-editing", file: "CRISPR_Cas9.png", credit: "Wikimedia Commons / CRISPR Cas9" },
+    { key: "methylation-sensitive-cas9", file: "Cas9_Apo_Structure.png", credit: "Wikimedia Commons / Ben.lafrance" },
+    { key: "cas9-methylation", file: "Cas9_Apo_Structure.png", credit: "Wikimedia Commons / Ben.lafrance" },
+    { key: "neocortex-regulatory", file: "DNA_methylation.svg", credit: "Wikimedia Commons / Mariuswalter" },
+    { key: "ancient-streptococcus", file: "Streptococcus_pyogenes.jpg", credit: "Wikimedia Commons / CDC PHIL" },
+    { key: "ancient-dna-directional-selection", file: "Bell_Beaker_culture.jpg", credit: "Wikimedia Commons / Bell Beaker culture map" },
+    { key: "bell-beaker", file: "Bell_Beaker_Rijksmuseum_of_Oudheden_122.jpg", credit: "Wikimedia Commons / Rijksmuseum van Oudheden" },
+    { key: "roman-frontier", file: "Bell_Beaker_culture.jpg", credit: "Wikimedia Commons / archaeology map" },
     { key: "coral", file: "Blue_Acropora_coral.jpg", credit: "Wikimedia Commons / Blue Acropora coral" },
     { key: "ocean", file: "Aerial_view_of_the_Great_Barrier_Reef_74.jpg", credit: "Wikimedia Commons / Great Barrier Reef" },
     { key: "fish", file: "Threespine_stickleback.jpg", credit: "Wikimedia Commons / USFWS" },
     { key: "stickleback", file: "Threespine_stickleback.jpg", credit: "Wikimedia Commons / USFWS" },
     { key: "maize", file: "Corn_field.jpg", credit: "Wikimedia Commons / Corn field" },
     { key: "corn", file: "Corn_field.jpg", credit: "Wikimedia Commons / Corn field" },
-    { key: "ancient", file: "DNA_Double_Helix_by_NHGRI.jpg", credit: "Wikimedia Commons / NHGRI" },
-    { key: "dna", file: "DNA_Double_Helix_by_NHGRI.jpg", credit: "Wikimedia Commons / NHGRI" },
-    { key: "genome", file: "DNA_Double_Helix_by_NHGRI.jpg", credit: "Wikimedia Commons / NHGRI" },
-    { key: "cas9", file: "DNA_Double_Helix_by_NHGRI.jpg", credit: "Wikimedia Commons / NHGRI" },
-    { key: "methylation", file: "DNA_Double_Helix_by_NHGRI.jpg", credit: "Wikimedia Commons / NHGRI" },
+    { key: "cas9", file: "Cas9_Apo_Structure.png", credit: "Wikimedia Commons / Ben.lafrance" },
+    { key: "methylation", file: "DNA_methylation.svg", credit: "Wikimedia Commons / Mariuswalter" },
     { key: "influenza", file: "Influenza_virus_particle_colorized.jpg", credit: "Wikimedia Commons / influenza virus" },
     { key: "malaria", file: "Plasmodium_falciparum_ring_forms_and_gametocytes.jpg", credit: "Wikimedia Commons / CDC" },
     { key: "tuberculosis", file: "Mycobacterium_tuberculosis_SEM.jpg", credit: "Wikimedia Commons / NIAID" },
@@ -48,10 +55,7 @@
     { key: "llm", file: "Computer_lab.jpg", credit: "Wikimedia Commons / computer lab" }
   ];
 
-  const fallback = {
-    file: "DNA_Double_Helix_by_NHGRI.jpg",
-    credit: "Wikimedia Commons / NHGRI"
-  };
+  const fallback = null;
 
   function pickRuleFromText(text) {
     const haystack = String(text || "").toLowerCase();
@@ -72,11 +76,10 @@
   window.HotarunThumbnails = {
     resolve(img) {
       const replacement = pickImage(img);
+      if (!replacement) return null;
       return {
         src: replacementUrl(replacement.file),
-        credit: replacement.credit,
-        fallbackSrc: replacementUrl(fallback.file),
-        fallbackCredit: fallback.credit
+        credit: replacement.credit
       };
     }
   };
@@ -85,11 +88,11 @@
     const src = img.getAttribute("src") || "";
     if (!src.includes("assets/thumbs/") && !src.includes("../assets/thumbs/")) return;
     const replacement = window.HotarunThumbnails.resolve(img);
+    if (!replacement) return;
     img.src = replacement.src;
     img.onerror = () => {
       img.onerror = null;
-      img.src = replacement.fallbackSrc;
-      img.dataset.credit = replacement.fallbackCredit;
+      img.classList.remove("non-ai-thumb");
     };
     img.loading = "lazy";
     img.decoding = "async";

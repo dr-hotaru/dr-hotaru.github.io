@@ -666,6 +666,26 @@ footer {
   line-height: 1.35;
 }
 
+.affiliate-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.affiliate-actions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 13px;
+  border-radius: 8px;
+  background: #101722;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
 .affiliate-panel-home {
   margin: 0 auto;
   padding: 30px;

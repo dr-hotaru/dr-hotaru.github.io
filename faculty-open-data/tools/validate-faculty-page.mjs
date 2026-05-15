@@ -109,7 +109,10 @@ const context = {
     createElement: tag => new ElementMock(tag)
   },
   fetch: async url => ({
-    json: async () => JSON.parse(fs.readFileSync(path.join(base, url), "utf8"))
+    json: async () => {
+      const cleanUrl = String(url).split("?")[0];
+      return JSON.parse(fs.readFileSync(path.join(base, cleanUrl), "utf8"));
+    }
   }),
   Map,
   Set,

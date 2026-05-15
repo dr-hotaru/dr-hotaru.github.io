@@ -6,6 +6,8 @@ const state = {
   selectedId: null
 };
 
+const DATA_VERSION = "20260515-2";
+
 const els = {
   year: document.querySelector("#yearFilter"),
   field: document.querySelector("#fieldFilter"),
@@ -26,8 +28,8 @@ const els = {
 
 async function loadData() {
   const [response, achievementsResponse] = await Promise.all([
-    fetch("data/researchers.json", { cache: "no-store" }),
-    fetch("data/achievements.json", { cache: "no-store" })
+    fetch(`data/researchers.json?v=${DATA_VERSION}`, { cache: "no-store" }),
+    fetch(`data/achievements.json?v=${DATA_VERSION}`, { cache: "no-store" })
   ]);
   const data = await response.json();
   const achievementsData = await achievementsResponse.json();

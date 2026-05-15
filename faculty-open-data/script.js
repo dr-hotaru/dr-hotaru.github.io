@@ -66,7 +66,7 @@ function uniqueValues(values) {
 
 function hasPlaceholderText(value) {
   if (value === null || value === undefined) return false;
-  if (typeof value === "string") return /\?{2,}|�/.test(value);
+  if (typeof value === "string") return /\?{2,}|\uFFFD/.test(value);
   if (Array.isArray(value)) return value.some(hasPlaceholderText);
   if (typeof value === "object") return Object.values(value).some(hasPlaceholderText);
   return false;
@@ -129,6 +129,7 @@ function renderRows() {
       <td>${escapeHtml(item.field)}</td>
       <td>${formatBaselineCount(item, "leadAuthor")}</td>
       <td>${formatBaselineCount(item, "coauthored")}</td>
+      <td class="source-cell">${formatAchievementSource(item)}</td>
     `;
     row.addEventListener("click", () => {
       state.selectedId = item.id;
@@ -331,13 +332,25 @@ function formatBaselineCount(item, key) {
     return escapeHtml(value);
   }
   const metrics = item.achievements?.metrics;
-  if (!metrics) {
-    return "未集計";
+  if (key === "leadAuthor" && Number.isFinite(metrics?.baselineLeadAuthor)) {
+    return escapeHtml(metrics.baselineLeadAuthor);
   }
-  if (key === "leadAuthor") {
-    return `${escapeHtml(getMetricLabel(metrics))} ${escapeHtml(getMetricTotal(metrics))}`;
+  if (key === "coauthored" && Number.isFinite(metrics?.baselineCoauthored)) {
+    return escapeHtml(metrics.baselineCoauthored);
   }
-  return escapeHtml(getMetricSource(metrics));
+  return "未集計";
+}
+
+function formatAchievementSource(item) {
+  const baseline = item.baselinePublications || {};
+  const metrics = item.achievements?.metrics || {};
+  const primaryLink = item.achievements?.externalLinks?.[0] || item.sources?.[0] || {};
+  const label = baseline.source || metrics.source || primaryLink.label || "未集計";
+  const url = baseline.sourceUrl || primaryLink.url;
+  if (!url) {
+    return escapeHtml(label);
+  }
+  return `<a href="${escapeAttribute(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
 }
 
 function getMetricTotal(metrics) {
@@ -350,6 +363,10 @@ function getMetricLabel(metrics) {
 
 function getMetricSource(metrics) {
   return metrics.source || metrics.secondary || "公開DB";
+}
+
+function escapeAttribute(value) {
+  return escapeHtml(value).replace(/"/g, "&quot;");
 }
 
 [els.year, els.field, els.university, els.keyword].forEach(input => {

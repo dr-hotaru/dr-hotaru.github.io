@@ -194,7 +194,7 @@ input {
 
 table {
   width: 100%;
-  min-width: 920px;
+  min-width: 1040px;
   border-collapse: collapse;
 }
 
@@ -218,6 +218,18 @@ tbody tr {
 tbody tr:hover,
 tbody tr.is-active {
   background: var(--surface-soft);
+}
+
+.source-cell {
+  min-width: 132px;
+  max-width: 190px;
+}
+
+.source-cell a {
+  color: var(--cyan);
+  font-size: 13px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
 }
 
 canvas {
@@ -508,7 +520,7 @@ footer {
 
   table {
     width: max-content;
-    min-width: 720px;
+    min-width: 960px;
   }
 
   canvas {

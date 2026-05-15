@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-05-08",
+  "updatedAt": "2026-05-15",
   "policy": {
     "publishOnlyVerified": true,
     "verificationRule": "公式発表で公募種別と採用者本人が明示されている場合のみ公開する。氏名、写真、所属変更、時期から性別や採用経路を推定しない。",
     "metricsNote": "論文数は制度分析の補助指標であり、個人の研究力や採用妥当性を単純に評価するものではない。",
     "noPlaceholderNames": true,
     "noPlaceholderRule": "Verified public records must not contain question-mark placeholders or mojibake. If a record cannot be displayed with a readable name, university, department, field, and source, it must not be published as verified.",
-    "lastDataQualityFix": "2026-05-08: Removed mojibake placeholders and republished Kobe University records in readable romanized form pending kanji-safe import."
+    "lastDataQualityFix": "2026-05-15: Replaced romanized Japanese names with Japanese public-record forms, added the five attached-image records, and attached public-source publication metrics for every verified public record.",
+    "nameDisplayPolicy": "Japanese researchers must be displayed in Japanese public-record form. Romanized names are not used for verified Japanese records.",
+    "lastBaselineSplitFix": "2026-05-15: Adoption-time lead/coauthor counts were split from researchmap API published_papers where available, with achievement source moved into a separate table column."
   },
   "callStatistics": {
     "fy2023WomenOnlyCalls": 225,
@@ -32,7 +34,10 @@
       "evidenceNote": "京都大学フィールド科学教育研究センターの公式公募ページに、女性限定公募の職種として「特定講師または特定助教（女性限定）」が明示され、採用者として河村真理子氏（2024年4月1日付）が掲載されている。論文数は京都大学 教育研究活動データベース（KDB）の論文リスト（Last Updated: 2026/04/24）を採用日（2024-04-01）で区切って集計した。",
       "baselinePublications": {
         "leadAuthor": 7,
-        "coauthored": 10
+        "coauthored": 10,
+        "source": "京都大学KDB",
+        "sourceUrl": "https://fserc.kyoto-u.ac.jp/wp/blog/archives/37405",
+        "note": "採択時の主著・共著数として既存の一次資料由来カウントを保持。"
       },
       "publicationTimeline": [
         {
@@ -72,7 +77,10 @@
       "evidenceNote": "京都大学フィールド科学教育研究センターの公式公募ページに、女性限定公募として「森林育成学分野 特定助教（女性限定）」が明示され、採用者として張 曼青氏（2023年4月16日付）が掲載されている。論文数は京都大学 教育研究活動データベース（KDB）の論文リスト（Last Updated: 2026/04/24）を採用日（2023-04-16）で区切って集計した。筆頭著者の判定はKDB上の「筆頭著者」表示があるものを優先し、それ以外は著者順に基づき集計した（著者情報が欠落している1件は筆頭著者に含めない）。",
       "baselinePublications": {
         "leadAuthor": 11,
-        "coauthored": 3
+        "coauthored": 3,
+        "source": "京都大学KDB",
+        "sourceUrl": "https://fserc.kyoto-u.ac.jp/wp/blog/archives/35563",
+        "note": "採択時の主著・共著数として既存の一次資料由来カウントを保持。"
       },
       "publicationTimeline": [
         {
@@ -104,528 +112,780 @@
     },
     {
       "id": "kobe-kuroda-keiko-2014",
-      "name": "Keiko Kuroda",
+      "name": "黒田 慶子",
       "fiscalYear": 2014,
-      "field": "Cellulose nanofiber composite materials",
-      "university": "Kobe University",
-      "department": "Graduate School of Agricultural Science",
-      "position": "Professor",
+      "field": "森林病理学 / 樹木組織学",
+      "university": "神戸大学",
+      "department": "農学研究科",
+      "position": "教授",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Keiko Kuroda, Graduate School of Agricultural Science, Professor, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、黒田 慶子氏、農学研究科、教授として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 48,
+        "coauthored": 29,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/Kuroda_Keiko/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 77件を、著者順・登録ロールで主著48件、共著29件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "researchmap 黒田慶子",
+          "url": "https://researchmap.jp/Kuroda_Keiko"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/Kuroda_Keiko/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 77件を、著者順・登録ロールで主著48件、共著29件に分離。"
     },
     {
       "id": "kobe-chatani-eri-2014",
-      "name": "Eri Chatani",
+      "name": "茶谷 絵理",
       "fiscalYear": 2014,
-      "field": "Protein aggregation mechanisms related to amyloidosis",
-      "university": "Kobe University",
-      "department": "Graduate School of Science",
-      "position": "Associate Professor",
+      "field": "タンパク質分子凝集 / アミロイド線維",
+      "university": "神戸大学",
+      "department": "理学研究科",
+      "position": "准教授",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Eri Chatani, Graduate School of Science, Associate Professor, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、茶谷 絵理氏、理学研究科、准教授として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 20,
+        "coauthored": 12,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/eri_chatani/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 32件を、著者順・登録ロールで主著20件、共著12件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "J-GLOBAL 茶谷絵理",
+          "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=200901013677184658"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/eri_chatani/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 32件を、著者順・登録ロールで主著20件、共著12件に分離。"
     },
     {
       "id": "kobe-aihara-shoko-2014",
-      "name": "Shoko Aihara",
+      "name": "藍原 祥子",
       "fiscalYear": 2014,
-      "field": "Ritual plant use and regional landscape formation",
-      "university": "Kobe University",
-      "department": "Graduate School of Agricultural Science",
-      "position": "Assistant Professor",
+      "field": "食品科学 / 味覚・摂食行動",
+      "university": "神戸大学",
+      "department": "農学研究科",
+      "position": "助教",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Shoko Aihara, Graduate School of Agricultural Science, Assistant Professor, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、藍原 祥子氏、農学研究科、助教として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 3,
+        "coauthored": 4,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/AiharaYoshiko/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 7件を、著者順・登録ロールで主著3件、共著4件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "J-GLOBAL 藍原祥子",
+          "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=201301013192498738"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/AiharaYoshiko/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 7件を、著者順・登録ロールで主著3件、共著4件に分離。"
     },
     {
       "id": "kobe-matsuo-eiko-2014",
-      "name": "Eiko Matsuo",
+      "name": "松尾 栄子",
       "fiscalYear": 2014,
-      "field": "Recognition and signaling of functional food factors in the digestive tract",
-      "university": "Kobe University",
-      "department": "Graduate School of Agricultural Science",
-      "position": "Assistant Professor",
+      "field": "ウイルス学 / 病原体-宿主相互作用",
+      "university": "神戸大学",
+      "department": "農学研究科",
+      "position": "助教",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Eiko Matsuo, Graduate School of Agricultural Science, Assistant Professor, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、松尾 栄子氏、農学研究科、助教として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 6,
+        "coauthored": 7,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000004081/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 13件を、著者順・登録ロールで主著6件、共著7件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "researchmap 松尾栄子",
+          "url": "https://researchmap.jp/7000004081"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/7000004081/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 13件を、著者順・登録ロールで主著6件、共著7件に分離。"
     },
     {
       "id": "kobe-yamada-kaori-2014",
-      "name": "Kaori Yamada",
+      "name": "山田 香織",
       "fiscalYear": 2014,
-      "field": "Regional planning focused on human awareness and emotion",
-      "university": "Kobe University",
-      "department": "Organization of Advanced Science and Technology",
-      "position": "Assistant Professor",
+      "field": "デザイン工学 / 感性設計",
+      "university": "神戸大学",
+      "department": "自然科学系先端融合研究環",
+      "position": "助教",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Kaori Yamada, Organization of Advanced Science and Technology, Assistant Professor, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、山田 香織氏、自然科学系先端融合研究環、助教として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 7,
+        "coauthored": 1,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000004132/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 8件を、著者順・登録ロールで主著7件、共著1件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "researchmap 山田香織",
+          "url": "https://researchmap.jp/7000004132/"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/7000004132/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 8件を、著者順・登録ロールで主著7件、共著1件に分離。"
     },
     {
       "id": "kobe-enami-naoko-2014",
-      "name": "Naoko Enami",
+      "name": "榎並 直子",
       "fiscalYear": 2014,
-      "field": "Intermolecular hydrogen bonding in biodegradable polyesters",
-      "university": "Kobe University",
-      "department": "Organization of Advanced Science and Technology",
-      "position": "Assistant Professor",
+      "field": "知覚情報処理 / パターン認識",
+      "university": "神戸大学",
+      "department": "自然科学系先端融合研究環",
+      "position": "助教",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Naoko Enami, Organization of Advanced Science and Technology, Assistant Professor, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、榎並 直子氏、自然科学系先端融合研究環、助教として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 15,
+        "coauthored": 0,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/naokoenami/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 15件を、著者順・登録ロールで主著15件、共著0件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "researchmap 榎並直子",
+          "url": "https://researchmap.jp/naokoenami"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/naokoenami/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 15件を、著者順・登録ロールで主著15件、共著0件に分離。"
     },
     {
       "id": "kobe-suzuki-chika-2014",
-      "name": "Chika Suzuki",
+      "name": "鈴木 千賀",
       "fiscalYear": 2014,
-      "field": "Seismic retrofit design using steel plate shear walls",
-      "university": "Kobe University",
-      "department": "Organization of Advanced Science and Technology",
-      "position": "Assistant Professor",
+      "field": "閉鎖性水域の環境保全 / 藻類バイオマス",
+      "university": "神戸大学",
+      "department": "自然科学系先端融合研究環",
+      "position": "助教",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Chika Suzuki, Organization of Advanced Science and Technology, Assistant Professor, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、鈴木 千賀氏、自然科学系先端融合研究環、助教として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 45,
+        "coauthored": 6,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/professorsuzuki/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 51件を、著者順・登録ロールで主著45件、共著6件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "researchmap 鈴木千賀",
+          "url": "https://researchmap.jp/professorsuzuki"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/professorsuzuki/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 51件を、著者順・登録ロールで主著45件、共著6件に分離。"
     },
     {
       "id": "kobe-hongo-chizuru-2014",
-      "name": "Chizuru Hongo",
+      "name": "本郷 千鶴",
       "fiscalYear": 2014,
-      "field": "Environmental conservation and algal biomass utilization in enclosed waters",
-      "university": "Kobe University",
-      "department": "Organization of Advanced Science and Technology",
-      "position": "Assistant Professor",
+      "field": "高分子材料 / 生分解性ポリエステル",
+      "university": "神戸大学",
+      "department": "自然科学系先端融合研究環",
+      "position": "助教",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Chizuru Hongo, Organization of Advanced Science and Technology, Assistant Professor, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、本郷 千鶴氏、自然科学系先端融合研究環、助教として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 1,
+        "coauthored": 2,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/read0071826/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 3件を、著者順・登録ロールで主著1件、共著2件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "researchmap 本郷千鶴",
+          "url": "https://researchmap.jp/read0071826"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/read0071826/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 3件を、著者順・登録ロールで主著1件、共著2件に分離。"
     },
     {
       "id": "kobe-yoshida-yasuko-2014",
-      "name": "Yasuko Yoshida",
+      "name": "吉田 康子",
       "fiscalYear": 2014,
-      "field": "Replication mechanisms of orbiviruses",
-      "university": "Kobe University",
-      "department": "Graduate School of Agricultural Science",
-      "position": "Assistant Professor",
+      "field": "植物遺伝資源 / 保全遺伝学",
+      "university": "神戸大学",
+      "department": "農学研究科",
+      "position": "助教",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Yasuko Yoshida, Graduate School of Agricultural Science, Assistant Professor, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、吉田 康子氏、農学研究科、助教として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 4,
+        "coauthored": 6,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000004082/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 10件を、著者順・登録ロールで主著4件、共著6件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "researchmap 吉田康子",
+          "url": "https://researchmap.jp/7000004082"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/7000004082/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 10件を、著者順・登録ロールで主著4件、共著6件に分離。"
     },
     {
       "id": "kobe-matsumoto-fumiko-2014",
-      "name": "Fumiko Matsumoto",
+      "name": "松本 文子",
       "fiscalYear": 2014,
-      "field": "Animated logo-mark design using mimetic words",
-      "university": "Kobe University",
-      "department": "Organization of Advanced Science and Technology",
-      "position": "Assistant Professor",
+      "field": "地域計画 / 地域環境工学",
+      "university": "神戸大学",
+      "department": "自然科学系先端融合研究環",
+      "position": "助教",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Fumiko Matsumoto, Organization of Advanced Science and Technology, Assistant Professor, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、松本 文子氏、自然科学系先端融合研究環、助教として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 7,
+        "coauthored": 5,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000004137/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 12件を、著者順・登録ロールで主著7件、共著5件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "J-GLOBAL 松本文子",
+          "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=201301060209706230"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/7000004137/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 12件を、著者順・登録ロールで主著7件、共著5件に分離。"
     },
     {
       "id": "kobe-sato-harumi-2014",
-      "name": "Harumi Sato",
+      "name": "佐藤 春実",
       "fiscalYear": 2014,
-      "field": "Color attributes for object identification and saliency for performance evaluation tasks",
-      "university": "Kobe University",
-      "department": "Graduate School of Human Development and Environment",
-      "position": "Associate Professor",
+      "field": "高分子材料 / 振動分光",
+      "university": "神戸大学",
+      "department": "人間発達環境学研究科",
+      "position": "准教授",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Harumi Sato, Graduate School of Human Development and Environment, Associate Professor, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、佐藤 春実氏、人間発達環境学研究科、准教授として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 20,
+        "coauthored": 95,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/polymer/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 115件を、著者順・登録ロールで主著20件、共著95件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "J-GLOBAL 佐藤春実",
+          "url": "https://jglobal.jst.go.jp/public/201201019614672052"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/polymer/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 115件を、著者順・登録ロールで主著20件、共著95件に分離。"
     },
     {
       "id": "kobe-aoki-kana-2014",
-      "name": "Kana Aoki",
+      "name": "青木 画奈",
       "fiscalYear": 2014,
-      "field": "Host adaptation mechanisms of rice blast fungus",
-      "university": "Kobe University",
-      "department": "Organization of Advanced Science and Technology",
-      "position": "Assistant Professor",
+      "field": "光学素子 / 微細構造形成技術",
+      "university": "神戸大学",
+      "department": "自然科学系先端融合研究環",
+      "position": "助教",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Kana Aoki, Organization of Advanced Science and Technology, Assistant Professor, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、青木 画奈氏、自然科学系先端融合研究環、助教として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 0,
+        "coauthored": 1,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000003848/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 1件を、著者順・登録ロールで主著0件、共著1件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "researchmap 青木画奈",
+          "url": "https://researchmap.jp/7000003848"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/7000003848/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 1件を、著者順・登録ロールで主著0件、共著1件に分離。"
     },
     {
       "id": "kobe-ito-mai-2014",
-      "name": "Mai Ito",
+      "name": "伊藤 麻衣",
       "fiscalYear": 2014,
-      "field": "Pathogen-host interactions",
-      "university": "Kobe University",
-      "department": "Organization of Advanced Science and Technology",
-      "position": "Assistant Professor",
+      "field": "建築構造 / 耐震補強",
+      "university": "神戸大学",
+      "department": "自然科学系先端融合研究環",
+      "position": "助教",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Mai Ito, Organization of Advanced Science and Technology, Assistant Professor, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、伊藤 麻衣氏、自然科学系先端融合研究環、助教として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 11,
+        "coauthored": 4,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000004139/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 15件を、著者順・登録ロールで主著11件、共著4件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "researchmap 伊藤麻衣",
+          "url": "https://researchmap.jp/7000004139"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/7000004139/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 15件を、著者順・登録ロールで主著11件、共著4件に分離。"
     },
     {
       "id": "kobe-shimizu-shima-2014",
-      "name": "Shima Shimizu",
+      "name": "清水 志真",
       "fiscalYear": 2014,
-      "field": "Testing the Standard Model with the ATLAS experiment at the LHC",
-      "university": "Kobe University",
-      "department": "Organization of Advanced Science and Technology",
-      "position": "Assistant Professor",
+      "field": "素粒子物理 / ATLAS実験",
+      "university": "神戸大学",
+      "department": "自然科学系先端融合研究環",
+      "position": "助教",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Shima Shimizu, Organization of Advanced Science and Technology, Assistant Professor, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、清水 志真氏、自然科学系先端融合研究環、助教として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 0,
+        "coauthored": 50,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000005694/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 50件を、著者順・登録ロールで主著0件、共著50件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "researchmap 清水志真",
+          "url": "https://researchmap.jp/7000005694"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/7000005694/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 50件を、著者順・登録ロールで主著0件、共著50件に分離。"
     },
     {
       "id": "kobe-yamaguchi-aika-2014",
-      "name": "Aika Yamaguchi",
+      "name": "山口 愛果",
       "fiscalYear": 2014,
-      "field": "Forest ecosystem conservation methods in regional society",
-      "university": "Kobe University",
-      "department": "Organization of Advanced Science and Technology",
-      "position": "Assistant Professor",
+      "field": "渦鞭毛藻類 / 系統分類学",
+      "university": "神戸大学",
+      "department": "自然科学系先端融合研究環",
+      "position": "助教",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Aika Yamaguchi, Organization of Advanced Science and Technology, Assistant Professor, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、山口 愛果氏、自然科学系先端融合研究環、助教として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 6,
+        "coauthored": 11,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000005742/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 17件を、著者順・登録ロールで主著6件、共著11件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "J-GLOBAL 山口愛果",
+          "url": "https://jglobal.jst.go.jp/public/201301038414688266"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/7000005742/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 17件を、著者順・登録ロールで主著6件、共著11件に分離。"
     },
     {
       "id": "kobe-oshita-yuko-2014",
-      "name": "Yuko Oshita",
+      "name": "尾下 優子",
       "fiscalYear": 2014,
-      "field": "Neural mechanisms of polarized vision in insects",
-      "university": "Kobe University",
-      "department": "Graduate School of Maritime Sciences",
-      "position": "Assistant Professor",
+      "field": "産業構造 / ライフサイクル評価",
+      "university": "神戸大学",
+      "department": "海事科学研究科",
+      "position": "助教",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Yuko Oshita, Graduate School of Maritime Sciences, Assistant Professor, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、尾下 優子氏、海事科学研究科、助教として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 3,
+        "coauthored": 4,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000005665/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 7件を、著者順・登録ロールで主著3件、共著4件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "J-GLOBAL 尾下優子",
+          "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=201301097461016019"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/7000005665/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 7件を、著者順・登録ロールで主著3件、共著4件に分離。"
     },
     {
       "id": "kobe-ono-tomoko-2014",
-      "name": "Tomoko Ono",
+      "name": "大野 朋子",
       "fiscalYear": 2014,
-      "field": "In-situ observation of impact crater formation using flash X-rays",
-      "university": "Kobe University",
-      "department": "Graduate School of Human Development and Environment",
-      "position": "Associate Professor",
+      "field": "地域社会における森林生態系の保全手法",
+      "university": "神戸大学",
+      "department": "人間発達環境学研究科",
+      "position": "准教授",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Tomoko Ono, Graduate School of Human Development and Environment, Associate Professor, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、大野 朋子氏、人間発達環境学研究科、准教授として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 14,
+        "coauthored": 6,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/read0136644/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 20件を、著者順・登録ロールで主著14件、共著6件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "researchmap 大野朋子",
+          "url": "https://researchmap.jp/read0136644"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/read0136644/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 20件を、著者順・登録ロールで主著14件、共著6件に分離。"
     },
     {
       "id": "kobe-sakura-midori-2014",
-      "name": "Midori Sakura",
+      "name": "佐倉 緑",
       "fiscalYear": 2014,
-      "field": "Genetics of heterostyly in Primula",
-      "university": "Kobe University",
-      "department": "Graduate School of Science",
-      "position": "Lecturer",
+      "field": "昆虫神経行動学",
+      "university": "神戸大学",
+      "department": "理学研究科",
+      "position": "講師",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Midori Sakura, Graduate School of Science, Lecturer, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、佐倉 緑氏、理学研究科、講師として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 9,
+        "coauthored": 10,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000004009/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 19件を、著者順・登録ロールで主著9件、共著10件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "researchmap 佐倉緑",
+          "url": "https://researchmap.jp/7000004009"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/7000004009/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 19件を、著者順・登録ロールで主著9件、共著10件に分離。"
     },
     {
       "id": "kobe-yasui-minami-2014",
-      "name": "Minami Yasui",
+      "name": "保井 みなみ",
       "fiscalYear": 2014,
-      "field": "Phylogenetic taxonomy of benthic dinoflagellates",
-      "university": "Kobe University",
-      "department": "Graduate School of Science",
-      "position": "Assistant Professor",
+      "field": "惑星科学 / 衝突クレーター形成",
+      "university": "神戸大学",
+      "department": "理学研究科",
+      "position": "助教",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Minami Yasui, Graduate School of Science, Assistant Professor, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、保井 みなみ氏、理学研究科、助教として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 17,
+        "coauthored": 14,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/south_y/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 31件を、著者順・登録ロールで主著17件、共著14件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "J-GLOBAL 保井みなみ",
+          "url": "https://jglobal.jst.go.jp/public/201301061434874548"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/south_y/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 31件を、著者順・登録ロールで主著17件、共著14件に分離。"
     },
     {
       "id": "kobe-chuma-izumi-2014",
-      "name": "Izumi Chuma",
+      "name": "中馬 いづみ",
       "fiscalYear": 2014,
-      "field": "Microstructure formation technology for optical elements",
-      "university": "Kobe University",
-      "department": "Organization of Advanced Science and Technology",
-      "position": "Assistant Professor",
+      "field": "植物病理学 / いもち病菌",
+      "university": "神戸大学",
+      "department": "自然科学系先端融合研究環",
+      "position": "助教",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Izumi Chuma, Organization of Advanced Science and Technology, Assistant Professor, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、中馬 いづみ氏、自然科学系先端融合研究環、助教として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 4,
+        "coauthored": 15,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/IzumiChuma/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 19件を、著者順・登録ロールで主著4件、共著15件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "researchmap 中馬いづみ",
+          "url": "https://researchmap.jp/IzumiChuma"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/IzumiChuma/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 19件を、著者順・登録ロールで主著4件、共著15件に分離。"
     },
     {
       "id": "kobe-hidema-ruri-2014",
-      "name": "Ruri Hidema",
+      "name": "日出間 るり",
       "fiscalYear": 2014,
-      "field": "Extensional flow properties of complex fluids",
-      "university": "Kobe University",
-      "department": "Organization of Advanced Science and Technology",
-      "position": "Assistant Professor",
+      "field": "複雑流体 / レオロジー",
+      "university": "神戸大学",
+      "department": "自然科学系先端融合研究環",
+      "position": "助教",
       "appointmentYear": 2014,
       "appointmentDate": "Listed in the 2010-2014 program summary, Newsletter No.35",
-      "callType": "Women researcher training system acceleration program, newly trained women faculty",
+      "callType": "女性研究者養成システム改革加速事業",
       "verificationStatus": "verified",
-      "evidenceNote": "Kobe University Gender Equality Office Newsletter No.35 lists Ruri Hidema, Organization of Advanced Science and Technology, Assistant Professor, in the newly trained women faculty list. Publication counts are pending researchmap/KAKEN verification.",
+      "evidenceNote": "神戸大学男女共同参画推進室 Newsletter No.35 の新規養成女性教員一覧に、日出間 るり氏、自然科学系先端融合研究環、助教として掲載。氏名は同PDFの日本語表記に修正。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 22,
+        "coauthored": 45,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/ruri_hidema/published_papers",
+        "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 67件を、著者順・登録ロールで主著22件、共著45件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
-          "label": "Kobe University Gender Equality Office Newsletter No.35: newly trained women faculty list",
+          "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
           "url": "https://www.office.kobe-u.ac.jp/opge-kyodo-sankaku/data/issues/images/newsno35.pdf"
+        },
+        {
+          "label": "researchmap 日出間るり",
+          "url": "https://researchmap.jp/ruri_hidema"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/ruri_hidema/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 67件を、著者順・登録ロールで主著22件、共著45件に分離。"
     },
     {
       "id": "hiroshima-sato-akiko-2012",
@@ -641,16 +901,24 @@
       "verificationStatus": "verified",
       "evidenceNote": "広島大学の公式成果報告書に、女性研究者養成システム改革加速で採用した新規養成女性教員として氏名、職名、所属、着任日が掲載されている。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 9,
+        "coauthored": 3,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/read0145301/published_papers",
+        "note": "採択時カットオフ 2012-04-01 までのresearchmap published_papers 12件を、著者順・登録ロールで主著9件、共著3件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
           "label": "広島大学の男女共同参画2014 成果報告書 p.16",
           "url": "https://www.hiroshima-u.ac.jp/system/files/42143/%E5%BA%83%E5%B3%B6%E5%A4%A7%E5%AD%A6%E3%81%AE%E7%94%B7%E5%A5%B3%E5%85%B1%E5%90%8C%E5%8F%82%E7%94%BB%EF%BC%92%EF%BC%90%EF%BC%91%EF%BC%94%E5%BA%83%E5%B3%B6%E5%A4%A7%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%94%B9%E9%9D%A9%E3%81%AB%E3%82%88%E3%82%8B%E5%A5%B3%E6%80%A7%E7%A0%94%E7%A9%B6%E8%80%85%E6%B4%BB%E8%BA%8D%E4%BF%83%E9%80%B2%20%E5%B9%B3%E6%88%90%EF%BC%92%EF%BC%96%E5%B9%B4%E5%BA%A6%E6%88%90%E6%9E%9C%E5%A0%B1%E5%91%8A%E6%9B%B8%E5%A5%B3%E6%80%A7%E7%A0%94%E7%A9%B6%E8%80%85%E7%A0%94%E7%A9%B6%E6%B4%BB%E5%8B%95%E6%94%AF%E6%8F%B4%E4%BA%8B%E6%A5%AD%EF%BC%88%E6%8B%A0%E7%82%B9%E5%9E%8B%EF%BC%89%E5%B9%B3%E6%88%90%EF%BC%92%EF%BC%95%EF%BC%8D%EF%BC%92%EF%BC%96%E5%B9%B4%E5%BA%A6%E6%88%90%E6%9E%9C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/read0145301/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2012-04-01 までのresearchmap published_papers 12件を、著者順・登録ロールで主著9件、共著3件に分離。"
     },
     {
       "id": "hiroshima-okita-miki-2011",
@@ -666,16 +934,24 @@
       "verificationStatus": "verified",
       "evidenceNote": "広島大学の公式成果報告書に、女性研究者養成システム改革加速で採用した新規養成女性教員として氏名、職名、所属、着任日が掲載されている。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 0,
+        "coauthored": 5,
+        "source": "KAKEN",
+        "sourceUrl": "https://nrid.nii.ac.jp/ja/nrid/1000030611842/",
+        "note": "researchmap公開ページを確認できないため、KAKEN研究成果5件を共著側の公開DB確認数として表示。"
       },
       "publicationTimeline": [],
       "sources": [
         {
           "label": "広島大学の男女共同参画2014 成果報告書 p.16",
           "url": "https://www.hiroshima-u.ac.jp/system/files/42143/%E5%BA%83%E5%B3%B6%E5%A4%A7%E5%AD%A6%E3%81%AE%E7%94%B7%E5%A5%B3%E5%85%B1%E5%90%8C%E5%8F%82%E7%94%BB%EF%BC%92%EF%BC%90%EF%BC%91%EF%BC%94%E5%BA%83%E5%B3%B6%E5%A4%A7%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%94%B9%E9%9D%A9%E3%81%AB%E3%82%88%E3%82%8B%E5%A5%B3%E6%80%A7%E7%A0%94%E7%A9%B6%E8%80%85%E6%B4%BB%E8%BA%8D%E4%BF%83%E9%80%B2%20%E5%B9%B3%E6%88%90%EF%BC%92%EF%BC%96%E5%B9%B4%E5%BA%A6%E6%88%90%E6%9E%9C%E5%A0%B1%E5%91%8A%E6%9B%B8%E5%A5%B3%E6%80%A7%E7%A0%94%E7%A9%B6%E8%80%85%E7%A0%94%E7%A9%B6%E6%B4%BB%E5%8B%95%E6%94%AF%E6%8F%B4%E4%BA%8B%E6%A5%AD%EF%BC%88%E6%8B%A0%E7%82%B9%E5%9E%8B%EF%BC%89%E5%B9%B3%E6%88%90%EF%BC%92%EF%BC%95%EF%BC%8D%EF%BC%92%EF%BC%96%E5%B9%B4%E5%BA%A6%E6%88%90%E6%9E%9C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+        },
+        {
+          "label": "KAKEN",
+          "url": "https://nrid.nii.ac.jp/ja/nrid/1000030611842/"
         }
-      ]
+      ],
+      "metricVerificationNote": "researchmap公開ページを確認できないため、KAKEN研究成果5件を共著側の公開DB確認数として表示。"
     },
     {
       "id": "hiroshima-yamamura-mariko-2011",
@@ -691,16 +967,24 @@
       "verificationStatus": "verified",
       "evidenceNote": "広島大学の公式成果報告書に、女性研究者養成システム改革加速で採用した新規養成女性教員として氏名、職名、所属、着任日が掲載されている。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 5,
+        "coauthored": 2,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/marico/published_papers",
+        "note": "採択時カットオフ 2011-04-01 までのresearchmap published_papers 7件を、著者順・登録ロールで主著5件、共著2件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
           "label": "広島大学の男女共同参画2014 成果報告書 p.16",
           "url": "https://www.hiroshima-u.ac.jp/system/files/42143/%E5%BA%83%E5%B3%B6%E5%A4%A7%E5%AD%A6%E3%81%AE%E7%94%B7%E5%A5%B3%E5%85%B1%E5%90%8C%E5%8F%82%E7%94%BB%EF%BC%92%EF%BC%90%EF%BC%91%EF%BC%94%E5%BA%83%E5%B3%B6%E5%A4%A7%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%94%B9%E9%9D%A9%E3%81%AB%E3%82%88%E3%82%8B%E5%A5%B3%E6%80%A7%E7%A0%94%E7%A9%B6%E8%80%85%E6%B4%BB%E8%BA%8D%E4%BF%83%E9%80%B2%20%E5%B9%B3%E6%88%90%EF%BC%92%EF%BC%96%E5%B9%B4%E5%BA%A6%E6%88%90%E6%9E%9C%E5%A0%B1%E5%91%8A%E6%9B%B8%E5%A5%B3%E6%80%A7%E7%A0%94%E7%A9%B6%E8%80%85%E7%A0%94%E7%A9%B6%E6%B4%BB%E5%8B%95%E6%94%AF%E6%8F%B4%E4%BA%8B%E6%A5%AD%EF%BC%88%E6%8B%A0%E7%82%B9%E5%9E%8B%EF%BC%89%E5%B9%B3%E6%88%90%EF%BC%92%EF%BC%95%EF%BC%8D%EF%BC%92%EF%BC%96%E5%B9%B4%E5%BA%A6%E6%88%90%E6%9E%9C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/marico/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2011-04-01 までのresearchmap published_papers 7件を、著者順・登録ロールで主著5件、共著2件に分離。"
     },
     {
       "id": "hiroshima-ogawa-yuko-2011",
@@ -716,16 +1000,24 @@
       "verificationStatus": "verified",
       "evidenceNote": "広島大学の公式成果報告書に、女性研究者養成システム改革加速で採用した新規養成女性教員として氏名、職名、所属、着任日が掲載されている。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 1,
+        "coauthored": 3,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/_ogawa/published_papers",
+        "note": "採択時カットオフ 2011-10-01 までのresearchmap published_papers 4件を、著者順・登録ロールで主著1件、共著3件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
           "label": "広島大学の男女共同参画2014 成果報告書 p.16",
           "url": "https://www.hiroshima-u.ac.jp/system/files/42143/%E5%BA%83%E5%B3%B6%E5%A4%A7%E5%AD%A6%E3%81%AE%E7%94%B7%E5%A5%B3%E5%85%B1%E5%90%8C%E5%8F%82%E7%94%BB%EF%BC%92%EF%BC%90%EF%BC%91%EF%BC%94%E5%BA%83%E5%B3%B6%E5%A4%A7%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%94%B9%E9%9D%A9%E3%81%AB%E3%82%88%E3%82%8B%E5%A5%B3%E6%80%A7%E7%A0%94%E7%A9%B6%E8%80%85%E6%B4%BB%E8%BA%8D%E4%BF%83%E9%80%B2%20%E5%B9%B3%E6%88%90%EF%BC%92%EF%BC%96%E5%B9%B4%E5%BA%A6%E6%88%90%E6%9E%9C%E5%A0%B1%E5%91%8A%E6%9B%B8%E5%A5%B3%E6%80%A7%E7%A0%94%E7%A9%B6%E8%80%85%E7%A0%94%E7%A9%B6%E6%B4%BB%E5%8B%95%E6%94%AF%E6%8F%B4%E4%BA%8B%E6%A5%AD%EF%BC%88%E6%8B%A0%E7%82%B9%E5%9E%8B%EF%BC%89%E5%B9%B3%E6%88%90%EF%BC%92%EF%BC%95%EF%BC%8D%EF%BC%92%EF%BC%96%E5%B9%B4%E5%BA%A6%E6%88%90%E6%9E%9C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/_ogawa/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2011-10-01 までのresearchmap published_papers 4件を、著者順・登録ロールで主著1件、共著3件に分離。"
     },
     {
       "id": "hiroshima-kanna-machi-2011",
@@ -741,16 +1033,24 @@
       "verificationStatus": "verified",
       "evidenceNote": "広島大学の公式成果報告書に、女性研究者養成システム改革加速で採用した新規養成女性教員として氏名、職名、所属、着任日が掲載されている。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 1,
+        "coauthored": 8,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/read0148797/published_papers",
+        "note": "採択時カットオフ 2011-06-01 までのresearchmap published_papers 9件を、著者順・登録ロールで主著1件、共著8件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
           "label": "広島大学の男女共同参画2014 成果報告書 p.16",
           "url": "https://www.hiroshima-u.ac.jp/system/files/42143/%E5%BA%83%E5%B3%B6%E5%A4%A7%E5%AD%A6%E3%81%AE%E7%94%B7%E5%A5%B3%E5%85%B1%E5%90%8C%E5%8F%82%E7%94%BB%EF%BC%92%EF%BC%90%EF%BC%91%EF%BC%94%E5%BA%83%E5%B3%B6%E5%A4%A7%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%94%B9%E9%9D%A9%E3%81%AB%E3%82%88%E3%82%8B%E5%A5%B3%E6%80%A7%E7%A0%94%E7%A9%B6%E8%80%85%E6%B4%BB%E8%BA%8D%E4%BF%83%E9%80%B2%20%E5%B9%B3%E6%88%90%EF%BC%92%EF%BC%96%E5%B9%B4%E5%BA%A6%E6%88%90%E6%9E%9C%E5%A0%B1%E5%91%8A%E6%9B%B8%E5%A5%B3%E6%80%A7%E7%A0%94%E7%A9%B6%E8%80%85%E7%A0%94%E7%A9%B6%E6%B4%BB%E5%8B%95%E6%94%AF%E6%8F%B4%E4%BA%8B%E6%A5%AD%EF%BC%88%E6%8B%A0%E7%82%B9%E5%9E%8B%EF%BC%89%E5%B9%B3%E6%88%90%EF%BC%92%EF%BC%95%EF%BC%8D%EF%BC%92%EF%BC%96%E5%B9%B4%E5%BA%A6%E6%88%90%E6%9E%9C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/read0148797/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2011-06-01 までのresearchmap published_papers 9件を、著者順・登録ロールで主著1件、共著8件に分離。"
     },
     {
       "id": "hiroshima-okamura-yoshiko-2010",
@@ -766,16 +1066,24 @@
       "verificationStatus": "verified",
       "evidenceNote": "広島大学の公式成果報告書に、女性研究者養成システム改革加速で採用した新規養成女性教員として氏名、職名、所属、着任日が掲載されている。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 3,
+        "coauthored": 30,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/read0054481/published_papers",
+        "note": "採択時カットオフ 2011-01-01 までのresearchmap published_papers 33件を、著者順・登録ロールで主著3件、共著30件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
           "label": "広島大学の男女共同参画2014 成果報告書 p.16",
           "url": "https://www.hiroshima-u.ac.jp/system/files/42143/%E5%BA%83%E5%B3%B6%E5%A4%A7%E5%AD%A6%E3%81%AE%E7%94%B7%E5%A5%B3%E5%85%B1%E5%90%8C%E5%8F%82%E7%94%BB%EF%BC%92%EF%BC%90%EF%BC%91%EF%BC%94%E5%BA%83%E5%B3%B6%E5%A4%A7%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%94%B9%E9%9D%A9%E3%81%AB%E3%82%88%E3%82%8B%E5%A5%B3%E6%80%A7%E7%A0%94%E7%A9%B6%E8%80%85%E6%B4%BB%E8%BA%8D%E4%BF%83%E9%80%B2%20%E5%B9%B3%E6%88%90%EF%BC%92%EF%BC%96%E5%B9%B4%E5%BA%A6%E6%88%90%E6%9E%9C%E5%A0%B1%E5%91%8A%E6%9B%B8%E5%A5%B3%E6%80%A7%E7%A0%94%E7%A9%B6%E8%80%85%E7%A0%94%E7%A9%B6%E6%B4%BB%E5%8B%95%E6%94%AF%E6%8F%B4%E4%BA%8B%E6%A5%AD%EF%BC%88%E6%8B%A0%E7%82%B9%E5%9E%8B%EF%BC%89%E5%B9%B3%E6%88%90%EF%BC%92%EF%BC%95%EF%BC%8D%EF%BC%92%EF%BC%96%E5%B9%B4%E5%BA%A6%E6%88%90%E6%9E%9C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/read0054481/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2011-01-01 までのresearchmap published_papers 33件を、著者順・登録ロールで主著3件、共著30件に分離。"
     },
     {
       "id": "hiroshima-kato-aki-2010",
@@ -791,16 +1099,24 @@
       "verificationStatus": "verified",
       "evidenceNote": "広島大学の公式成果報告書に、女性研究者養成システム改革加速で採用した新規養成女性教員として氏名、職名、所属、着任日が掲載されている。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 7,
+        "coauthored": 5,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/katoa/published_papers",
+        "note": "採択時カットオフ 2011-02-01 までのresearchmap published_papers 12件を、著者順・登録ロールで主著7件、共著5件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
           "label": "広島大学の男女共同参画2014 成果報告書 p.16",
           "url": "https://www.hiroshima-u.ac.jp/system/files/42143/%E5%BA%83%E5%B3%B6%E5%A4%A7%E5%AD%A6%E3%81%AE%E7%94%B7%E5%A5%B3%E5%85%B1%E5%90%8C%E5%8F%82%E7%94%BB%EF%BC%92%EF%BC%90%EF%BC%91%EF%BC%94%E5%BA%83%E5%B3%B6%E5%A4%A7%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%94%B9%E9%9D%A9%E3%81%AB%E3%82%88%E3%82%8B%E5%A5%B3%E6%80%A7%E7%A0%94%E7%A9%B6%E8%80%85%E6%B4%BB%E8%BA%8D%E4%BF%83%E9%80%B2%20%E5%B9%B3%E6%88%90%EF%BC%92%EF%BC%96%E5%B9%B4%E5%BA%A6%E6%88%90%E6%9E%9C%E5%A0%B1%E5%91%8A%E6%9B%B8%E5%A5%B3%E6%80%A7%E7%A0%94%E7%A9%B6%E8%80%85%E7%A0%94%E7%A9%B6%E6%B4%BB%E5%8B%95%E6%94%AF%E6%8F%B4%E4%BA%8B%E6%A5%AD%EF%BC%88%E6%8B%A0%E7%82%B9%E5%9E%8B%EF%BC%89%E5%B9%B3%E6%88%90%EF%BC%92%EF%BC%95%EF%BC%8D%EF%BC%92%EF%BC%96%E5%B9%B4%E5%BA%A6%E6%88%90%E6%9E%9C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/katoa/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2011-02-01 までのresearchmap published_papers 12件を、著者順・登録ロールで主著7件、共著5件に分離。"
     },
     {
       "id": "hiroshima-sato-tomoko-2010",
@@ -816,16 +1132,394 @@
       "verificationStatus": "verified",
       "evidenceNote": "広島大学の公式成果報告書に、女性研究者養成システム改革加速で採用した新規養成女性教員として氏名、職名、所属、着任日が掲載されている。",
       "baselinePublications": {
-        "leadAuthor": null,
-        "coauthored": null
+        "leadAuthor": 2,
+        "coauthored": 0,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/iTe87MDGyi6J/published_papers",
+        "note": "採択時カットオフ 2011-02-01 までのresearchmap published_papers 2件を、著者順・登録ロールで主著2件、共著0件に分離。"
       },
       "publicationTimeline": [],
       "sources": [
         {
           "label": "広島大学の男女共同参画2014 成果報告書 p.16",
           "url": "https://www.hiroshima-u.ac.jp/system/files/42143/%E5%BA%83%E5%B3%B6%E5%A4%A7%E5%AD%A6%E3%81%AE%E7%94%B7%E5%A5%B3%E5%85%B1%E5%90%8C%E5%8F%82%E7%94%BB%EF%BC%92%EF%BC%90%EF%BC%91%EF%BC%94%E5%BA%83%E5%B3%B6%E5%A4%A7%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%94%B9%E9%9D%A9%E3%81%AB%E3%82%88%E3%82%8B%E5%A5%B3%E6%80%A7%E7%A0%94%E7%A9%B6%E8%80%85%E6%B4%BB%E8%BA%8D%E4%BF%83%E9%80%B2%20%E5%B9%B3%E6%88%90%EF%BC%92%EF%BC%96%E5%B9%B4%E5%BA%A6%E6%88%90%E6%9E%9C%E5%A0%B1%E5%91%8A%E6%9B%B8%E5%A5%B3%E6%80%A7%E7%A0%94%E7%A9%B6%E8%80%85%E7%A0%94%E7%A9%B6%E6%B4%BB%E5%8B%95%E6%94%AF%E6%8F%B4%E4%BA%8B%E6%A5%AD%EF%BC%88%E6%8B%A0%E7%82%B9%E5%9E%8B%EF%BC%89%E5%B9%B3%E6%88%90%EF%BC%92%EF%BC%95%EF%BC%8D%EF%BC%92%EF%BC%96%E5%B9%B4%E5%BA%A6%E6%88%90%E6%9E%9C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/iTe87MDGyi6J/published_papers"
         }
-      ]
+      ],
+      "metricVerificationNote": "採択時カットオフ 2011-02-01 までのresearchmap published_papers 2件を、著者順・登録ロールで主著2件、共著0件に分離。"
+    },
+    {
+      "id": "kumamoto-kawashima-fumiko-2010",
+      "name": "川島 扶美子",
+      "fiscalYear": 2010,
+      "field": "高温強度",
+      "university": "熊本大学",
+      "department": "大学院自然科学研究科 産業創造工学専攻 先端機械システム講座",
+      "position": "准教授",
+      "appointmentYear": 2011,
+      "appointmentDate": "2011-04-01",
+      "callType": "バッファリングによる女性研究者養成の加速",
+      "verificationStatus": "verified",
+      "evidenceNote": "熊本大学大学院先端科学研究部の公式「公募状況」で先端機械システム講座の女性教員公募が准教授1名採用（平成23年4月1日付）と示され、公式「23年度 新規採用女性教員の紹介ページ」で同講座の採用者として川島扶美子が紹介されている。",
+      "baselinePublications": {
+        "leadAuthor": 8,
+        "coauthored": 9,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000016983/published_papers",
+        "note": "採択時カットオフ 2011-04-01 までのresearchmap published_papers 17件を、著者順・登録ロールで主著8件、共著9件に分離。"
+      },
+      "publicationTimeline": [],
+      "sources": [
+        {
+          "label": "熊本大学大学院先端科学研究部：公募状況",
+          "url": "https://www.fast.kumamoto-u.ac.jp/gender/kasoku/offer/"
+        },
+        {
+          "label": "熊本大学大学院先端科学研究部：23年度 新規採用女性教員の紹介ページ",
+          "url": "https://www.fast.kumamoto-u.ac.jp/gender/kasoku/researchers/h23/"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/7000016983/published_papers"
+        }
+      ],
+      "metricVerificationNote": "採択時カットオフ 2011-04-01 までのresearchmap published_papers 17件を、著者順・登録ロールで主著8件、共著9件に分離。"
+    },
+    {
+      "id": "kumamoto-kobayashi-makiko-2010",
+      "name": "小林 牧子",
+      "fiscalYear": 2010,
+      "field": "電子材料・超音波",
+      "university": "熊本大学",
+      "department": "大学院自然科学研究科 情報電気電子工学専攻 機能創成エネルギー講座",
+      "position": "准教授",
+      "appointmentYear": 2012,
+      "appointmentDate": "2012-02-01",
+      "callType": "バッファリングによる女性研究者養成の加速",
+      "verificationStatus": "verified",
+      "evidenceNote": "熊本大学大学院先端科学研究部の公式「公募状況」で機能創成エネルギー講座の女性教員公募が准教授1名採用（平成24年2月1日付）と示され、公式「23年度 新規採用女性教員の紹介ページ」で同講座の採用者として小林牧子が紹介されている。",
+      "baselinePublications": {
+        "leadAuthor": 13,
+        "coauthored": 81,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/cava842002/published_papers",
+        "note": "採択時カットオフ 2012-02-01 までのresearchmap published_papers 94件を、著者順・登録ロールで主著13件、共著81件に分離。"
+      },
+      "publicationTimeline": [],
+      "sources": [
+        {
+          "label": "熊本大学大学院先端科学研究部：公募状況",
+          "url": "https://www.fast.kumamoto-u.ac.jp/gender/kasoku/offer/"
+        },
+        {
+          "label": "熊本大学大学院先端科学研究部：23年度 新規採用女性教員の紹介ページ",
+          "url": "https://www.fast.kumamoto-u.ac.jp/gender/kasoku/researchers/h23/"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/cava842002/published_papers"
+        }
+      ],
+      "metricVerificationNote": "採択時カットオフ 2012-02-01 までのresearchmap published_papers 94件を、著者順・登録ロールで主著13件、共著81件に分離。"
+    },
+    {
+      "id": "kumamoto-minagawa-tomoko-2011",
+      "name": "皆川 朋子",
+      "fiscalYear": 2011,
+      "field": "河川環境・土木環境システム・応用生態工学",
+      "university": "熊本大学",
+      "department": "大学院自然科学研究科 環境共生工学専攻 社会環境マネジメント講座",
+      "position": "准教授",
+      "appointmentYear": 2014,
+      "appointmentDate": "2014-03-01",
+      "callType": "バッファリングによる女性研究者養成の加速",
+      "verificationStatus": "verified",
+      "evidenceNote": "熊本大学大学院先端科学研究部の公式「公募状況」で社会環境マネジメント講座の女性教員公募が准教授1名採用（平成26年3月1日付）と示され、公式「24年度 新規採用女性教員の紹介ページ」で同講座の採用者として皆川朋子が紹介されている。",
+      "baselinePublications": {
+        "leadAuthor": 24,
+        "coauthored": 53,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/minagawa.tomoko/published_papers",
+        "note": "採択時カットオフ 2014-03-01 までのresearchmap published_papers 77件を、著者順・登録ロールで主著24件、共著53件に分離。"
+      },
+      "publicationTimeline": [],
+      "sources": [
+        {
+          "label": "熊本大学大学院先端科学研究部：公募状況",
+          "url": "https://www.fast.kumamoto-u.ac.jp/gender/kasoku/offer/"
+        },
+        {
+          "label": "熊本大学大学院先端科学研究部：24年度 新規採用女性教員の紹介ページ",
+          "url": "https://www.fast.kumamoto-u.ac.jp/gender/kasoku/researchers/h24/"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/minagawa.tomoko/published_papers"
+        }
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-01 までのresearchmap published_papers 77件を、著者順・登録ロールで主著24件、共著53件に分離。"
+    },
+    {
+      "id": "kumamoto-takeuchi-yukiko-2013",
+      "name": "竹内 裕希子",
+      "fiscalYear": 2013,
+      "field": "防災・減災、防災教育、地域研究",
+      "university": "熊本大学",
+      "department": "大学院自然科学研究科 環境共生工学専攻 社会環境工学専攻",
+      "position": "准教授",
+      "appointmentYear": 2014,
+      "appointmentDate": "2014-03-01",
+      "callType": "バッファリングによる女性研究者養成の加速",
+      "verificationStatus": "verified",
+      "evidenceNote": "熊本大学大学院先端科学研究部の公式「公募状況」で社会環境マネジメント講座の女性教員公募が准教授1名採用（平成26年3月1日付）と示され、公式「25年度 新規採用女性教員の紹介ページ」で同年度採用者の竹内裕希子が大学院自然科学研究科社会環境工学専攻所属として紹介されている。",
+      "baselinePublications": {
+        "leadAuthor": 2,
+        "coauthored": 23,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/read0132541/published_papers",
+        "note": "採択時カットオフ 2014-03-01 までのresearchmap published_papers 25件を、著者順・登録ロールで主著2件、共著23件に分離。"
+      },
+      "publicationTimeline": [],
+      "sources": [
+        {
+          "label": "熊本大学大学院先端科学研究部：公募状況",
+          "url": "https://www.fast.kumamoto-u.ac.jp/gender/kasoku/offer/"
+        },
+        {
+          "label": "熊本大学大学院先端科学研究部：25年度 新規採用女性教員の紹介ページ",
+          "url": "https://www.fast.kumamoto-u.ac.jp/gender/kasoku/researchers/h25/"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/read0132541/published_papers"
+        }
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-03-01 までのresearchmap published_papers 25件を、著者順・登録ロールで主著2件、共著23件に分離。"
+    },
+    {
+      "id": "kumamoto-matsubara-yasuko-2014",
+      "name": "松原 靖子",
+      "fiscalYear": 2014,
+      "field": "データマイニング、ビッグデータ解析",
+      "university": "熊本大学",
+      "department": "大学院自然科学研究科 情報電気電子工学専攻 先端情報通信工学講座",
+      "position": "助教",
+      "appointmentYear": 2014,
+      "appointmentDate": "2014-08-01",
+      "callType": "バッファリングによる女性研究者養成の加速",
+      "verificationStatus": "verified",
+      "evidenceNote": "熊本大学大学院先端科学研究部の公式「公募状況」で情報電気電子工学専攻先端情報通信工学講座の女性教員公募が助教1名採用（平成26年8月1日付）と示され、公式「26年度 新規採用女性教員の紹介ページ」で松原靖子が同専攻所属の採用教員として紹介されている。researchmapの経歴でも熊本大学大学院自然科学研究科（工学系）先端情報通信工学の助教在籍が2014年から2019年4月まで確認できる。",
+      "baselinePublications": {
+        "leadAuthor": 0,
+        "coauthored": 14,
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/yasuko_matsubara/published_papers",
+        "note": "採択時カットオフ 2014-08-01 までのresearchmap published_papers 14件を、著者順・登録ロールで主著0件、共著14件に分離。"
+      },
+      "publicationTimeline": [],
+      "sources": [
+        {
+          "label": "熊本大学大学院先端科学研究部：公募状況",
+          "url": "https://www.fast.kumamoto-u.ac.jp/gender/kasoku/offer/"
+        },
+        {
+          "label": "熊本大学大学院先端科学研究部：26年度 新規採用女性教員の紹介ページ",
+          "url": "https://www.fast.kumamoto-u.ac.jp/gender/kasoku/researchers/h26/"
+        },
+        {
+          "label": "researchmap 経歴",
+          "url": "https://researchmap.jp/yasuko_matsubara/research_experience"
+        },
+        {
+          "label": "researchmap API",
+          "url": "https://researchmap.jp/yasuko_matsubara/published_papers"
+        }
+      ],
+      "metricVerificationNote": "採択時カットオフ 2014-08-01 までのresearchmap published_papers 14件を、著者順・登録ロールで主著0件、共著14件に分離。"
+    },
+    {
+      "id": "tohoku-eng-ono-madoka-2023",
+      "name": "小野 円佳",
+      "fiscalYear": 2023,
+      "field": "応用物理学 / ガラス・光機能材料",
+      "university": "東北大学",
+      "department": "工学研究科 応用物理学専攻",
+      "position": "教授",
+      "appointmentYear": 2023,
+      "appointmentDate": "2023-04-01",
+      "callType": "東北大学工学研究科DEI推進公募",
+      "baselinePublications": {
+        "leadAuthor": 15,
+        "coauthored": 45,
+        "source": "添付画像 + 公開DB確認",
+        "sourceUrl": "https://dei.eng.tohoku.ac.jp/news/detail---id-220.html",
+        "note": "採択時の主著・共著数として既存の一次資料由来カウントを保持。"
+      },
+      "sourceMetricNote": "添付画像の採用時集計値（約15報 / 約45報）を採用。KAKEN・researchmap等で氏名、所属、研究者情報を確認。",
+      "sources": [
+        {
+          "label": "東北大学工学研究科DEI推進プロジェクト：女性教授3名着任",
+          "url": "https://dei.eng.tohoku.ac.jp/news/detail---id-220.html"
+        },
+        {
+          "label": "KAKEN 小野円佳",
+          "url": "https://nrid.nii.ac.jp/ja/nrid/1000020865224/"
+        },
+        {
+          "label": "researchmap 小野円佳",
+          "url": "https://researchmap.jp/MO-Hokudai"
+        }
+      ],
+      "verificationStatus": "verified",
+      "evidenceNote": "東北大学工学研究科DEI推進プロジェクト：女性教授3名着任等で氏名・所属・職位を確認。採用時論文数は添付画像の主著/共著目安を反映し、Google Scholar・researchmap・KAKEN・J-GLOBAL等で追跡できるよう根拠URLを付与。",
+      "publicationTimeline": []
+    },
+    {
+      "id": "tohoku-eng-xu-chaonan-2023",
+      "name": "徐 超男",
+      "fiscalYear": 2023,
+      "field": "材料システム工学 / 応力発光材料",
+      "university": "東北大学",
+      "department": "工学研究科 材料システム工学専攻",
+      "position": "教授",
+      "appointmentYear": 2023,
+      "appointmentDate": "2023-04-01",
+      "callType": "東北大学工学研究科DEI推進公募",
+      "baselinePublications": {
+        "leadAuthor": 60,
+        "coauthored": 180,
+        "source": "添付画像 + 公開DB確認",
+        "sourceUrl": "https://dei.eng.tohoku.ac.jp/news/detail---id-220.html",
+        "note": "採択時の主著・共著数として既存の一次資料由来カウントを保持。"
+      },
+      "sourceMetricNote": "添付画像の採用時集計値（約60報 / 約180報以上）を採用。東北大学教員プロフィール・researchmapで氏名、所属、研究者情報を確認。",
+      "sources": [
+        {
+          "label": "東北大学工学研究科DEI推進プロジェクト：女性教授3名着任",
+          "url": "https://dei.eng.tohoku.ac.jp/news/detail---id-220.html"
+        },
+        {
+          "label": "東北大学 工学研究科 教員プロフィール 徐超男",
+          "url": "https://www.eng.tohoku.ac.jp/research/researchers/v-%2C-id%2C2b5fcc66-eabb-4442-af81-b84930d0bacd.html"
+        },
+        {
+          "label": "researchmap 徐超男",
+          "url": "https://researchmap.jp/read0081648"
+        }
+      ],
+      "verificationStatus": "verified",
+      "evidenceNote": "東北大学工学研究科DEI推進プロジェクト：女性教授3名着任等で氏名・所属・職位を確認。採用時論文数は添付画像の主著/共著目安を反映し、Google Scholar・researchmap・KAKEN・J-GLOBAL等で追跡できるよう根拠URLを付与。",
+      "publicationTimeline": []
+    },
+    {
+      "id": "tohoku-eng-kubota-aya-2023",
+      "name": "窪田 亜矢",
+      "fiscalYear": 2023,
+      "field": "都市計画 / 都市・建築デザイン",
+      "university": "東北大学",
+      "department": "工学研究科 都市・建築学専攻",
+      "position": "教授",
+      "appointmentYear": 2023,
+      "appointmentDate": "2023-04-01",
+      "callType": "東北大学工学研究科DEI推進公募",
+      "baselinePublications": {
+        "leadAuthor": 25,
+        "coauthored": 40,
+        "source": "添付画像 + 公開DB確認",
+        "sourceUrl": "https://dei.eng.tohoku.ac.jp/news/detail---id-220.html",
+        "note": "採択時の主著・共著数として既存の一次資料由来カウントを保持。"
+      },
+      "sourceMetricNote": "添付画像の採用時集計値（約25報 / 約40報）を採用。researchmapで氏名、所属、研究者情報を確認。",
+      "sources": [
+        {
+          "label": "東北大学工学研究科DEI推進プロジェクト：女性教授3名着任",
+          "url": "https://dei.eng.tohoku.ac.jp/news/detail---id-220.html"
+        },
+        {
+          "label": "researchmap 窪田亜矢",
+          "url": "https://researchmap.jp/ayakubota?lang=ja"
+        }
+      ],
+      "verificationStatus": "verified",
+      "evidenceNote": "東北大学工学研究科DEI推進プロジェクト：女性教授3名着任等で氏名・所属・職位を確認。採用時論文数は添付画像の主著/共著目安を反映し、Google Scholar・researchmap・KAKEN・J-GLOBAL等で追跡できるよう根拠URLを付与。",
+      "publicationTimeline": []
+    },
+    {
+      "id": "nagoya-gender-saegusa-mayumi-2023",
+      "name": "三枝 麻由美",
+      "fiscalYear": 2023,
+      "field": "社会学 / ジェンダー平等",
+      "university": "名古屋大学",
+      "department": "ジェンダーダイバーシティセンター",
+      "position": "准教授",
+      "appointmentYear": 2023,
+      "appointmentDate": "研究者総覧で2022年4月から現職確認",
+      "callType": "名古屋大学研究者総覧確認",
+      "baselinePublications": {
+        "leadAuthor": 10,
+        "coauthored": 15,
+        "source": "添付画像 + 公開DB確認",
+        "sourceUrl": "https://profs.provost.nagoya-u.ac.jp/html/100005828_ja.html",
+        "note": "採択時の主著・共著数として既存の一次資料由来カウントを保持。"
+      },
+      "sourceMetricNote": "添付画像の採用時集計値（約10報 / 約15報）を採用。名古屋大学研究者総覧・researchmapで氏名、所属、論文11件等を確認。",
+      "sources": [
+        {
+          "label": "名古屋大学 研究者詳細 三枝麻由美",
+          "url": "https://profs.provost.nagoya-u.ac.jp/html/100005828_ja.html"
+        },
+        {
+          "label": "researchmap 三枝麻由美",
+          "url": "https://researchmap.jp/read0156761"
+        },
+        {
+          "label": "J-GLOBAL 三枝麻由美",
+          "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=201101057420760165"
+        }
+      ],
+      "verificationStatus": "verified",
+      "evidenceNote": "名古屋大学 研究者詳細 三枝麻由美等で氏名・所属・職位を確認。採用時論文数は添付画像の主著/共著目安を反映し、Google Scholar・researchmap・KAKEN・J-GLOBAL等で追跡できるよう根拠URLを付与。",
+      "publicationTimeline": []
+    },
+    {
+      "id": "tohoku-ifs-yakeno-aiko-2022",
+      "name": "焼野 藍子",
+      "fiscalYear": 2022,
+      "field": "航空宇宙流体工学 / 流体シミュレーション",
+      "university": "東北大学",
+      "department": "流体科学研究所 航空宇宙流体工学研究分野",
+      "position": "助教",
+      "appointmentYear": 2022,
+      "appointmentDate": "東北大学 女性研究者活躍の軌跡で助教として確認",
+      "callType": "東北大学「女性研究者活躍の軌跡」",
+      "baselinePublications": {
+        "leadAuthor": 10,
+        "coauthored": 20,
+        "source": "添付画像 + 公開DB確認",
+        "sourceUrl": "https://www.rpip.tohoku.ac.jp/jp/pr/spotlight/detail---id-897.html",
+        "note": "採択時の主著・共著数として既存の一次資料由来カウントを保持。"
+      },
+      "sourceMetricNote": "添付画像の採用時集計値（約10報 / 約20報）を採用。東北大学産学連携機構・研究者紹介等で氏名、所属、職位を確認。",
+      "sources": [
+        {
+          "label": "東北大学 産学連携機構 研究者紹介 焼野藍子",
+          "url": "https://www.rpip.tohoku.ac.jp/jp/pr/spotlight/detail---id-897.html"
+        },
+        {
+          "label": "東北大学 研究者紹介 焼野藍子",
+          "url": "https://www.r-info.tohoku.ac.jp/ja/96b1205bf6c4835998983d85a12d647a.html"
+        },
+        {
+          "label": "CiNii Research 焼野藍子",
+          "url": "https://cir.nii.ac.jp/crid/1581698604396677761"
+        }
+      ],
+      "verificationStatus": "verified",
+      "evidenceNote": "東北大学 産学連携機構 研究者紹介 焼野藍子等で氏名・所属・職位を確認。採用時論文数は添付画像の主著/共著目安を反映し、Google Scholar・researchmap・KAKEN・J-GLOBAL等で追跡できるよう根拠URLを付与。",
+      "publicationTimeline": []
     }
   ],
   "candidateCalls": [
@@ -1182,17 +1876,17 @@
     },
     {
       "id": "tsukuba-all-fields-2026-female-associate-assistant",
-      "fiscalYear": 2025,
+      "fiscalYear": 2026,
       "university": "筑波大学",
       "department": "全学・全研究分野",
       "position": "准教授または助教",
       "field": "全分野",
-      "appointmentDate": "2026年4月1日",
+      "appointmentDate": "2027年4月1日",
       "statusLabel": "採用者未確認",
-      "note": "全学20名枠のうち14名分の女性限定公募。採用者名との対応は未確認。",
+      "note": "2026年4月20日公開の女性限定公募としてJREC-INおよび筑波大学公式ニュースで確認。全学19枠のうち16枠を全研究分野対象の一括公募として募集している。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
       "source": {
-        "label": "日本細胞生物学会 公募掲載",
-        "url": "https://www.jscb.gr.jp/jscb/communication/jscb_communication-6845/"
+        "label": "筑波大学：女性を対象とした教員公募を開始",
+        "url": "https://www.tsukuba.ac.jp/news/20260417090000.html"
       }
     },
     {
@@ -1388,6 +2082,669 @@
       "source": {
         "label": "東京大学宇宙線研究所 人事公募",
         "url": "https://www.icrr.u-tokyo.ac.jp/careers/"
+      }
+    },
+    {
+      "id": "iwate-school-education-2026-female-associate-professor-or-lecturer",
+      "fiscalYear": 2026,
+      "university": "岩手大学",
+      "department": "教育学部 学校教育科（教育学関連）",
+      "position": "准教授または講師",
+      "field": "教育学",
+      "appointmentDate": "2026年10月1日",
+      "statusLabel": "採用者未確認",
+      "note": "2026年4月28日掲載の女性限定公募として公式掲載。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "岩手大学教育学部：学校教育科（教育学関連）女性限定公募",
+        "url": "https://www.edu.iwate-u.ac.jp/news-list/news/2026/9892/"
+      }
+    },
+    {
+      "id": "iwate-english-2026-female-associate-professor-or-lecturer",
+      "fiscalYear": 2026,
+      "university": "岩手大学",
+      "department": "教育学部 英語教育科（英語学関連（英語学））",
+      "position": "准教授または講師",
+      "field": "英語学",
+      "appointmentDate": "2026年10月1日",
+      "statusLabel": "採用者未確認",
+      "note": "2026年4月27日掲載の女性限定公募として公式掲載。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "岩手大学教育学部：英語教育科（英語学関連（英語学））女性限定公募",
+        "url": "https://www.edu.iwate-u.ac.jp/news-list/news/2026/9866/"
+      }
+    },
+    {
+      "id": "tohoku-agri-2026-female-professor",
+      "fiscalYear": 2026,
+      "university": "東北大学",
+      "department": "大学院農学研究科 再生型アグリバイオシステム学分野",
+      "position": "教授",
+      "field": "再生型アグリバイオシステム学",
+      "appointmentDate": "2026年8月1日以降",
+      "statusLabel": "採用者未確認",
+      "note": "2026年3月2日公開の女性限定公募として農学研究科公式ページおよび東北大学DEI推進センターの募集一覧で確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "東北大学大学院農学研究科：再生型アグリバイオシステム学分野 教授（女性限定公募）",
+        "url": "https://www.agri.tohoku.ac.jp/jp/news/20260302-2/"
+      }
+    },
+    {
+      "id": "tohoku-tagen-2026-female-professor",
+      "fiscalYear": 2026,
+      "university": "東北大学",
+      "department": "多元物質科学研究所 グリーン機能材料プロセス研究分野",
+      "position": "教授",
+      "field": "グリーン機能材料プロセス研究",
+      "appointmentDate": "2026年8月1日以降",
+      "statusLabel": "採用者未確認",
+      "note": "2026年3月31日掲載の東北大学女性限定公募一覧で、多元物質科学研究所のグリーン機能材料プロセス研究分野教授として公式確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "東北大学DEI推進センター：東北大学教員公募（女性限定公募）",
+        "url": "https://dei.tohoku.ac.jp/news_topics/public-appeal/p/49151/"
+      }
+    },
+    {
+      "id": "yamaguchi-history-2026-female-lecturer",
+      "fiscalYear": 2026,
+      "university": "山口大学",
+      "department": "人文学部 人文学科 歴史学講座",
+      "position": "講師",
+      "field": "日本古代史",
+      "appointmentDate": "2027年4月1日",
+      "statusLabel": "採用者未確認",
+      "note": "2026年2月20日付の公募要項で、女性限定公募として公式掲載。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "山口大学人文学部：歴史学講座 講師（女性限定）公募要項",
+        "url": "https://www.yamaguchi-u.ac.jp/wp-content/uploads/2026/02/26022411.pdf"
+      }
+    },
+    {
+      "id": "yamaguchi-chinese-literature-2026-female-lecturer",
+      "fiscalYear": 2026,
+      "university": "山口大学",
+      "department": "人文学部 人文学科 日本・中国言語文学講座",
+      "position": "講師",
+      "field": "中国文学",
+      "appointmentDate": "2027年4月1日",
+      "statusLabel": "採用者未確認",
+      "note": "2026年1月6日付の公募要項で、女性限定公募として公式掲載。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "山口大学人文学部：日本・中国言語文学講座 中国文学分野 講師（女性限定）公募要項",
+        "url": "https://www.yamaguchi-u.ac.jp/wp-content/uploads/2026/01/26010811.pdf"
+      }
+    },
+    {
+      "id": "yamaguchi-german-linguistics-2026-female-lecturer-or-associate-professor",
+      "fiscalYear": 2026,
+      "university": "山口大学",
+      "department": "人文学部 人文学科 欧米言語文学講座",
+      "position": "講師または准教授",
+      "field": "ドイツ語学および比較言語学・対照言語学",
+      "appointmentDate": "2027年4月1日",
+      "statusLabel": "採用者未確認",
+      "note": "2026年1月5日付の公募要項で、女性限定公募として公式掲載。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "山口大学人文学部：欧米言語文学講座 講師または准教授（女性限定）公募要項",
+        "url": "https://www.yamaguchi-u.ac.jp/wp-content/uploads/2026/01/26010611.pdf"
+      }
+    },
+    {
+      "id": "tohoku-law-2026-female-professor",
+      "fiscalYear": 2026,
+      "university": "東北大学",
+      "department": "大学院法学研究科",
+      "position": "教授",
+      "field": "ジェンダー・多様性に関する法学・政治学分野",
+      "appointmentDate": "2026年11月1日",
+      "statusLabel": "採用者未確認",
+      "note": "2026年3月2日公開の女性限定公募としてJREC-INで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "JREC-IN：東北大学法学研究科 テニュアー教授（女性限定公募）",
+        "url": "https://jrecin.jst.go.jp/seek/SeekJorDetail?id=D126030095"
+      }
+    },
+    {
+      "id": "tohoku-science-2026-female-professor",
+      "fiscalYear": 2026,
+      "university": "東北大学",
+      "department": "大学院理学研究科",
+      "position": "教授",
+      "field": "環境・地球科学分野",
+      "appointmentDate": "2026年8月1日以降",
+      "statusLabel": "採用者未確認",
+      "note": "2026年3月2日公開の女性限定公募として理学研究科公式ページで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "東北大学大学院理学研究科：教員公募（女性限定公募）",
+        "url": "https://www.sci.tohoku.ac.jp/recruit/post-20260531.html"
+      }
+    },
+    {
+      "id": "tohoku-dentistry-2026-female-professor",
+      "fiscalYear": 2026,
+      "university": "東北大学",
+      "department": "大学院歯学研究科",
+      "position": "教授",
+      "field": "地域共創バイオ情報学分野（仮称）",
+      "appointmentDate": "2026年8月1日以降",
+      "statusLabel": "採用者未確認",
+      "note": "2026年3月公開の女性限定公募としてJREC-IN掲載の公募要項で確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "JREC-IN：東北大学歯学研究科教員公募（女性限定公募）",
+        "url": "https://jrecin.jst.go.jp/seek/SeekDownload?id=6231230&jobOfferRecruitId=D126030106&num=8"
+      }
+    },
+    {
+      "id": "tohoku-pharmacy-2026-female-professor",
+      "fiscalYear": 2026,
+      "university": "東北大学",
+      "department": "大学院薬学研究科",
+      "position": "教授",
+      "field": "臓器連関・病態制御薬学分野",
+      "appointmentDate": "2026年10月1日以降",
+      "statusLabel": "採用者未確認",
+      "note": "2026年3月2日公開の女性限定公募としてJREC-INで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "JREC-IN：東北大学大学院薬学研究科 女性教授候補者の公募",
+        "url": "https://jrecin.jst.go.jp/seek/SeekJorDetail?id=D126030033"
+      }
+    },
+    {
+      "id": "tohoku-idac-2026-female-professor",
+      "fiscalYear": 2026,
+      "university": "東北大学",
+      "department": "加齢医学研究所",
+      "position": "教授",
+      "field": "加齢医学研究分野",
+      "appointmentDate": "2026年8月1日以降",
+      "statusLabel": "採用者未確認",
+      "note": "2026年3月11日掲載の女性限定公募として加齢医学研究所公式ページおよびJREC-INで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "東北大学加齢医学研究所：教授公募（女性限定公募）",
+        "url": "https://www.idac.tohoku.ac.jp/site_ja/recruit/23838"
+      }
+    },
+    {
+      "id": "ube-kosen-mechanical-2026-female-associate-professor-or-lecturer-or-assistant-professor",
+      "fiscalYear": 2026,
+      "university": "宇部工業高等専門学校",
+      "department": "機械工学科",
+      "position": "准教授、講師または助教",
+      "field": "機械工学分野",
+      "appointmentDate": "要項参照",
+      "statusLabel": "採用者未確認",
+      "note": "2026年3月公開の女性限定公募として、宇部工業高等専門学校の教員公募ページおよびJREC-INで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "sources": [
+        {
+          "label": "宇部工業高等専門学校：教員公募",
+          "url": "https://www.ube-k.ac.jp/academic-staff/"
+        },
+        {
+          "label": "JREC-IN：機械工学科(准教授，講師または助教)の公募【機械工学分野】（女性限定）",
+          "url": "https://jrecin.jst.go.jp/seek/SeekJorDetail?id=D126030240"
+        }
+      ]
+    },
+    {
+      "id": "ube-kosen-electrical-2026-female-associate-professor-or-lecturer-or-assistant-professor",
+      "fiscalYear": 2026,
+      "university": "宇部工業高等専門学校",
+      "department": "電気工学科・電気システム工学科",
+      "position": "准教授、講師または助教",
+      "field": "電気分野",
+      "appointmentDate": "要項参照",
+      "statusLabel": "採用者未確認",
+      "note": "2026年3月公開の女性限定公募として、宇部工業高等専門学校の学科別公募ページおよびJREC-INで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "sources": [
+        {
+          "label": "宇部工業高等専門学校：電気工学科・電気システム工学科（女性限定）",
+          "url": "https://www.ube-k.ac.jp/academic-staff/denki/"
+        },
+        {
+          "label": "JREC-IN：電気工学科・電気システム工学科（准教授、講師または助教）の公募（電気分野）（女性限定）",
+          "url": "https://jrecin.jst.go.jp/seek/SeekJorSearch?bg1=&bg2=&bg3=&bg4=&bg5=&bg6=&bgCode1=&bgCode2=&bgCode3=&bgCode4=&bgCode5=&bgCode6=&dispcount=10&dt=2&fn=0&jobform=&jobterm=1&keyword_and=&keyword_not=&keyword_or=&orgtype=00005&page=1&sm1=&sm2=&sm3=&sm4=&sm5=&sm6=&smCode1=&smCode2=&smCode3=&smCode4=&smCode5=&smCode6=&sort=1"
+        }
+      ]
+    },
+    {
+      "id": "ube-kosen-history-2026-female-associate-professor-or-lecturer",
+      "fiscalYear": 2026,
+      "university": "宇部工業高等専門学校",
+      "department": "一般科・社会",
+      "position": "准教授または講師",
+      "field": "歴史学、歴史教育、その他関連分野",
+      "appointmentDate": "要項参照",
+      "statusLabel": "採用者未確認",
+      "note": "2026年3月公開の歴史分野の女性限定公募として、宇部工業高等専門学校の教員公募一覧およびJREC-INで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "sources": [
+        {
+          "label": "宇部工業高等専門学校：教員公募",
+          "url": "https://www.ube-k.ac.jp/academic-staff/"
+        },
+        {
+          "label": "JREC-IN：一般科・社会（歴史）教員公募（女性限定）",
+          "url": "https://jrecin.jst.go.jp/seek/SeekJorDetail?id=D126030817"
+        }
+      ]
+    },
+    {
+      "id": "tsukuba-human-disability-2026-female-assistant-professor",
+      "fiscalYear": 2026,
+      "university": "筑波大学",
+      "department": "人間系",
+      "position": "助教",
+      "field": "重度重複障害教育",
+      "appointmentDate": "2027年4月1日",
+      "statusLabel": "採用者未確認",
+      "note": "2026年5月1日公開の女性限定公募として、筑波大学人間系の教員公募一覧およびJREC-INで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "sources": [
+        {
+          "label": "筑波大学人間系：教員・研究員公募一覧",
+          "url": "https://www2.human.tsukuba.ac.jp/jinji-kobo"
+        },
+        {
+          "label": "JREC-IN：助教の公募（重度重複障害教育分野）（女性限定公募）",
+          "url": "https://jrecin.jst.go.jp/seek/SeekJorDetail?id=D126042049"
+        }
+      ]
+    },
+    {
+      "id": "tokyo-noko-applied-chemistry-2026-female-associate-professor-or-lecturer",
+      "fiscalYear": 2026,
+      "university": "東京農工大学",
+      "department": "工学研究院応用化学部門",
+      "position": "准教授または講師",
+      "field": "応用化学",
+      "appointmentDate": "2026年10月1日以降",
+      "statusLabel": "採用者未確認",
+      "note": "2026年6月1日締切の女性限定公募として東京農工大学公式の教員公募ページで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "東京農工大学：工学研究院 応用化学部門 准教授または講師（女性限定） 1名",
+        "url": "https://www.tuat.ac.jp/outline/kyousyoku/kyouin/20260601_01.html"
+      }
+    },
+    {
+      "id": "kyutech-ics-2026-female-associate-professor-or-assistant-professor",
+      "fiscalYear": 2026,
+      "university": "九州工業大学",
+      "department": "大学院情報工学研究院 知的システム工学研究系",
+      "position": "准教授または助教",
+      "field": "制御およびシステム工学分野、または機械工学分野",
+      "appointmentDate": "2026年8月1日以降",
+      "statusLabel": "採用者未確認",
+      "note": "2026年3月6日公開の女性限定公募としてJREC-INで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "sources": [
+        {
+          "label": "JREC-IN：九州工業大学 大学院情報工学研究院知的システム工学系 准教授または助教（女性限定）",
+          "url": "https://jrecin.jst.go.jp/seek/SeekJorDetail?id=D126030305"
+        },
+        {
+          "label": "九州工業大学 情報工学部：知的システム分野",
+          "url": "https://www.iizuka.kyutech.ac.jp/ics/introduction"
+        }
+      ]
+    },
+    {
+      "id": "kyoto-dpri-earthquake-disaster-2025-female-assistant-professor",
+      "fiscalYear": 2025,
+      "university": "京都大学",
+      "department": "防災研究所 地震災害研究センター地震情報研究領域・巨大災害研究センター巨大災害過程研究領域",
+      "position": "助教",
+      "field": "地震情報の発信手法・受け手対応評価、ラテンアメリカ地域を含む地震・津波災害軽減研究",
+      "appointmentDate": "選考後、可能な限り早い時期",
+      "statusLabel": "採用者未確認",
+      "note": "2025年8月1日締切の女性限定公募として京都大学防災研究所の公式ページで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "京都大学防災研究所：地震災害研究センター地震情報研究領域及び巨大災害研究センター巨大災害過程研究領域（兼任）助教（女性限定）",
+        "url": "https://www.dpri.kyoto-u.ac.jp/news/23243/"
+      }
+    },
+    {
+      "id": "kumamoto-math-2026-female-professor",
+      "fiscalYear": 2026,
+      "university": "熊本大学",
+      "department": "大学院先端科学研究部 基礎科学部門 数学分野",
+      "position": "教授",
+      "field": "数学",
+      "appointmentDate": "2026年10月1日以降",
+      "statusLabel": "採用者未確認",
+      "note": "熊本大学公式の教員・研究者公募ページで女性限定公募として確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "熊本大学：教員・研究者",
+        "url": "https://www.kumamoto-u.ac.jp/daigakujouhou/saiyou"
+      }
+    },
+    {
+      "id": "kumamoto-law-2026-female-tenure-track-associate-professor-or-lecturer",
+      "fiscalYear": 2026,
+      "university": "熊本大学",
+      "department": "大学院人文社会科学研究部",
+      "position": "テニュアトラック准教授またはテニュアトラック講師",
+      "field": "法学分野（民法・商法・環境法）",
+      "appointmentDate": "2026年10月1日以降",
+      "statusLabel": "採用者未確認",
+      "note": "熊本大学公式の教員・研究者公募ページで女性限定公募として確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "熊本大学：教員・研究者",
+        "url": "https://www.kumamoto-u.ac.jp/daigakujouhou/saiyou"
+      }
+    },
+    {
+      "id": "kumamoto-biomedical-materials-2026-female-associate-professor",
+      "fiscalYear": 2026,
+      "university": "熊本大学",
+      "department": "大学院先端科学研究部（工学系） 医工学部門 生命分子・医用材料分野",
+      "position": "准教授",
+      "field": "有機化学・有機材料化学分野（高分子材料、生体関連材料を含む）",
+      "appointmentDate": "2026年12月1日以降",
+      "statusLabel": "採用者未確認",
+      "note": "熊本大学公式の教員・研究者公募ページで女性限定公募として確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "熊本大学：教員・研究者",
+        "url": "https://www.kumamoto-u.ac.jp/daigakujouhou/saiyou"
+      }
+    },
+    {
+      "id": "kumamoto-reproductive-health-2026-female-professor-or-associate-professor",
+      "fiscalYear": 2026,
+      "university": "熊本大学",
+      "department": "大学院生命科学研究部（保健学系） リプロダクティブヘルス学講座",
+      "position": "教授または准教授",
+      "field": "リプロダクティブヘルス学",
+      "appointmentDate": "採用決定後、できるだけ早い時期",
+      "statusLabel": "採用者未確認",
+      "note": "熊本大学公式の教員・研究者公募ページで女性限定公募として確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "熊本大学：教員・研究者",
+        "url": "https://www.kumamoto-u.ac.jp/daigakujouhou/saiyou"
+      }
+    },
+    {
+      "id": "kumamoto-htlv-center-2026-female-professor",
+      "fiscalYear": 2026,
+      "university": "熊本大学",
+      "department": "ヒトレトロウイルス学共同研究センター",
+      "position": "教授",
+      "field": "要項参照",
+      "appointmentDate": "2026年10月1日以降",
+      "statusLabel": "採用者未確認",
+      "note": "熊本大学公式の教員・研究者公募ページで女性限定公募として確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "熊本大学：教員・研究者",
+        "url": "https://www.kumamoto-u.ac.jp/daigakujouhou/saiyou"
+      }
+    },
+    {
+      "id": "kumamoto-water-cycle-regional-design-2026-female-associate-professor",
+      "fiscalYear": 2026,
+      "university": "熊本大学",
+      "department": "くまもと水循環・減災研究教育センター 地域デザイン部門",
+      "position": "准教授",
+      "field": "地域づくりや地域社会の課題解決に関連した分野",
+      "appointmentDate": "2026年10月1日以降",
+      "statusLabel": "採用者未確認",
+      "note": "熊本大学公式の教員・研究者公募ページで女性限定公募として確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "熊本大学：教員・研究者",
+        "url": "https://www.kumamoto-u.ac.jp/daigakujouhou/saiyou"
+      }
+    },
+    {
+      "id": "kumamoto-clinical-psychology-2026-female-professor",
+      "fiscalYear": 2026,
+      "university": "熊本大学",
+      "department": "大学院人文社会科学研究部",
+      "position": "教授",
+      "field": "臨床心理学",
+      "appointmentDate": "2027年4月1日",
+      "statusLabel": "採用者未確認",
+      "note": "熊本大学公式の教員・研究者公募ページで女性限定公募として確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "熊本大学：教員・研究者",
+        "url": "https://www.kumamoto-u.ac.jp/daigakujouhou/saiyou"
+      }
+    },
+    {
+      "id": "toyama-chimono-geotech-2026-female-lecturer-or-associate-professor",
+      "fiscalYear": 2026,
+      "university": "富山県立大学",
+      "department": "工学部 環境・社会基盤工学科",
+      "position": "講師または准教授",
+      "field": "地盤防災分野、地盤工学分野",
+      "appointmentDate": "2027年4月1日",
+      "statusLabel": "採用者未確認",
+      "note": "2026年5月1日公開の女性限定公募としてJREC-INで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "JREC-IN：〖女性限定〗講師又は准教授の公募（地盤防災分野、地盤工学分野）",
+        "url": "https://jrecin.jst.go.jp/seek/SeekJorSearch?fn=0&jobkind=00022"
+      }
+    },
+    {
+      "id": "toyama-chemistry-2026-female-lecturer-or-associate-professor",
+      "fiscalYear": 2026,
+      "university": "富山県立大学",
+      "department": "工学部・情報工学部・看護学部",
+      "position": "講師または准教授",
+      "field": "化学及び関連分野",
+      "appointmentDate": "2027年4月1日",
+      "statusLabel": "採用者未確認",
+      "note": "2026年5月1日公開の女性限定公募としてJREC-INで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "JREC-IN：〖女性限定〗講師または准教授の公募（化学及び関連分野）",
+        "url": "https://jrecin.jst.go.jp/seek/SeekJorDetail?id=D126050064"
+      }
+    },
+    {
+      "id": "kanazawa-mechanical-2026-female-tenure-track-assistant-professor",
+      "fiscalYear": 2026,
+      "university": "金沢大学",
+      "department": "理工研究域 機械工学系",
+      "position": "テニュアトラック助教",
+      "field": "計算材料力学分野",
+      "appointmentDate": "2027年4月1日以降のできるだけ早い時期",
+      "statusLabel": "採用者未確認",
+      "note": "2026年5月1日公開の女性限定公募としてJREC-INで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "JREC-IN：テニュアトラック助教（女性限定，計算材料力学分野）",
+        "url": "https://jrecin.jst.go.jp/seek/SeekJorSearch?bg1=00005&bg2=00005&bg3=00005&bgCode1=00005&bgCode2=00005&bgCode3=00005&dispcount=50&dt=2&fn=2&jobform=&jobterm=&keyword_and=&keyword_not=&keyword_or=&orgtype=00001&page=2&sm1=.....&sm2=00005&sm3=.....&smCode1=.....&smCode2=00005&smCode3=.....&sort=0"
+      }
+    },
+    {
+      "id": "yamaguchi-chemistry-2026-female-assistant-professor",
+      "fiscalYear": 2026,
+      "university": "山口大学",
+      "department": "大学院創成科学研究科 理学系学域 化学分野",
+      "position": "助教",
+      "field": "ナノ材料科学、基礎物理化学、機能物性化学、無機・錯体化学、無機物質・無機材料化学",
+      "appointmentDate": "2027年4月1日以降のできるだけ早い時期",
+      "statusLabel": "採用者未確認",
+      "note": "2026年4月30日公開の女性限定公募としてJREC-INで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "JREC-IN：助教（大学院創成科学研究科理学系学域 化学分野）公募〖女性限定〗",
+        "url": "https://jrecin.jst.go.jp/seek/SeekJorDetail?id=D126042102"
+      }
+    },
+    {
+      "id": "kyushu-engineering-applied-chemistry-2026-female-professor",
+      "fiscalYear": 2026,
+      "university": "九州大学",
+      "department": "大学院工学研究院 応用化学部門 機能物質化学講座",
+      "position": "教授",
+      "field": "化学工学、無機化学、電気化学、触媒化学",
+      "appointmentDate": "2027年4月1日以降のできるだけ早い時期",
+      "statusLabel": "採用者未確認",
+      "note": "2026年5月7日公開の女性限定公募としてJREC-INで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "JREC-IN：九州大学 大学院工学研究院 応用化学部門 機能物質化学講座 教授の公募（女性限定）",
+        "url": "https://jrecin.jst.go.jp/seek/SeekJorDetail?id=D126050339"
+      }
+    },
+    {
+      "id": "tokuyama-materials-2026-female-professor-associate-assistant",
+      "fiscalYear": 2026,
+      "university": "徳山工業高等専門学校",
+      "department": "機械電気工学科",
+      "position": "教授、准教授または助教",
+      "field": "材料工学",
+      "appointmentDate": "要項参照",
+      "statusLabel": "採用者未確認",
+      "note": "2026年5月7日更新の女性限定公募としてJREC-IN検索結果および徳山工業高等専門学校の教職員採用情報更新告知で確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "sources": [
+        {
+          "label": "JREC-IN：教員募集 機械電気工学科（材料工学）教授、准教授または助教1名（女性限定）",
+          "url": "https://jrecin.jst.go.jp/seek/SeekJorDetail?id=D126050322"
+        },
+        {
+          "label": "徳山工業高等専門学校：教職員採用情報を更新しました",
+          "url": "https://www.tokuyama.ac.jp/"
+        }
+      ]
+    },
+    {
+      "id": "tokuyama-infoelectronics-2026-female-professor-associate-assistant",
+      "fiscalYear": 2026,
+      "university": "徳山工業高等専門学校",
+      "department": "情報電子工学科",
+      "position": "教授、准教授または助教",
+      "field": "情報工学・情報通信工学・電気電子工学関連分野",
+      "appointmentDate": "要項参照",
+      "statusLabel": "採用者未確認",
+      "note": "2026年5月7日更新の女性限定公募としてJREC-IN検索結果および徳山工業高等専門学校の教職員採用情報更新告知で確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "sources": [
+        {
+          "label": "JREC-IN：教員募集 情報電子工学科（情報工学・情報通信工学・電気電子工学に関連する分野全般）教授、准教授または助教1名（女性限定）",
+          "url": "https://jrecin.jst.go.jp/seek/SeekJorSearch?bg1=&bg2=&bg3=&bg4=&bg5=&bg6=&bgCode1=&bgCode2=&bgCode3=&bgCode4=&bgCode5=&bgCode6=&dispcount=50&dt=2&fn=0&jobform=&jobterm=&keyword_and=&keyword_not=&keyword_or=&orgtype=00001&orgtype=00002&orgtype=00003&orgtype=00004&orgtype=00005&orgtype=00006&orgtype=00007&page=2&sm1=&sm2=&sm3=&sm4=&sm5=&sm6=&smCode1=&smCode2=&smCode3=&smCode4=&smCode5=&smCode6=&sort=0"
+        },
+        {
+          "label": "徳山工業高等専門学校：教職員採用情報を更新しました",
+          "url": "https://www.tokuyama.ac.jp/"
+        }
+      ]
+    },
+    {
+      "id": "tokuyama-architecture-2026-female-professor-associate-assistant",
+      "fiscalYear": 2026,
+      "university": "徳山工業高等専門学校",
+      "department": "土木建築工学科",
+      "position": "教授、准教授または助教",
+      "field": "建築環境分野・建築設備分野",
+      "appointmentDate": "要項参照",
+      "statusLabel": "採用者未確認",
+      "note": "2026年5月7日更新の女性限定公募としてJREC-IN検索結果および徳山工業高等専門学校の教職員採用情報更新告知で確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "sources": [
+        {
+          "label": "JREC-IN：教員募集 土木建築工学科（建築環境分野・建築設備分野のいずれか又はその両方）教授、准教授または助教1名（女性限定）",
+          "url": "https://jrecin.jst.go.jp/seek/SeekJorSearch?bg1=&bg2=&bg3=&bg4=&bg5=&bg6=&bgCode1=&bgCode2=&bgCode3=&bgCode4=&bgCode5=&bgCode6=&dispcount=50&dt=2&fn=4&jobform=&jobterm=&keyword_and=&keyword_not=%25E6%25A9%259F%25E6%25A2%25B0+%25E5%259C%259F%25E6%259C%25A8+%25E5%25BB%25BA%25E7%25AF%2589+%25E6%2583%2585%25E5%25A0%25B1+%25E6%259C%2589%25E6%25A9%259F+%25E9%259B%25BB%25E6%25B0%2597%25E9%259B%25BB%25E5%25AD%2590+%25E7%25B4%25A0%25E7%25B2%2592%2525&keyword_or=&page=15&sm1=&sm2=&sm3=&sm4=&sm5=&sm6=&smCode1=&smCode2=&smCode3=&smCode4=&smCode5=&smCode6=&sort=1"
+        },
+        {
+          "label": "徳山工業高等専門学校：教職員採用情報を更新しました",
+          "url": "https://www.tokuyama.ac.jp/"
+        }
+      ]
+    },
+    {
+      "id": "nagaoka-design-theory-2026-female-assistant-professor",
+      "fiscalYear": 2026,
+      "university": "長岡造形大学",
+      "department": "大学院造形研究科 造形専攻",
+      "position": "助教",
+      "field": "美術・デザインの制作理論、制作実践論",
+      "appointmentDate": "2027年4月1日",
+      "statusLabel": "採用者未確認",
+      "note": "2026年5月7日公開の女性限定公募としてJREC-INで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "JREC-IN：長岡造形大学大学院 助教の募集〖美術・デザインの制作理論、制作実践論〗※女性限定",
+        "url": "https://jrecin.jst.go.jp/seek/SeekJorDetail?id=D126050154"
+      }
+    },
+    {
+      "id": "kanazawa-cognitive-behavior-2026-female-tt-associate-professor-or-assistant-professor",
+      "fiscalYear": 2026,
+      "university": "金沢大学",
+      "department": "国際基幹教育院 GS教育系",
+      "position": "TT准教授またはTT助教",
+      "field": "認知行動科学関連分野",
+      "appointmentDate": "2027年1月1日",
+      "statusLabel": "採用者未確認",
+      "note": "2026年3月6日公開の女性限定公募としてJREC-INで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "JREC-IN：〖女性限定公募〗TT准教授またはTT助教の公募（国際基幹教育院：認知行動科学関連分野）",
+        "url": "https://jrecin.jst.go.jp/seek/SeekJorDetail?id=D126030338"
+      }
+    },
+    {
+      "id": "toyama-biochemistry-2026-female-associate-professor",
+      "fiscalYear": 2026,
+      "university": "富山県立大学",
+      "department": "工学部 生物工学科",
+      "position": "准教授",
+      "field": "生化学、機能性食品工学、応用微生物学分野",
+      "appointmentDate": "2027年4月1日",
+      "statusLabel": "採用者未確認",
+      "note": "2026年5月7日公開の女性限定公募としてJREC-INで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "JREC-IN：〖女性限定〗准教授の公募（生化学、機能性食品工学、応用微生物学分野）",
+        "url": "https://jrecin.jst.go.jp/seek/SeekJorDetail?id=D126050148"
+      }
+    },
+    {
+      "id": "toyama-system-math-2026-female-assistant-professor-or-lecturer-or-associate-professor",
+      "fiscalYear": 2026,
+      "university": "富山県立大学",
+      "department": "情報工学部 データサイエンス学科",
+      "position": "助教、講師または准教授",
+      "field": "データサイエンスやシステム数理に関する分野",
+      "appointmentDate": "2027年4月1日",
+      "statusLabel": "採用者未確認",
+      "note": "2026年5月7日公開の女性限定公募としてJREC-INで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "JREC-IN：〖女性限定〗助教、講師又は准教授の公募（データサイエンスやシステム数理に関する分野）",
+        "url": "https://jrecin.jst.go.jp/seek/SeekJorDetail?id=D126050149"
+      }
+    },
+    {
+      "id": "toyama-datascience-intelligence-2026-female-assistant-professor-or-lecturer-or-associate-professor",
+      "fiscalYear": 2026,
+      "university": "富山県立大学",
+      "department": "情報工学部 データサイエンス学科",
+      "position": "助教、講師または准教授",
+      "field": "データサイエンスや知能情報学に関する分野",
+      "appointmentDate": "2027年4月1日",
+      "statusLabel": "採用者未確認",
+      "note": "2026年5月7日公開の女性限定公募としてJREC-INで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "JREC-IN：〖女性限定〗助教、講師又は准教授の公募（データサイエンスや知能情報学に関する分野）",
+        "url": "https://jrecin.jst.go.jp/seek/SeekJorDetail?id=D126050157"
+      }
+    },
+    {
+      "id": "toyama-network-2026-female-assistant-professor-or-lecturer-or-associate-professor",
+      "fiscalYear": 2026,
+      "university": "富山県立大学",
+      "department": "情報工学部 情報システム工学科",
+      "position": "助教、講師または准教授",
+      "field": "通信ネットワーク分野",
+      "appointmentDate": "2027年4月1日",
+      "statusLabel": "採用者未確認",
+      "note": "2026年5月7日公開の女性限定公募としてJREC-INで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "JREC-IN：〖女性限定〗助教、講師又は准教授の公募（通信ネットワーク分野）",
+        "url": "https://jrecin.jst.go.jp/seek/SeekJorDetail?id=D126050163"
+      }
+    },
+    {
+      "id": "toyama-vr-ai-2026-female-assistant-professor-or-lecturer-or-associate-professor",
+      "fiscalYear": 2026,
+      "university": "富山県立大学",
+      "department": "情報工学部 情報システム工学科",
+      "position": "助教、講師または准教授",
+      "field": "バーチャルリアリティ、テレイグジスタンス、AIに関する分野",
+      "appointmentDate": "2027年4月1日",
+      "statusLabel": "採用者未確認",
+      "note": "2026年5月7日公開の女性限定公募としてJREC-INで確認。採用者名との対応を示す公式発表は未確認のため、個人データには未登録。",
+      "source": {
+        "label": "JREC-IN：〖女性限定〗助教、講師又は准教授の公募（バーチャルリアリティ、テレイグジスタンス、ＡＩに関する分野）",
+        "url": "https://jrecin.jst.go.jp/seek/SeekJorDetail?id=D126050161"
       }
     }
   ]

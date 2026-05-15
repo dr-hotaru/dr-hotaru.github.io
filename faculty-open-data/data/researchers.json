@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-15",
+  "updatedAt": "2026-05-16",
   "policy": {
     "publishOnlyVerified": true,
     "verificationRule": "公式発表で公募種別と採用者本人が明示されている場合のみ公開する。氏名、写真、所属変更、時期から性別や採用経路を推定しない。",
@@ -8,7 +8,8 @@
     "noPlaceholderRule": "Verified public records must not contain question-mark placeholders or mojibake. If a record cannot be displayed with a readable name, university, department, field, and source, it must not be published as verified.",
     "lastDataQualityFix": "2026-05-15: Replaced romanized Japanese names with Japanese public-record forms, added the five attached-image records, and attached public-source publication metrics for every verified public record.",
     "nameDisplayPolicy": "Japanese researchers must be displayed in Japanese public-record form. Romanized names are not used for verified Japanese records.",
-    "lastBaselineSplitFix": "2026-05-15: Adoption-time lead/coauthor counts were split from researchmap API published_papers where available, with achievement source moved into a separate table column."
+    "lastBaselineSplitFix": "2026-05-15: Adoption-time lead/coauthor counts were split from researchmap API published_papers where available, with achievement source moved into a separate table column.",
+    "lastTimelineFix": "2026-05-16: Added post-appointment yearly lead/coauthor publication timelines for every verified researcher. Timelines are derived from researchmap API where available; KAKEN is used for the one record without researchmap papers."
   },
   "callStatistics": {
     "fy2023WomenOnlyCalls": 225,
@@ -49,6 +50,11 @@
           "year": 2025,
           "leadAuthor": 0,
           "coauthored": 1
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
         }
       ],
       "sources": [
@@ -60,7 +66,13 @@
           "label": "京都大学 教育研究活動データベース（河村真理子・論文一覧）",
           "url": "https://kdb.iimc.kyoto-u.ac.jp/profile/ja.2451ccaa09c40750.html"
         }
-      ]
+      ],
+      "timelineSource": {
+        "source": "京都大学KDB",
+        "sourceUrl": "https://kdb.iimc.kyoto-u.ac.jp/profile/ja.2451ccaa09c40750.html",
+        "note": "京都大学KDBの論文リストを採用日以降で年別集計。既存の主著・共著判定を保持。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kyoto-fserc-zhang-manqing-2022",
@@ -97,6 +109,11 @@
           "year": 2025,
           "leadAuthor": 1,
           "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
         }
       ],
       "sources": [
@@ -108,7 +125,13 @@
           "label": "京都大学 教育研究活動データベース（張 曼青・論文一覧）",
           "url": "https://kdb.iimc.kyoto-u.ac.jp/profile/ja.c45dfc2076126539.html"
         }
-      ]
+      ],
+      "timelineSource": {
+        "source": "京都大学KDB",
+        "sourceUrl": "https://kdb.iimc.kyoto-u.ac.jp/profile/ja.c45dfc2076126539.html",
+        "note": "京都大学KDBの論文リストを採用日以降で年別集計。既存の主著・共著判定を保持。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-kuroda-keiko-2014",
@@ -130,7 +153,73 @@
         "sourceUrl": "https://researchmap.jp/Kuroda_Keiko/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 77件を、著者順・登録ロールで主著48件、共著29件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 1,
+          "coauthored": 4
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 1,
+          "coauthored": 3
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 2,
+          "coauthored": 11
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 1,
+          "coauthored": 4
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 5,
+          "coauthored": 0
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 3
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -145,7 +234,14 @@
           "url": "https://researchmap.jp/Kuroda_Keiko/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 77件を、著者順・登録ロールで主著48件、共著29件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 77件を、著者順・登録ロールで主著48件、共著29件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/Kuroda_Keiko/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-chatani-eri-2014",
@@ -167,7 +263,73 @@
         "sourceUrl": "https://researchmap.jp/eri_chatani/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 32件を、著者順・登録ロールで主著20件、共著12件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 3,
+          "coauthored": 1
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 2,
+          "coauthored": 1
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 2,
+          "coauthored": 1
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 2,
+          "coauthored": 2
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 3,
+          "coauthored": 1
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 5,
+          "coauthored": 3
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 3,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 4
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 2,
+          "coauthored": 2
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 1,
+          "coauthored": 2
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 1,
+          "coauthored": 1
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -182,7 +344,14 @@
           "url": "https://researchmap.jp/eri_chatani/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 32件を、著者順・登録ロールで主著20件、共著12件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 32件を、著者順・登録ロールで主著20件、共著12件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/eri_chatani/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-aihara-shoko-2014",
@@ -204,7 +373,73 @@
         "sourceUrl": "https://researchmap.jp/AiharaYoshiko/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 7件を、著者順・登録ロールで主著3件、共著4件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 0,
+          "coauthored": 3
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -219,7 +454,14 @@
           "url": "https://researchmap.jp/AiharaYoshiko/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 7件を、著者順・登録ロールで主著3件、共著4件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 7件を、著者順・登録ロールで主著3件、共著4件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/AiharaYoshiko/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-matsuo-eiko-2014",
@@ -241,7 +483,73 @@
         "sourceUrl": "https://researchmap.jp/7000004081/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 13件を、著者順・登録ロールで主著6件、共著7件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 1,
+          "coauthored": 2
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 1,
+          "coauthored": 2
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -256,7 +564,14 @@
           "url": "https://researchmap.jp/7000004081/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 13件を、著者順・登録ロールで主著6件、共著7件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 13件を、著者順・登録ロールで主著6件、共著7件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000004081/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-yamada-kaori-2014",
@@ -278,7 +593,73 @@
         "sourceUrl": "https://researchmap.jp/7000004132/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 8件を、著者順・登録ロールで主著7件、共著1件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 2,
+          "coauthored": 0
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 1,
+          "coauthored": 3
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 1,
+          "coauthored": 3
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 3,
+          "coauthored": 1
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 2,
+          "coauthored": 0
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -293,7 +674,14 @@
           "url": "https://researchmap.jp/7000004132/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 8件を、著者順・登録ロールで主著7件、共著1件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 8件を、著者順・登録ロールで主著7件、共著1件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000004132/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-enami-naoko-2014",
@@ -315,7 +703,73 @@
         "sourceUrl": "https://researchmap.jp/naokoenami/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 15件を、著者順・登録ロールで主著15件、共著0件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 6,
+          "coauthored": 0
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 9,
+          "coauthored": 0
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 7,
+          "coauthored": 0
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 4,
+          "coauthored": 2
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 2,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -330,7 +784,14 @@
           "url": "https://researchmap.jp/naokoenami/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 15件を、著者順・登録ロールで主著15件、共著0件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 15件を、著者順・登録ロールで主著15件、共著0件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/naokoenami/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-suzuki-chika-2014",
@@ -352,7 +813,73 @@
         "sourceUrl": "https://researchmap.jp/professorsuzuki/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 51件を、著者順・登録ロールで主著45件、共著6件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 9,
+          "coauthored": 0
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 2,
+          "coauthored": 0
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 3,
+          "coauthored": 0
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -367,7 +894,14 @@
           "url": "https://researchmap.jp/professorsuzuki/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 51件を、著者順・登録ロールで主著45件、共著6件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 51件を、著者順・登録ロールで主著45件、共著6件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/professorsuzuki/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-hongo-chizuru-2014",
@@ -389,7 +923,73 @@
         "sourceUrl": "https://researchmap.jp/read0071826/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 3件を、著者順・登録ロールで主著1件、共著2件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -404,7 +1004,14 @@
           "url": "https://researchmap.jp/read0071826/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 3件を、著者順・登録ロールで主著1件、共著2件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 3件を、著者順・登録ロールで主著1件、共著2件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/read0071826/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-yoshida-yasuko-2014",
@@ -426,7 +1033,73 @@
         "sourceUrl": "https://researchmap.jp/7000004082/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 10件を、著者順・登録ロールで主著4件、共著6件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 1,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -441,7 +1114,14 @@
           "url": "https://researchmap.jp/7000004082/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 10件を、著者順・登録ロールで主著4件、共著6件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 10件を、著者順・登録ロールで主著4件、共著6件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000004082/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-matsumoto-fumiko-2014",
@@ -463,7 +1143,73 @@
         "sourceUrl": "https://researchmap.jp/7000004137/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 12件を、著者順・登録ロールで主著7件、共著5件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -478,7 +1224,14 @@
           "url": "https://researchmap.jp/7000004137/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 12件を、著者順・登録ロールで主著7件、共著5件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 12件を、著者順・登録ロールで主著7件、共著5件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000004137/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-sato-harumi-2014",
@@ -500,7 +1253,73 @@
         "sourceUrl": "https://researchmap.jp/polymer/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 115件を、著者順・登録ロールで主著20件、共著95件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 1,
+          "coauthored": 2
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 1,
+          "coauthored": 3
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 1,
+          "coauthored": 4
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 1,
+          "coauthored": 5
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 1,
+          "coauthored": 5
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 3,
+          "coauthored": 1
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 6,
+          "coauthored": 2
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 4,
+          "coauthored": 2
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 4,
+          "coauthored": 1
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 2,
+          "coauthored": 4
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 4
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -515,7 +1334,14 @@
           "url": "https://researchmap.jp/polymer/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 115件を、著者順・登録ロールで主著20件、共著95件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 115件を、著者順・登録ロールで主著20件、共著95件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/polymer/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-aoki-kana-2014",
@@ -537,7 +1363,73 @@
         "sourceUrl": "https://researchmap.jp/7000003848/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 1件を、著者順・登録ロールで主著0件、共著1件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -552,7 +1444,14 @@
           "url": "https://researchmap.jp/7000003848/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 1件を、著者順・登録ロールで主著0件、共著1件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 1件を、著者順・登録ロールで主著0件、共著1件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000003848/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-ito-mai-2014",
@@ -574,7 +1473,73 @@
         "sourceUrl": "https://researchmap.jp/7000004139/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 15件を、著者順・登録ロールで主著11件、共著4件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 3,
+          "coauthored": 0
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -589,7 +1554,14 @@
           "url": "https://researchmap.jp/7000004139/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 15件を、著者順・登録ロールで主著11件、共著4件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 15件を、著者順・登録ロールで主著11件、共著4件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000004139/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-shimizu-shima-2014",
@@ -611,7 +1583,73 @@
         "sourceUrl": "https://researchmap.jp/7000005694/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 50件を、著者順・登録ロールで主著0件、共著50件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 72
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 0,
+          "coauthored": 96
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 0,
+          "coauthored": 32
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -626,7 +1664,14 @@
           "url": "https://researchmap.jp/7000005694/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 50件を、著者順・登録ロールで主著0件、共著50件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 50件を、著者順・登録ロールで主著0件、共著50件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000005694/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-yamaguchi-aika-2014",
@@ -648,7 +1693,73 @@
         "sourceUrl": "https://researchmap.jp/7000005742/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 17件を、著者順・登録ロールで主著6件、共著11件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 0,
+          "coauthored": 6
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 1,
+          "coauthored": 4
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -663,7 +1774,14 @@
           "url": "https://researchmap.jp/7000005742/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 17件を、著者順・登録ロールで主著6件、共著11件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 17件を、著者順・登録ロールで主著6件、共著11件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000005742/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-oshita-yuko-2014",
@@ -685,7 +1803,73 @@
         "sourceUrl": "https://researchmap.jp/7000005665/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 7件を、著者順・登録ロールで主著3件、共著4件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 2,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -700,7 +1884,14 @@
           "url": "https://researchmap.jp/7000005665/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 7件を、著者順・登録ロールで主著3件、共著4件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 7件を、著者順・登録ロールで主著3件、共著4件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000005665/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-ono-tomoko-2014",
@@ -722,7 +1913,73 @@
         "sourceUrl": "https://researchmap.jp/read0136644/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 20件を、著者順・登録ロールで主著14件、共著6件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -737,7 +1994,14 @@
           "url": "https://researchmap.jp/read0136644/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 20件を、著者順・登録ロールで主著14件、共著6件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 20件を、著者順・登録ロールで主著14件、共著6件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/read0136644/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-sakura-midori-2014",
@@ -759,7 +2023,73 @@
         "sourceUrl": "https://researchmap.jp/7000004009/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 19件を、著者順・登録ロールで主著9件、共著10件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 1,
+          "coauthored": 2
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 0,
+          "coauthored": 3
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 1,
+          "coauthored": 2
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -774,7 +2104,14 @@
           "url": "https://researchmap.jp/7000004009/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 19件を、著者順・登録ロールで主著9件、共著10件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 19件を、著者順・登録ロールで主著9件、共著10件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000004009/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-yasui-minami-2014",
@@ -796,7 +2133,73 @@
         "sourceUrl": "https://researchmap.jp/south_y/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 31件を、著者順・登録ロールで主著17件、共著14件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 3,
+          "coauthored": 0
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 2,
+          "coauthored": 7
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 2,
+          "coauthored": 4
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 5
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 4
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -811,7 +2214,14 @@
           "url": "https://researchmap.jp/south_y/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 31件を、著者順・登録ロールで主著17件、共著14件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 31件を、著者順・登録ロールで主著17件、共著14件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/south_y/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-chuma-izumi-2014",
@@ -833,7 +2243,73 @@
         "sourceUrl": "https://researchmap.jp/IzumiChuma/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 19件を、著者順・登録ロールで主著4件、共著15件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 0,
+          "coauthored": 3
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 0,
+          "coauthored": 7
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -848,7 +2324,14 @@
           "url": "https://researchmap.jp/IzumiChuma/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 19件を、著者順・登録ロールで主著4件、共著15件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 19件を、著者順・登録ロールで主著4件、共著15件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/IzumiChuma/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kobe-hidema-ruri-2014",
@@ -870,7 +2353,73 @@
         "sourceUrl": "https://researchmap.jp/ruri_hidema/published_papers",
         "note": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 67件を、著者順・登録ロールで主著22件、共著45件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 4,
+          "coauthored": 9
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 2,
+          "coauthored": 14
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 6,
+          "coauthored": 24
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 3,
+          "coauthored": 3
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 6,
+          "coauthored": 14
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 2,
+          "coauthored": 9
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 2,
+          "coauthored": 4
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 1,
+          "coauthored": 5
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 4,
+          "coauthored": 5
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 1,
+          "coauthored": 5
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 4,
+          "coauthored": 2
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 5,
+          "coauthored": 4
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "神戸大学男女共同参画推進室 Newsletter No.35（新規養成女性教員一覧）",
@@ -885,7 +2434,14 @@
           "url": "https://researchmap.jp/ruri_hidema/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 67件を、著者順・登録ロールで主著22件、共著45件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-31 までのresearchmap published_papers 67件を、著者順・登録ロールで主著22件、共著45件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/ruri_hidema/published_papers",
+        "startDate": "2014-04-01",
+        "note": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "hiroshima-sato-akiko-2012",
@@ -907,7 +2463,83 @@
         "sourceUrl": "https://researchmap.jp/read0145301/published_papers",
         "note": "採択時カットオフ 2012-04-01 までのresearchmap published_papers 12件を、著者順・登録ロールで主著9件、共著3件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2012,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2013,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 2,
+          "coauthored": 0
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 4,
+          "coauthored": 0
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 3,
+          "coauthored": 0
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 4,
+          "coauthored": 0
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 2,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 3,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 5,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "広島大学の男女共同参画2014 成果報告書 p.16",
@@ -918,7 +2550,14 @@
           "url": "https://researchmap.jp/read0145301/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2012-04-01 までのresearchmap published_papers 12件を、著者順・登録ロールで主著9件、共著3件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2012-04-01 までのresearchmap published_papers 12件を、著者順・登録ロールで主著9件、共著3件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/read0145301/published_papers",
+        "startDate": "2012-04-01",
+        "note": "着任日 2012-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "hiroshima-okita-miki-2011",
@@ -940,7 +2579,88 @@
         "sourceUrl": "https://nrid.nii.ac.jp/ja/nrid/1000030611842/",
         "note": "researchmap公開ページを確認できないため、KAKEN研究成果5件を共著側の公開DB確認数として表示。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2011,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2012,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2013,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "広島大学の男女共同参画2014 成果報告書 p.16",
@@ -951,7 +2671,13 @@
           "url": "https://nrid.nii.ac.jp/ja/nrid/1000030611842/"
         }
       ],
-      "metricVerificationNote": "researchmap公開ページを確認できないため、KAKEN研究成果5件を共著側の公開DB確認数として表示。"
+      "metricVerificationNote": "researchmap公開ページを確認できないため、KAKEN研究成果5件を共著側の公開DB確認数として表示。",
+      "timelineSource": {
+        "source": "KAKEN",
+        "sourceUrl": "https://nrid.nii.ac.jp/ja/nrid/1000030611842/",
+        "note": "KAKEN研究成果のうち雑誌論文として確認できる2015年・2018年の2件を、着任後共著論文として年別集計。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "hiroshima-yamamura-mariko-2011",
@@ -973,7 +2699,88 @@
         "sourceUrl": "https://researchmap.jp/marico/published_papers",
         "note": "採択時カットオフ 2011-04-01 までのresearchmap published_papers 7件を、著者順・登録ロールで主著5件、共著2件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2011,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2012,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2013,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 2,
+          "coauthored": 0
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 2,
+          "coauthored": 0
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "広島大学の男女共同参画2014 成果報告書 p.16",
@@ -984,7 +2791,14 @@
           "url": "https://researchmap.jp/marico/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2011-04-01 までのresearchmap published_papers 7件を、著者順・登録ロールで主著5件、共著2件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2011-04-01 までのresearchmap published_papers 7件を、著者順・登録ロールで主著5件、共著2件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/marico/published_papers",
+        "startDate": "2011-04-01",
+        "note": "着任日 2011-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "hiroshima-ogawa-yuko-2011",
@@ -1006,7 +2820,88 @@
         "sourceUrl": "https://researchmap.jp/_ogawa/published_papers",
         "note": "採択時カットオフ 2011-10-01 までのresearchmap published_papers 4件を、著者順・登録ロールで主著1件、共著3件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2011,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2012,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2013,
+          "leadAuthor": 3,
+          "coauthored": 7
+        },
+        {
+          "year": 2014,
+          "leadAuthor": 2,
+          "coauthored": 9
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 2,
+          "coauthored": 11
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 6,
+          "coauthored": 10
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 6
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 1,
+          "coauthored": 13
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 1,
+          "coauthored": 7
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 3,
+          "coauthored": 5
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 1,
+          "coauthored": 8
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 1,
+          "coauthored": 5
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 1,
+          "coauthored": 2
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "広島大学の男女共同参画2014 成果報告書 p.16",
@@ -1017,7 +2912,14 @@
           "url": "https://researchmap.jp/_ogawa/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2011-10-01 までのresearchmap published_papers 4件を、著者順・登録ロールで主著1件、共著3件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2011-10-01 までのresearchmap published_papers 4件を、著者順・登録ロールで主著1件、共著3件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/_ogawa/published_papers",
+        "startDate": "2011-10-01",
+        "note": "着任日 2011-10-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "hiroshima-kanna-machi-2011",
@@ -1039,7 +2941,88 @@
         "sourceUrl": "https://researchmap.jp/read0148797/published_papers",
         "note": "採択時カットオフ 2011-06-01 までのresearchmap published_papers 9件を、著者順・登録ロールで主著1件、共著8件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2011,
+          "leadAuthor": 1,
+          "coauthored": 2
+        },
+        {
+          "year": 2012,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2013,
+          "leadAuthor": 2,
+          "coauthored": 3
+        },
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 3,
+          "coauthored": 0
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 1,
+          "coauthored": 3
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 1,
+          "coauthored": 3
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "広島大学の男女共同参画2014 成果報告書 p.16",
@@ -1050,7 +3033,14 @@
           "url": "https://researchmap.jp/read0148797/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2011-06-01 までのresearchmap published_papers 9件を、著者順・登録ロールで主著1件、共著8件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2011-06-01 までのresearchmap published_papers 9件を、著者順・登録ロールで主著1件、共著8件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/read0148797/published_papers",
+        "startDate": "2011-06-01",
+        "note": "着任日 2011-06-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "hiroshima-okamura-yoshiko-2010",
@@ -1072,7 +3062,88 @@
         "sourceUrl": "https://researchmap.jp/read0054481/published_papers",
         "note": "採択時カットオフ 2011-01-01 までのresearchmap published_papers 33件を、著者順・登録ロールで主著3件、共著30件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2011,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2012,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2013,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 4
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 0,
+          "coauthored": 5
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 1,
+          "coauthored": 11
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 7
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 0,
+          "coauthored": 3
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 0,
+          "coauthored": 5
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 2,
+          "coauthored": 2
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "広島大学の男女共同参画2014 成果報告書 p.16",
@@ -1083,7 +3154,14 @@
           "url": "https://researchmap.jp/read0054481/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2011-01-01 までのresearchmap published_papers 33件を、著者順・登録ロールで主著3件、共著30件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2011-01-01 までのresearchmap published_papers 33件を、著者順・登録ロールで主著3件、共著30件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/read0054481/published_papers",
+        "startDate": "2011-01-01",
+        "note": "着任日 2011-01-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "hiroshima-kato-aki-2010",
@@ -1105,7 +3183,88 @@
         "sourceUrl": "https://researchmap.jp/katoa/published_papers",
         "note": "採択時カットオフ 2011-02-01 までのresearchmap published_papers 12件を、著者順・登録ロールで主著7件、共著5件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2011,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2012,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2013,
+          "leadAuthor": 1,
+          "coauthored": 4
+        },
+        {
+          "year": 2014,
+          "leadAuthor": 1,
+          "coauthored": 2
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 2,
+          "coauthored": 0
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 2,
+          "coauthored": 0
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 2,
+          "coauthored": 2
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 1,
+          "coauthored": 2
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 2,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 2,
+          "coauthored": 2
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 1,
+          "coauthored": 4
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 3
+        }
+      ],
       "sources": [
         {
           "label": "広島大学の男女共同参画2014 成果報告書 p.16",
@@ -1116,7 +3275,14 @@
           "url": "https://researchmap.jp/katoa/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2011-02-01 までのresearchmap published_papers 12件を、著者順・登録ロールで主著7件、共著5件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2011-02-01 までのresearchmap published_papers 12件を、著者順・登録ロールで主著7件、共著5件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/katoa/published_papers",
+        "startDate": "2011-02-01",
+        "note": "着任日 2011-02-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "hiroshima-sato-tomoko-2010",
@@ -1138,7 +3304,88 @@
         "sourceUrl": "https://researchmap.jp/iTe87MDGyi6J/published_papers",
         "note": "採択時カットオフ 2011-02-01 までのresearchmap published_papers 2件を、著者順・登録ロールで主著2件、共著0件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2011,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2012,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2013,
+          "leadAuthor": 2,
+          "coauthored": 1
+        },
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 0,
+          "coauthored": 9
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 4
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 0,
+          "coauthored": 3
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 1,
+          "coauthored": 2
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "広島大学の男女共同参画2014 成果報告書 p.16",
@@ -1149,7 +3396,14 @@
           "url": "https://researchmap.jp/iTe87MDGyi6J/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2011-02-01 までのresearchmap published_papers 2件を、著者順・登録ロールで主著2件、共著0件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2011-02-01 までのresearchmap published_papers 2件を、著者順・登録ロールで主著2件、共著0件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/iTe87MDGyi6J/published_papers",
+        "startDate": "2011-02-01",
+        "note": "着任日 2011-02-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kumamoto-kawashima-fumiko-2010",
@@ -1171,7 +3425,88 @@
         "sourceUrl": "https://researchmap.jp/7000016983/published_papers",
         "note": "採択時カットオフ 2011-04-01 までのresearchmap published_papers 17件を、著者順・登録ロールで主著8件、共著9件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2011,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2012,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2013,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 3,
+          "coauthored": 1
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 0,
+          "coauthored": 4
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 3,
+          "coauthored": 1
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 2,
+          "coauthored": 0
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "熊本大学大学院先端科学研究部：公募状況",
@@ -1186,7 +3521,14 @@
           "url": "https://researchmap.jp/7000016983/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2011-04-01 までのresearchmap published_papers 17件を、著者順・登録ロールで主著8件、共著9件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2011-04-01 までのresearchmap published_papers 17件を、著者順・登録ロールで主著8件、共著9件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/7000016983/published_papers",
+        "startDate": "2011-04-01",
+        "note": "着任日 2011-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kumamoto-kobayashi-makiko-2010",
@@ -1208,7 +3550,83 @@
         "sourceUrl": "https://researchmap.jp/cava842002/published_papers",
         "note": "採択時カットオフ 2012-02-01 までのresearchmap published_papers 94件を、著者順・登録ロールで主著13件、共著81件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2012,
+          "leadAuthor": 1,
+          "coauthored": 10
+        },
+        {
+          "year": 2013,
+          "leadAuthor": 1,
+          "coauthored": 11
+        },
+        {
+          "year": 2014,
+          "leadAuthor": 7,
+          "coauthored": 10
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 6,
+          "coauthored": 10
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 1,
+          "coauthored": 19
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 3,
+          "coauthored": 16
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 1,
+          "coauthored": 17
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 10,
+          "coauthored": 1
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 7,
+          "coauthored": 2
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 12,
+          "coauthored": 0
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 4,
+          "coauthored": 4
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 9,
+          "coauthored": 5
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 3
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 5
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 1
+        }
+      ],
       "sources": [
         {
           "label": "熊本大学大学院先端科学研究部：公募状況",
@@ -1223,7 +3641,14 @@
           "url": "https://researchmap.jp/cava842002/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2012-02-01 までのresearchmap published_papers 94件を、著者順・登録ロールで主著13件、共著81件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2012-02-01 までのresearchmap published_papers 94件を、著者順・登録ロールで主著13件、共著81件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/cava842002/published_papers",
+        "startDate": "2012-02-01",
+        "note": "着任日 2012-02-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kumamoto-minagawa-tomoko-2011",
@@ -1245,7 +3670,73 @@
         "sourceUrl": "https://researchmap.jp/minagawa.tomoko/published_papers",
         "note": "採択時カットオフ 2014-03-01 までのresearchmap published_papers 77件を、著者順・登録ロールで主著24件、共著53件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 2,
+          "coauthored": 3
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 3,
+          "coauthored": 4
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 2,
+          "coauthored": 1
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 7,
+          "coauthored": 0
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 3,
+          "coauthored": 2
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 9,
+          "coauthored": 1
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 2,
+          "coauthored": 1
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 6,
+          "coauthored": 1
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 4,
+          "coauthored": 2
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 2,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 4,
+          "coauthored": 1
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 1,
+          "coauthored": 2
+        }
+      ],
       "sources": [
         {
           "label": "熊本大学大学院先端科学研究部：公募状況",
@@ -1260,7 +3751,14 @@
           "url": "https://researchmap.jp/minagawa.tomoko/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-01 までのresearchmap published_papers 77件を、著者順・登録ロールで主著24件、共著53件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-01 までのresearchmap published_papers 77件を、著者順・登録ロールで主著24件、共著53件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/minagawa.tomoko/published_papers",
+        "startDate": "2014-03-01",
+        "note": "着任日 2014-03-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kumamoto-takeuchi-yukiko-2013",
@@ -1282,7 +3780,73 @@
         "sourceUrl": "https://researchmap.jp/read0132541/published_papers",
         "note": "採択時カットオフ 2014-03-01 までのresearchmap published_papers 25件を、著者順・登録ロールで主著2件、共著23件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 2,
+          "coauthored": 0
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 5,
+          "coauthored": 0
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 3,
+          "coauthored": 0
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 2,
+          "coauthored": 0
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 1,
+          "coauthored": 3
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 1
+        }
+      ],
       "sources": [
         {
           "label": "熊本大学大学院先端科学研究部：公募状況",
@@ -1297,7 +3861,14 @@
           "url": "https://researchmap.jp/read0132541/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-03-01 までのresearchmap published_papers 25件を、著者順・登録ロールで主著2件、共著23件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-03-01 までのresearchmap published_papers 25件を、著者順・登録ロールで主著2件、共著23件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/read0132541/published_papers",
+        "startDate": "2014-03-01",
+        "note": "着任日 2014-03-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "kumamoto-matsubara-yasuko-2014",
@@ -1319,7 +3890,73 @@
         "sourceUrl": "https://researchmap.jp/yasuko_matsubara/published_papers",
         "note": "採択時カットオフ 2014-08-01 までのresearchmap published_papers 14件を、著者順・登録ロールで主著0件、共著14件に分離。"
       },
-      "publicationTimeline": [],
+      "publicationTimeline": [
+        {
+          "year": 2014,
+          "leadAuthor": 0,
+          "coauthored": 3
+        },
+        {
+          "year": 2015,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2016,
+          "leadAuthor": 0,
+          "coauthored": 7
+        },
+        {
+          "year": 2017,
+          "leadAuthor": 0,
+          "coauthored": 5
+        },
+        {
+          "year": 2018,
+          "leadAuthor": 0,
+          "coauthored": 4
+        },
+        {
+          "year": 2019,
+          "leadAuthor": 0,
+          "coauthored": 4
+        },
+        {
+          "year": 2020,
+          "leadAuthor": 0,
+          "coauthored": 3
+        },
+        {
+          "year": 2021,
+          "leadAuthor": 0,
+          "coauthored": 4
+        },
+        {
+          "year": 2022,
+          "leadAuthor": 0,
+          "coauthored": 7
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 8
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 10
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 18
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
       "sources": [
         {
           "label": "熊本大学大学院先端科学研究部：公募状況",
@@ -1338,7 +3975,14 @@
           "url": "https://researchmap.jp/yasuko_matsubara/published_papers"
         }
       ],
-      "metricVerificationNote": "採択時カットオフ 2014-08-01 までのresearchmap published_papers 14件を、著者順・登録ロールで主著0件、共著14件に分離。"
+      "metricVerificationNote": "採択時カットオフ 2014-08-01 までのresearchmap published_papers 14件を、著者順・登録ロールで主著0件、共著14件に分離。",
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/yasuko_matsubara/published_papers",
+        "startDate": "2014-08-01",
+        "note": "着任日 2014-08-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "tohoku-eng-ono-madoka-2023",
@@ -1371,11 +4015,43 @@
         {
           "label": "researchmap 小野円佳",
           "url": "https://researchmap.jp/MO-Hokudai"
+        },
+        {
+          "label": "researchmap API（着任後推移）",
+          "url": "https://researchmap.jp/MO-Hokudai/published_papers"
         }
       ],
       "verificationStatus": "verified",
       "evidenceNote": "東北大学工学研究科DEI推進プロジェクト：女性教授3名着任等で氏名・所属・職位を確認。採用時論文数は添付画像の主著/共著目安を反映し、Google Scholar・researchmap・KAKEN・J-GLOBAL等で追跡できるよう根拠URLを付与。",
-      "publicationTimeline": []
+      "publicationTimeline": [
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 2,
+          "coauthored": 1
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 1,
+          "coauthored": 6
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/MO-Hokudai/published_papers",
+        "startDate": "2023-04-01",
+        "note": "着任日 2023-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "tohoku-eng-xu-chaonan-2023",
@@ -1408,11 +4084,43 @@
         {
           "label": "researchmap 徐超男",
           "url": "https://researchmap.jp/read0081648"
+        },
+        {
+          "label": "researchmap API（着任後推移）",
+          "url": "https://researchmap.jp/read0081648/published_papers"
         }
       ],
       "verificationStatus": "verified",
       "evidenceNote": "東北大学工学研究科DEI推進プロジェクト：女性教授3名着任等で氏名・所属・職位を確認。採用時論文数は添付画像の主著/共著目安を反映し、Google Scholar・researchmap・KAKEN・J-GLOBAL等で追跡できるよう根拠URLを付与。",
-      "publicationTimeline": []
+      "publicationTimeline": [
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 6,
+          "coauthored": 1
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 5,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 1
+        }
+      ],
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/read0081648/published_papers",
+        "startDate": "2023-04-01",
+        "note": "着任日 2023-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "tohoku-eng-kubota-aya-2023",
@@ -1441,11 +4149,43 @@
         {
           "label": "researchmap 窪田亜矢",
           "url": "https://researchmap.jp/ayakubota?lang=ja"
+        },
+        {
+          "label": "researchmap API（着任後推移）",
+          "url": "https://researchmap.jp/ayakubota/published_papers"
         }
       ],
       "verificationStatus": "verified",
       "evidenceNote": "東北大学工学研究科DEI推進プロジェクト：女性教授3名着任等で氏名・所属・職位を確認。採用時論文数は添付画像の主著/共著目安を反映し、Google Scholar・researchmap・KAKEN・J-GLOBAL等で追跡できるよう根拠URLを付与。",
-      "publicationTimeline": []
+      "publicationTimeline": [
+        {
+          "year": 2023,
+          "leadAuthor": 0,
+          "coauthored": 1
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 2,
+          "coauthored": 2
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 1
+        }
+      ],
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/ayakubota/published_papers",
+        "startDate": "2023-04-01",
+        "note": "着任日 2023-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "nagoya-gender-saegusa-mayumi-2023",
@@ -1478,11 +4218,43 @@
         {
           "label": "J-GLOBAL 三枝麻由美",
           "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=201101057420760165"
+        },
+        {
+          "label": "researchmap API（着任後推移）",
+          "url": "https://researchmap.jp/read0156761/published_papers"
         }
       ],
       "verificationStatus": "verified",
       "evidenceNote": "名古屋大学 研究者詳細 三枝麻由美等で氏名・所属・職位を確認。採用時論文数は添付画像の主著/共著目安を反映し、Google Scholar・researchmap・KAKEN・J-GLOBAL等で追跡できるよう根拠URLを付与。",
-      "publicationTimeline": []
+      "publicationTimeline": [
+        {
+          "year": 2023,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 1,
+          "coauthored": 0
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 0
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 0,
+          "coauthored": 0
+        }
+      ],
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/read0156761/published_papers",
+        "startDate": "2023-04-01",
+        "note": "着任日 2023-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     },
     {
       "id": "tohoku-ifs-yakeno-aiko-2022",
@@ -1515,11 +4287,48 @@
         {
           "label": "CiNii Research 焼野藍子",
           "url": "https://cir.nii.ac.jp/crid/1581698604396677761"
+        },
+        {
+          "label": "researchmap API（着任後推移）",
+          "url": "https://researchmap.jp/aikoyakeno/published_papers"
         }
       ],
       "verificationStatus": "verified",
       "evidenceNote": "東北大学 産学連携機構 研究者紹介 焼野藍子等で氏名・所属・職位を確認。採用時論文数は添付画像の主著/共著目安を反映し、Google Scholar・researchmap・KAKEN・J-GLOBAL等で追跡できるよう根拠URLを付与。",
-      "publicationTimeline": []
+      "publicationTimeline": [
+        {
+          "year": 2022,
+          "leadAuthor": 1,
+          "coauthored": 2
+        },
+        {
+          "year": 2023,
+          "leadAuthor": 1,
+          "coauthored": 1
+        },
+        {
+          "year": 2024,
+          "leadAuthor": 4,
+          "coauthored": 5
+        },
+        {
+          "year": 2025,
+          "leadAuthor": 0,
+          "coauthored": 2
+        },
+        {
+          "year": 2026,
+          "leadAuthor": 2,
+          "coauthored": 3
+        }
+      ],
+      "timelineSource": {
+        "source": "researchmap API",
+        "sourceUrl": "https://researchmap.jp/aikoyakeno/published_papers",
+        "startDate": "2022-04-01",
+        "note": "着任日 2022-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。",
+        "updatedAt": "2026-05-16"
+      }
     }
   ],
   "candidateCalls": [

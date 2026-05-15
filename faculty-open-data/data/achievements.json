@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-15",
+  "updatedAt": "2026-05-16",
   "items": [
     {
       "researcherId": "kyoto-fserc-kawamura-mariko-2023",
@@ -125,7 +125,8 @@
           "venue": "Plankton Biology and Ecology",
           "role": "筆頭著者"
         }
-      ]
+      ],
+      "timelineNote": "京都大学KDBの論文リストを採用日以降で年別集計。既存の主著・共著判定を保持。"
     },
     {
       "researcherId": "kyoto-fserc-zhang-manqing-2022",
@@ -245,7 +246,8 @@
           "venue": "国際セミナー論文集",
           "role": "筆頭著者"
         }
-      ]
+      ],
+      "timelineNote": "京都大学KDBの論文リストを採用日以降で年別集計。既存の主著・共著判定を保持。"
     },
     {
       "researcherId": "hiroshima-okamura-yoshiko-2010",
@@ -275,7 +277,8 @@
         "baselineLeadAuthor": 3,
         "baselineCoauthored": 30,
         "baselineCutoff": "2011-01-01"
-      }
+      },
+      "timelineNote": "着任日 2011-01-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "hiroshima-sato-tomoko-2010",
@@ -309,7 +312,8 @@
         "baselineLeadAuthor": 2,
         "baselineCoauthored": 0,
         "baselineCutoff": "2011-02-01"
-      }
+      },
+      "timelineNote": "着任日 2011-02-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "hiroshima-kato-aki-2010",
@@ -343,7 +347,8 @@
         "baselineLeadAuthor": 7,
         "baselineCoauthored": 5,
         "baselineCutoff": "2011-02-01"
-      }
+      },
+      "timelineNote": "着任日 2011-02-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "hiroshima-yamamura-mariko-2011",
@@ -377,7 +382,8 @@
         "baselineLeadAuthor": 5,
         "baselineCoauthored": 2,
         "baselineCutoff": "2011-04-01"
-      }
+      },
+      "timelineNote": "着任日 2011-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "hiroshima-okita-miki-2011",
@@ -403,7 +409,8 @@
         "baselineLeadAuthor": 0,
         "baselineCoauthored": 5,
         "baselineCutoff": "2011-04-01"
-      }
+      },
+      "timelineNote": "KAKEN研究成果のうち雑誌論文として確認できる2015年・2018年の2件を、着任後共著論文として年別集計。"
     },
     {
       "researcherId": "hiroshima-kanna-machi-2011",
@@ -437,7 +444,8 @@
         "baselineLeadAuthor": 1,
         "baselineCoauthored": 8,
         "baselineCutoff": "2011-06-01"
-      }
+      },
+      "timelineNote": "着任日 2011-06-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "hiroshima-ogawa-yuko-2011",
@@ -471,7 +479,8 @@
         "baselineLeadAuthor": 1,
         "baselineCoauthored": 3,
         "baselineCutoff": "2011-10-01"
-      }
+      },
+      "timelineNote": "着任日 2011-10-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "hiroshima-sato-akiko-2012",
@@ -505,7 +514,8 @@
         "baselineLeadAuthor": 9,
         "baselineCoauthored": 3,
         "baselineCutoff": "2012-04-01"
-      }
+      },
+      "timelineNote": "着任日 2012-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kumamoto-kawashima-fumiko-2010",
@@ -539,7 +549,8 @@
         "baselineLeadAuthor": 8,
         "baselineCoauthored": 9,
         "baselineCutoff": "2011-04-01"
-      }
+      },
+      "timelineNote": "着任日 2011-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kumamoto-kobayashi-makiko-2010",
@@ -569,7 +580,8 @@
         "baselineLeadAuthor": 13,
         "baselineCoauthored": 81,
         "baselineCutoff": "2012-02-01"
-      }
+      },
+      "timelineNote": "着任日 2012-02-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kumamoto-minagawa-tomoko-2011",
@@ -603,7 +615,8 @@
         "baselineLeadAuthor": 24,
         "baselineCoauthored": 53,
         "baselineCutoff": "2014-03-01"
-      }
+      },
+      "timelineNote": "着任日 2014-03-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kumamoto-takeuchi-yukiko-2013",
@@ -633,7 +646,8 @@
         "baselineLeadAuthor": 2,
         "baselineCoauthored": 23,
         "baselineCutoff": "2014-03-01"
-      }
+      },
+      "timelineNote": "着任日 2014-03-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kumamoto-matsubara-yasuko-2014",
@@ -663,7 +677,8 @@
         "baselineLeadAuthor": 0,
         "baselineCoauthored": 14,
         "baselineCutoff": "2014-08-01"
-      }
+      },
+      "timelineNote": "着任日 2014-08-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-kuroda-keiko-2014",
@@ -693,7 +708,8 @@
         "baselineLeadAuthor": 48,
         "baselineCoauthored": 29,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-chatani-eri-2014",
@@ -723,7 +739,8 @@
         "baselineLeadAuthor": 20,
         "baselineCoauthored": 12,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-aihara-shoko-2014",
@@ -753,7 +770,8 @@
         "baselineLeadAuthor": 3,
         "baselineCoauthored": 4,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-matsuo-eiko-2014",
@@ -783,7 +801,8 @@
         "baselineLeadAuthor": 6,
         "baselineCoauthored": 7,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-yamada-kaori-2014",
@@ -813,7 +832,8 @@
         "baselineLeadAuthor": 7,
         "baselineCoauthored": 1,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-enami-naoko-2014",
@@ -843,7 +863,8 @@
         "baselineLeadAuthor": 15,
         "baselineCoauthored": 0,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-suzuki-chika-2014",
@@ -873,7 +894,8 @@
         "baselineLeadAuthor": 45,
         "baselineCoauthored": 6,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-hongo-chizuru-2014",
@@ -903,7 +925,8 @@
         "baselineLeadAuthor": 1,
         "baselineCoauthored": 2,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-yoshida-yasuko-2014",
@@ -933,7 +956,8 @@
         "baselineLeadAuthor": 4,
         "baselineCoauthored": 6,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-matsumoto-fumiko-2014",
@@ -963,7 +987,8 @@
         "baselineLeadAuthor": 7,
         "baselineCoauthored": 5,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-sato-harumi-2014",
@@ -993,7 +1018,8 @@
         "baselineLeadAuthor": 20,
         "baselineCoauthored": 95,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-aoki-kana-2014",
@@ -1023,7 +1049,8 @@
         "baselineLeadAuthor": 0,
         "baselineCoauthored": 1,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-ito-mai-2014",
@@ -1053,7 +1080,8 @@
         "baselineLeadAuthor": 11,
         "baselineCoauthored": 4,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-shimizu-shima-2014",
@@ -1083,7 +1111,8 @@
         "baselineLeadAuthor": 0,
         "baselineCoauthored": 50,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-yamaguchi-aika-2014",
@@ -1113,7 +1142,8 @@
         "baselineLeadAuthor": 6,
         "baselineCoauthored": 11,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-oshita-yuko-2014",
@@ -1143,7 +1173,8 @@
         "baselineLeadAuthor": 3,
         "baselineCoauthored": 4,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-ono-tomoko-2014",
@@ -1173,7 +1204,8 @@
         "baselineLeadAuthor": 14,
         "baselineCoauthored": 6,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-sakura-midori-2014",
@@ -1203,7 +1235,8 @@
         "baselineLeadAuthor": 9,
         "baselineCoauthored": 10,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-yasui-minami-2014",
@@ -1233,7 +1266,8 @@
         "baselineLeadAuthor": 17,
         "baselineCoauthored": 14,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-chuma-izumi-2014",
@@ -1263,7 +1297,8 @@
         "baselineLeadAuthor": 4,
         "baselineCoauthored": 15,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "kobe-hidema-ruri-2014",
@@ -1293,7 +1328,8 @@
         "baselineLeadAuthor": 22,
         "baselineCoauthored": 45,
         "baselineCutoff": "2014-03-31"
-      }
+      },
+      "timelineNote": "着任日 2014-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "tohoku-eng-ono-madoka-2023",
@@ -1324,7 +1360,8 @@
           }
         ],
         "note": "主著/共著は添付画像の概算値。DBごとに収録範囲が異なるため継続確認対象。"
-      }
+      },
+      "timelineNote": "着任日 2023-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "tohoku-eng-xu-chaonan-2023",
@@ -1355,7 +1392,8 @@
           }
         ],
         "note": "主著/共著は添付画像の概算値。DBごとに収録範囲が異なるため継続確認対象。"
-      }
+      },
+      "timelineNote": "着任日 2023-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "tohoku-eng-kubota-aya-2023",
@@ -1382,7 +1420,8 @@
           }
         ],
         "note": "主著/共著は添付画像の概算値。DBごとに収録範囲が異なるため継続確認対象。"
-      }
+      },
+      "timelineNote": "着任日 2023-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "nagoya-gender-saegusa-mayumi-2023",
@@ -1413,7 +1452,8 @@
           }
         ],
         "note": "主著/共著は添付画像の概算値。DBごとに収録範囲が異なるため継続確認対象。"
-      }
+      },
+      "timelineNote": "着任日 2023-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     },
     {
       "researcherId": "tohoku-ifs-yakeno-aiko-2022",
@@ -1444,7 +1484,8 @@
           }
         ],
         "note": "主著/共著は添付画像の概算値。DBごとに収録範囲が異なるため継続確認対象。"
-      }
+      },
+      "timelineNote": "着任日 2022-04-01 以降のresearchmap published_papersを年別に集計。著者順・登録ロールで主著/共著を分離。"
     }
   ]
 }

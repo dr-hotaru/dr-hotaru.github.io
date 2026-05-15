@@ -6,7 +6,7 @@ const state = {
   selectedId: null
 };
 
-const DATA_VERSION = "20260515-2";
+const DATA_VERSION = "20260516-1";
 
 const els = {
   year: document.querySelector("#yearFilter"),

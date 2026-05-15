@@ -102,6 +102,26 @@ if (missingBaselineSource.length) {
   throw new Error(`Verified faculty data is missing baseline achievement source: ${missingBaselineSource.map(item => item.id).join(", ")}`);
 }
 
+const missingTimeline = (data.researchers || []).filter(item =>
+  item.verificationStatus === "verified" && (
+    !Array.isArray(item.publicationTimeline) || item.publicationTimeline.length === 0
+  )
+);
+
+if (missingTimeline.length) {
+  throw new Error(`Verified faculty data is missing post-appointment publication timeline: ${missingTimeline.map(item => item.id).join(", ")}`);
+}
+
+const invalidTimeline = (data.researchers || []).filter(item =>
+  item.verificationStatus === "verified" && item.publicationTimeline.some(point =>
+    !Number.isFinite(point.year) || !Number.isFinite(point.leadAuthor) || !Number.isFinite(point.coauthored)
+  )
+);
+
+if (invalidTimeline.length) {
+  throw new Error(`Verified faculty data has invalid post-appointment timeline values: ${invalidTimeline.map(item => item.id).join(", ")}`);
+}
+
 const context = {
   console,
   document: {
